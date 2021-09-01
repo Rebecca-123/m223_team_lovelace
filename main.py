@@ -8,3 +8,24 @@ app = Flask(__name__)
 # map URL route for function below
 def index():
     return render_template("index.html")
+
+
+@app.route("/ritvik")
+def ritvik():
+    return render_template("ritvik.html")
+
+
+@app.route("/william")
+def william():
+    return render_template("william.html")
+
+
+@app.route("/rebecca")
+def rebecca():
+    return render_template("rebecca.html")
+
+
+@app.route("/christina")
+def christina():
+    return render_template("christina.html")
+

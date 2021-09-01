@@ -29,3 +29,6 @@ def rebecca():
 def christina():
     return render_template("christina.html")
 
+@app.route("/journals")
+def journal():
+    return render_template("journal.html")

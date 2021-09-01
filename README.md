@@ -1,5 +1,5 @@
 # Team Lovelace Website
-## Group Members: Christina Lee, Rebecca Su, Ritvik Keerthi, William LI
+## Group Members: Christina Lee, Rebecca Su, Ritvik Keerthi and William Li
 ### Idea
 ### Celestial themed website with objects rotated around as a gallery.
 ### Visual thoughts

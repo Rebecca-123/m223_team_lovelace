@@ -1,4 +1,4 @@
-# import flask
+
 from flask import Flask, render_template, url_for
 # create an instance of flask object
 app = Flask(__name__)

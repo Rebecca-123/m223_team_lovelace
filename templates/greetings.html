@@ -2,7 +2,7 @@
 {% extends "layouts/base.html" %}
 
 <!- This variable sets name of browser tab  -->
-{% set project = "william" %}
+{% set project = "Greetings" %}
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
@@ -10,7 +10,7 @@
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: system-ui;">
 
         <div class="col-12">
-            <p>Hello William!</p>
+            <p>Hello {{ name }}</p>
         </div>
 
         <div class="col-12">

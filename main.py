@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 
 # create an instance of flask object
 app = Flask(__name__)
@@ -36,6 +36,13 @@ def christina():
 def journal():
     return render_template("journal.html")
 
+@app.route('/greetings/', methods=['GET', 'POST'])
+def greeting():
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:
+            return render_template("greetings.html", name=name)
+    return render_template("greetings.html", name="name")
 
 if __name__ == "__main__":
     app.run(debug=True)

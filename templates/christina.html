@@ -1,12 +1,12 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
-
 <!- This variable sets name of browser tab  -->
 {% set project = "christina" %}
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     {% include "layouts/navbar.html" %}
+    {% include "layouts/css.html" %}
     <!- Try building a new body here ->
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: system-ui;">
 

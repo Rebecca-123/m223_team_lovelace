@@ -1,10 +1,10 @@
 # Team Lovelace Website
 ## Group Members: Christina Lee, Rebecca Su, Ritvik Keerthi and William Li
-### Idea
-### Celestial themed website with objects rotated around as a gallery.
-### Visual thoughts
-#### home page: gallery of celestial objects
-#### each image will link to a page with more detailed information about the object
-#### dropdown with labs
-#### greetings project
-#### Each of our individual bio in our journals
+## Project Ideation
+### Unique Idea: celestial themed website with objects rotated around (gallery)
+#### Viewers can learn more about objects by clicking on the images
+#### Website will also contain work from TPT and information about team members
+### Visual Thoughts
+#### Home page: gallery of celestial objects
+#### Each image will link to a page with more detailed information about the object
+#### Nav bar with Home, About > dropdown with team members, Celestial Objects > dropdown with different objects, Labs > dropdown with different pages including a greetings page > Journals

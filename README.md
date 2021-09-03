@@ -7,3 +7,4 @@
 #### each image will link to a page with more detailed information about the object
 #### dropdown with labs
 #### greetings project
+#### Each of our individual bio in our journals

@@ -2,16 +2,15 @@
 {% extends "layouts/base.html" %}
 
 <!- This variable sets name of browser tab  -->
-{% set project = "rebecca" %}
+{% set project = "Greetings" %}
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
-    {% include "layouts/navbar.html" %}
     <!- Try building a new body here ->
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: system-ui;">
 
         <div class="col-12">
-            <p>Hello Rebecca!</p>
+            <p>Hello {{ name }}</p>
         </div>
 
         <div class="col-12">

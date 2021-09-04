@@ -14,7 +14,7 @@
 
 ### Week 2 Innovation Sprint
 
-#### Journals with assigned College Board video notes
+#### Journals with Assigned College Board Video Notes
 ##### [Ritvik Keerthi and William Li Journal](https://docs.google.com/document/d/1yTmP6R16Gsj7J-Nt4jP-sOAtXwmaNLJ-t-T8G6riBp0/edit?usp=sharing)
 ##### [Christina Lee and Rebecca Su Journal](https://docs.google.com/document/d/1rxDS-Su8Yf-JtRhYigMewVp3HRqp1VQKlIGGpcutEeI/edit)
 

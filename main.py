@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request
 
 # create an instance of flask object
@@ -11,17 +10,21 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+
 @app.route("/about/")
 def about():
     return render_template("about.html")
+
 
 @app.route("/christina/")
 def christina():
     return render_template("/team/christina.html")
 
+
 @app.route("/rebecca/")
 def rebecca():
     return render_template("/team/rebecca.html")
+
 
 @app.route("/ritvik/")
 def ritvik():

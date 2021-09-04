@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, request
 
 # create an instance of flask object
 app = Flask(__name__)
@@ -36,6 +36,7 @@ def christina():
 def journal():
     return render_template("journal.html")
 
+
 @app.route('/greetings/', methods=['GET', 'POST'])
 def greeting():
     if request.form:
@@ -44,9 +45,11 @@ def greeting():
             return render_template("greetings.html", name=name)
     return render_template("greetings.html", name="name")
 
+
 @app.route("/tpt/")
 def tpt():
     return render_template("tpt.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

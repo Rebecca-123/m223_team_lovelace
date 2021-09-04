@@ -44,5 +44,9 @@ def greeting():
             return render_template("greetings.html", name=name)
     return render_template("greetings.html", name="name")
 
+@app.route("/tpt/")
+def tpt():
+    return render_template("tpt.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

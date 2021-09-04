@@ -29,9 +29,9 @@
 #### PBL Total Points
 | Team Member     | Individual Score (out of 4)|Score (out of 8)| Justification                       |
 | --------------- |:---------------------------|:--------------:| -----------------------------------:|
-| Christina Lee   |                            |                | $1600 |
-| Rebecca Su      |                            |   $12          |       |
-| Ritvik Keerthi  |                            |    8           |       |
+| Christina Lee   |                            |                |       |
+| Rebecca Su      |              4             |    8           |       |
+| Ritvik Keerthi  |              4             |    8           |       |
 | William Li      |                            |                |       |
 
 #### Journals with Assigned College Board Video Notes
@@ -41,3 +41,5 @@
 #### TPT Brain Writing (Design-a-Thon)
 ##### [Restaurants in Poway Brain Write](https://www.canva.com/design/DAEo0kZBgVA/R9kRBpZFF88cjC9wivz40Q/view?utm_content=DAEo0kZBgVA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 ###### [Diagram with Website Plan](https://docs.google.com/presentation/d/1X-lsOf79Y-JZbHH0RyQ2TtXRqFzc_2bfVrBIuFVO_A4/edit?usp=sharing)
+
+#### [Personal Work Plans Document](https://docs.google.com/document/d/1vjgZwvOvii0DBXW2ADS4WltAxWOelT-jzfc37c1P1gs/edit?usp=sharing)

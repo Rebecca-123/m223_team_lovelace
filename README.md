@@ -16,15 +16,15 @@
 
 #### Grading
 ##### PBL (Team) Points (4/4)
-| Requirement                                                                           |  Evidence                       |
-| --------------------------------------------------------------------------------------| -----------------------------------:|
-| Scrum Master. Define tasks and place assignments to in-progress on the Scrum board.   | [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)  |
-| Designer. Wire Frame (at least three theme pages, team mini-labs, and about)   |  [Wireframes]() |
+| Requirement                                                                                                                                                                                                               |  Evidence                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -----------------------------------:|
+| Scrum Master. Define tasks and place assignments to in-progress on the Scrum board.                                                                                                                                       | [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)  |
+| Designer. Wire Frame (at least three theme pages, team mini-labs, and about)                                                                                                                                              | [Wireframes]() |
 | Technical Lead. Coordinate brain write session, after preliminary wire frames, make sure you capture technical complexities as an output of this exercise (input, saving data, comments, visual actions, animations, ...) | [Brainwrite](), Wireframes above |
-| Navigators. Capture or build highlight of Ideation in README.md, this allows ideas to persist with Project,  Make sure that work from Developers works to expectations (testing, suggestions for improvement) |    [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation) |
-| Developers. Bootstrap drop downs in navbar, start to form Wire Frame menu options.  Each menu option should have a Stub code page | [Ticket]() |
-| Developers. Integration of Greet like functionality into a mini-lab page | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/10) |
-| Developers. Integration of Video Journal 0 into a mini-lab page | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/3) |
+| Navigators. Capture or build highlight of Ideation in README.md, this allows ideas to persist with Project,  Make sure that work from Developers works to expectations (testing, suggestions for improvement)             | [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation) |
+| Developers. Bootstrap drop downs in navbar, start to form Wire Frame menu options.  Each menu option should have a Stub code page                                                                                         | [Ticket]() |
+| Developers. Integration of Greet like functionality into a mini-lab page                                                                                                                                                  | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/10) |
+| Developers. Integration of Video Journal 0 into a mini-lab page                                                                                                                                                           | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/3) |
 
 ####PBL Total Points
 | Team Member     | Individual Score (out of 4)|Score (out of 8)| Justification                       |

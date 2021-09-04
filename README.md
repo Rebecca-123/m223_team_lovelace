@@ -14,8 +14,8 @@
 
 ### Week 2 Innovation Sprint
 
-#### Grading
-##### PBL (Team) Points (4/4)
+### Grading
+#### PBL (Team) Points (4/4)
 | Requirement                                                                                                                                                                                                               |  Evidence                       |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -----------------------------------:|
 | Scrum Master. Define tasks and place assignments to in-progress on the Scrum board.                                                                                                                                       | [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)  |
@@ -26,7 +26,7 @@
 | Developers. Integration of Greet like functionality into a mini-lab page                                                                                                                                                  | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/10) |
 | Developers. Integration of Video Journal 0 into a mini-lab page                                                                                                                                                           | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/3) |
 
-####PBL Total Points
+#### PBL Total Points
 | Team Member     | Individual Score (out of 4)|Score (out of 8)| Justification                       |
 | --------------- |:---------------------------|:--------------:| -----------------------------------:|
 | Christina Lee   |                            |                | $1600 |

@@ -12,7 +12,7 @@
 ##### Each image will link to a page with more detailed information about the object
 ##### Nav bar with Home, About > dropdown with team members, Celestial Objects > dropdown with different objects, Labs > dropdown with different pages including a greetings page > Journals
 
-### Week 2 Innovation Sprint
+## Week 2 Innovation Sprint
 
 ### Grading
 #### PBL (Team) Points (4/4)

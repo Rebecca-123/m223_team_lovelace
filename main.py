@@ -15,6 +15,14 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route("/christina/")
+def christina():
+    return render_template("/team/christina.html")
+
+@app.route("/rebecca/")
+def rebecca():
+    return render_template("/team/rebecca.html")
+
 @app.route("/ritvik/")
 def ritvik():
     return render_template("/team/ritvik.html")
@@ -22,17 +30,7 @@ def ritvik():
 
 @app.route("/william/")
 def william():
-    return render_template("/teamwilliam.html")
-
-
-@app.route("/rebecca/")
-def rebecca():
-    return render_template("/team/rebecca.html")
-
-
-@app.route("/christina/")
-def christina():
-    return render_template("/team/christina.html")
+    return render_template("/team/william.html")
 
 
 @app.route("/journal/")

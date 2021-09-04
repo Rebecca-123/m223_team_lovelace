@@ -13,27 +13,26 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav mr-auto">
-                <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-                    <li class="nav-item">
-                        <a class="nav-link" href={{ url_for('index') }}>Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href={{ url_for('about') }} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href={{ url_for('christina') }}>Christina</a>
-                            <a class="dropdown-item" href={{ url_for('rebecca') }}>Rebecca</a>
-                            <a class="dropdown-item" href={{ url_for('ritvik') }}>Ritvik</a>
-                            <a class="dropdown-item" href={{ url_for('william') }}>William</a>
-                            <a class="nav-link" href={{ url_for('journal') }}>Journal</a>
-                        </div>
-                    </li>
-            </ul>
+        <ul class="navbar-nav mr-auto">
+            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
+            <li class="nav-item">
+                <a class="nav-link" href={{ url_for('index') }}>Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href={{ url_for('about') }} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href={{ url_for('christina') }}>Christina</a></li>
+            <li><a class="dropdown-item" href={{ url_for('rebecca') }}>Rebecca</a></li>
+            <li><a class="dropdown-item" href={{ url_for('ritvik') }}>Ritvik</a></li>
+            <li><a class="dropdown-item" href={{ url_for('william') }}>William</a></li>
+            <li><a class="nav-link" href={{ url_for('journal') }}>Journal</a></li>
+        </ul>
+    </div>
+            </li>
         </div>
     </nav>
 </body>
 
 
-                  
+
 

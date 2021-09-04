@@ -1,37 +1,52 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <title>Team Lovelace</title>
+</head>
 <!-- Navigation Bar from bootstrap
-TThis HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
--->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="127.0.0.1:5000">{{name}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <a class="navbar-nav">
-            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <a class="nav-link" href={{ url_for('index') }}>Home</a>
-                </button>
-                <button class="dropbtn">
-                    <a class="nav-link" href={{ url_for('ritvik') }}>Ritvik</a>
-                </button>
-                <button class="dropbtn">
-                    <a class="nav-link" href={{ url_for('william') }}>William</a>
-                </button>
-                <button class="dropbtn">
-                    <a class="nav-link" href={{ url_for('christina') }}>Christina</a>
-                </button>
-                <button class="dropbtn">
-                    <a class="nav-link" href={{ url_for('rebecca') }}>Rebecca</a>
-                </button>
-                    <!-- stub is shown using the name of the route -->
-                <button class="dropbtn">
-                    <a class="nav-link" href={{ url_for('journal') }}>Journal</a>
-                </button>
+    TThis HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
+    -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="127.0.0.1:5000">{{name}}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto">
+                <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href={{ url_for('index') }}>Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href={{ url_for('about') }} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href={{ url_for('christina') }}>Christina</a>
+                            <a class="dropdown-item" href={{ url_for('rebecca') }}>Rebecca</a>
+                            <a class="dropdown-item" href={{ url_for('ritvik') }}>Ritvik</a>
+                            <a class="dropdown-item" href={{ url_for('william') }}>William</a>
+                        </di>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href={{ url_for('journal') }}>Journal</a>
+                    </li>
+                    <button class="dropbtn">
+                        <a class="nav-link" href={{ url_for('ritvik') }}>Ritvik</a>
+                    </button>
+                    <button class="dropbtn">
+                        <a class="nav-link" href={{ url_for('william') }}>William</a>
+                    </button>
+                    <button class="dropbtn">
+                        <a class="nav-link" href={{ url_for('christina') }}>Christina</a>
+                    </button>
+                    <button class="dropbtn">
+                        <a class="nav-link" href={{ url_for('rebecca') }}>Rebecca</a>
+                    </button>
+                </div>
+            </ul>
         </div>
-        </a>
-    </div>
-</nav>
+    </nav>
+</body>
 

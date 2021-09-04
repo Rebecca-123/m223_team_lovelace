@@ -2,30 +2,17 @@
 {% extends "layouts/base.html" %}
 
 <!- This variable sets name of browser tab  -->
-{% set project = "ritvik" %}
+{% set project = "rebecca" %}
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     {% include "layouts/navbar.html" %}
     {% include "layouts/css.html" %}
     <!- Try building a new body here ->
-    <style>
-        body {
-            background-color: #2e2246;
-            background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.natgeofe.com%2Fk%2Fa2a738a9-e019-4911-98e6-17f31c45ac88%2Fmilky-way-2_2x1.jpg&imgrefurl=https%3A%2F%2Fkids.nationalgeographic.com%2Fspace%2Farticle%2Fmilky-way&tbnid=muwXFZRQX29HxM&vet=12ahUKEwiTweSVxOTyAhUCm54KHUpaCcQQMygBegUIARDAAQ..i&docid=9662TrCUZvuWjM&w=3072&h=1536&itg=1&q=milky%20way%20galaxy%20images&ved=2ahUKEwiTweSVxOTyAhUCm54KHUpaCcQQMygBegUIARDAAQ");
-            background-size: cover;
-            font-family: "Courier New", monospace;
-        }
-
-        h1, h2, h3 {
-            color: lightblue;
-        }
-
-    </style>
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: system-ui;">
 
         <div class="col-12">
-            <p>Hello Ritvik!</p>
+            <p>Hello Rebecca!</p>
         </div>
 
         <div class="col-12">
@@ -37,7 +24,7 @@
         </div>
 
         <div class="col-12">
-            <img src="/static/assets/flask.jpeg" style="height: 400px" >
+            <img alt="Flask Hello World" src="/static/assets/flask.jpeg" style="height: 400px" >
         </div>
 
     </div>

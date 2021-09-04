@@ -17,22 +17,22 @@ def about():
 
 @app.route("/ritvik/")
 def ritvik():
-    return render_template("ritvik.html")
+    return render_template("/team/ritvik.html")
 
 
 @app.route("/william/")
 def william():
-    return render_template("william.html")
+    return render_template("/teamwilliam.html")
 
 
 @app.route("/rebecca/")
 def rebecca():
-    return render_template("rebecca.html")
+    return render_template("/team/rebecca.html")
 
 
 @app.route("/christina/")
 def christina():
-    return render_template("christina.html")
+    return render_template("/team/christina.html")
 
 
 @app.route("/journal/")

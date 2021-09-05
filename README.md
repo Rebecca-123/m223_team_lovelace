@@ -69,3 +69,4 @@
 | Greetings page navigation bar                                                                    | |
 | Submissions with dropdown Week 0-1     |                                                         | |
 | Celestial objects on navigation bar, dropdown with object names                                  | |
+| New journal.html, embed journals                                                                 | |

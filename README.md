@@ -15,7 +15,7 @@
 ## Introduction - Sprint 0 
 ### Week 0: 8/18-20
 #### Progress
-##### Installing and learning how to use tools. Learn basics of how the website functions. (Flask and HTML)
+##### Installing and learning how to use tools. Learning basics of how the website functions. (Flask and HTML)
 
 ## Innovation - Sprints 1,2
 
@@ -60,3 +60,12 @@
 ##### Add variations to individual team members' pages. Ensure navigation bar appears on all pages. Include overview/demo of website.
 
 ## Prototyping - Sprints 3, 4
+### Sprint 3 - Week 3: 9/7-10
+#### Progress
+|Task                                                                                              |  Evidence                                                                           |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| Scrum Board                                                                                      | [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)         |
+| Home page: celestial object gallery                                                              | |
+| Greetings page navigation bar                                                                    | |
+| Submissions with dropdown Week 0-1     |                                                         | |
+| Celestial objects on navigation bar, dropdown with object names                                  | |

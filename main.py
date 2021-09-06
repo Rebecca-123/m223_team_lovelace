@@ -50,9 +50,9 @@ def greeting():
     return render_template("greetings.html", name="name")
 
 
-@app.route("/tpt/")
+@app.route("/earlyconcepts/")
 def tpt():
-    return render_template("tpt.html")
+    return render_template("earlyconcepts.html")
 
 
 if __name__ == "__main__":

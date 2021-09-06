@@ -51,7 +51,7 @@ def greeting():
 
 
 @app.route("/earlyconcepts/")
-def tpt():
+def earlyconcepts():
     return render_template("earlyconcepts.html")
 
 

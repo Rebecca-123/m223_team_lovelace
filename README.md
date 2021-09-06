@@ -1,4 +1,4 @@
-# Team Lovelace Website
+# AP CSP Period 3: Team Lovelace
 
 ## Table of Contents
 1. [Contributors](https://github.com/Rebecca-123/m223_team_lovelace#contributors)

@@ -1,5 +1,4 @@
 # Team Lovelace Website
-## Group Members: Christina Lee, Rebecca Su, Ritvik Keerthi and William Li
 
 ## Table of Contents
 1. [Contributors](https://github.com/Rebecca-123/m223_team_lovelace#contributors)

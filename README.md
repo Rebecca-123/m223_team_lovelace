@@ -66,6 +66,8 @@
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
 | Scrum Board                                                                                      | [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)         |
 | Home page: celestial object gallery                                                              | |
-| Greetings page navigation bar                                                                    | |
+| Greetings page navigation bar                                                                    | | 
+| Journals page navigation bar                                                                     | |
 | Layout for about pages and individual changes to each page                                       | |
 | Celestial objects on navigation bar, dropdown with object names                                  | |
+| Add website ideation under mini-labs                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/18)               |

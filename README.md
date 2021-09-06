@@ -1,6 +1,21 @@
 # Team Lovelace Website
 ## Group Members: Christina Lee, Rebecca Su, Ritvik Keerthi and William Li
 
+## Table of Contents
+1. [Contributors]()
+2. [Project Ideation]()
+3. [Sprint 0 - Introduction]()
+4. [Sprints 1,2 - Innovation]()
+5. [Sprints 3,4 - Prototyping]()
+
+## Contributors
+| Name | GitHub Profile |
+|:-----|:---------------|
+| Christina Lee | @christinlee367 |
+| Rebecca Su | @Rebecca-123 |
+| Ritvik Keerthi | @Ritvik-Keerthi |
+| William Li | @3ghin5 |
+
 ## Project Ideation
 
 ### Unique Idea: celestial themed website with objects rotated around (gallery)
@@ -60,6 +75,7 @@
 ##### Add variations to individual team members' pages. Ensure navigation bar appears on all pages. Include overview/demo of website.
 
 ## Prototyping - Sprints 3, 4
+
 ### Sprint 3 - Week 3: 9/7-10
 #### Progress
 |Task                                                                                              |  Evidence                                                                           |

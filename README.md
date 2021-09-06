@@ -2,19 +2,19 @@
 ## Group Members: Christina Lee, Rebecca Su, Ritvik Keerthi and William Li
 
 ## Table of Contents
-1. [Contributors]()
-2. [Project Ideation]()
-3. [Sprint 0 - Introduction]()
-4. [Sprints 1,2 - Innovation]()
-5. [Sprints 3,4 - Prototyping]()
+1. [Contributors](https://github.com/Rebecca-123/m223_team_lovelace#contributors)
+2. [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation)
+3. [Sprint 0 - Introduction](https://github.com/Rebecca-123/m223_team_lovelace#introduction---sprint-0)
+4. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
+5. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 
 ## Contributors
 | Name | GitHub Profile |
 |:-----|:---------------|
-| Christina Lee | @christinlee367 |
-| Rebecca Su | @Rebecca-123 |
-| Ritvik Keerthi | @Ritvik-Keerthi |
-| William Li | @3ghin5 |
+| Christina Lee | [@christinlee367](https://github.com/christinlee367) |
+| Rebecca Su | [@Rebecca-123](https://github.com/Rebecca-123) |
+| Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) |
+| William Li | [@3ghin5](https://github.com/3ghin5) |
 
 ## Project Ideation
 

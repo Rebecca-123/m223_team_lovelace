@@ -14,24 +14,29 @@
 {% block body %}
     <div class="w3-content w3-section" style="max-width:500px">
         <img class="mySlides" src="/static/assets/comet.jpeg" style="width:100%">
-        <img class="mySlides" src="/static/assets/galaxy.jpg" style="width:100%">
-        <img class="mySlides" src="/static/assets/constellations.jpg" style="width:100%">
+        <img class="mySlides" src="/static/assets/galaxy.jpeg" style="width:100%">
+        <img class="mySlides" src="/static/assets/spinny.jpeg" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
 
     <script>
-        var myIndex = 0;
-        carousel();
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-        function carousel() {
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            x[myIndex-1].style.display = "block";
-            setTimeout(carousel, 2000); // Change image every 2 seconds
+            x[slideIndex-1].style.display = "block";
         }
     </script>
 

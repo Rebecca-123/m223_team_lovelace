@@ -1,15 +1,18 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+        <title>Team Lovelace</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="about2.css") }}">
         {%block head%}
 
         {%endblock%}
-        <title>Team Lovelace</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/about2.css') }}">
     </head>
 
     <body>
     {% include "layouts/navbar.html" %}
         <p>Hello!</p>
+        {%block body%}
+
+        {%endblock%}
     </body>
 </html>

@@ -1,10 +1,12 @@
 <!-- Extending the predefined project layout -->
+
 {% extends "layouts/about.html" %}
 
 <!- This variable sets name of browser tab  -->
 {% set project = "rebecca" %}
 
 <!- This is a replacement block for Body in base.html -->
+<link rel="stylesheet" href="css/about.css">
 {% block body %}
     <!- Try building a new body here ->
     <p>Hi!</p>

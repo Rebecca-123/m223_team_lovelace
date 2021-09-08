@@ -16,3 +16,7 @@ body {
 [show-background-image] #backgroundImage {
     visibility: visible;
 }
+
+.p1 {
+    font-family: "Agency FB", Times, serif;
+}

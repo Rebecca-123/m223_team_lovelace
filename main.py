@@ -54,9 +54,9 @@ def greeting():
 def earlyconcepts():
     return render_template("earlyconcepts.html")
 
-@app.route("/test/")
-def test():
-    return "test"
+@app.route("/binary/")
+def binary():
+    return render_template("binary.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -58,5 +58,16 @@ def all_labs():
 def binary():
     return render_template("binary.html")
 
+@app.route("/brainwrite/")
+def brainwrite():
+    return render_template("brainwrite.html")
+
+@app.route("/wireframes/")
+def wireframe():
+    return render_template("wireframes.html")
+
+@app.route("/TPT3/")
+def TPT3():
+    return render_template("TPT3.html")
 if __name__ == "__main__":
     app.run(debug=True)

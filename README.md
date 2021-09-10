@@ -1,12 +1,14 @@
 # AP CSP Period 3: Team Lovelace
 
 ## Table of Contents
-1. [Contributors](https://github.com/Rebecca-123/m223_team_lovelace#contributors)
-2. [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation)
-3. [Sprint 0 - Introduction](https://github.com/Rebecca-123/m223_team_lovelace#introduction---sprint-0)
-4. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
-5. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
+1. [Scrum Board]()
+2. [Contributors](https://github.com/Rebecca-123/m223_team_lovelace#contributors)
+3. [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation)
+4. [Sprint 0 - Introduction](https://github.com/Rebecca-123/m223_team_lovelace#introduction---sprint-0)
+5. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
+6. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 
+## [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)
 ## Contributors
 | Name | GitHub Profile |
 |:-----|:---------------|

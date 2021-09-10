@@ -1,4 +1,4 @@
 body {
-    background-color: blue;
-    font-size: 200px;
+    background: lightblue url("/static/assets/space_journal.jpg") no-repeat fixed center;
+    font-size: 20px;
 }

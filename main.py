@@ -50,9 +50,9 @@ def greeting():
     return render_template("greetings.html", name="name")
 
 
-@app.route("/earlyconcepts/")
-def earlyconcepts():
-    return render_template("earlyconcepts.html")
+@app.route("/all_labs/")
+def all_labs():
+    return render_template("all_labs.html")
 
 @app.route("/binary/")
 def binary():

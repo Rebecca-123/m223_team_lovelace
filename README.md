@@ -1,14 +1,16 @@
 # AP CSP Period 3: Team Lovelace
 
 ## Table of Contents
-1. [Scrum Board]()
+1. [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace#scrum-board)
 2. [Contributors](https://github.com/Rebecca-123/m223_team_lovelace#contributors)
-3. [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation)
-4. [Sprint 0 - Introduction](https://github.com/Rebecca-123/m223_team_lovelace#introduction---sprint-0)
-5. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
-6. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
+3. [Pair Share Journals]()
+4. [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation)
+5. [Sprint 0 - Introduction](https://github.com/Rebecca-123/m223_team_lovelace#introduction---sprint-0)
+6. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
+7. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 
 ## [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)
+
 ## Contributors
 | Name | GitHub Profile |
 |:-----|:---------------|
@@ -16,6 +18,10 @@
 | Rebecca Su | [@Rebecca-123](https://github.com/Rebecca-123) |
 | Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) |
 | William Li | [@3ghin5](https://github.com/3ghin5) |
+
+## Pair Share Journals
+### [Ritvik Keerthi and William Li Journal](https://docs.google.com/document/d/1yTmP6R16Gsj7J-Nt4jP-sOAtXwmaNLJ-t-T8G6riBp0/edit?usp=sharing)
+### [Christina Lee and Rebecca Su Journal](https://docs.google.com/document/d/1rxDS-Su8Yf-JtRhYigMewVp3HRqp1VQKlIGGpcutEeI/edit)
 
 ## Project Ideation
 

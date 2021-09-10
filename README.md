@@ -1,13 +1,14 @@
 # AP CSP Period 3: Team Lovelace
+## [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)
+## [Insights with Contributors and Commits](https://github.com/Rebecca-123/m223_team_lovelace/graphs/contributors)
 
 ## Table of Contents
 1. [Contributors](https://github.com/Rebecca-123/m223_team_lovelace#contributors)
-2. [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace#scrum-board)
-3. [Pair Share Journals](https://github.com/Rebecca-123/m223_team_lovelace#pair-share-journals)
-4. [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation)
-5. [Sprint 0 - Introduction](https://github.com/Rebecca-123/m223_team_lovelace#introduction---sprint-0)
-6. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
-7. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
+2. [Pair Share Journals](https://github.com/Rebecca-123/m223_team_lovelace#pair-share-journals)
+3. [Project Ideation](https://github.com/Rebecca-123/m223_team_lovelace#project-ideation)
+4. [Sprint 0 - Introduction](https://github.com/Rebecca-123/m223_team_lovelace#introduction---sprint-0)
+5. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
+6. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
@@ -16,8 +17,6 @@
 | Rebecca Su | [@Rebecca-123](https://github.com/Rebecca-123) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3ARebecca-123)|[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Arebecca-123)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=Rebecca-123)|
 | Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3ARitvik-Keerthi) |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Aritvik-keerthi)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=Ritvik-Keerthi)|
 | William Li | [@3ghin5](https://github.com/3ghin5) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3A3ghin5) |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3A3ghin5)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=3ghin5)|
-
-## [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)
 
 ## Pair Share Journals
 ### [Ritvik Keerthi and William Li Journal](https://docs.google.com/document/d/1yTmP6R16Gsj7J-Nt4jP-sOAtXwmaNLJ-t-T8G6riBp0/edit?usp=sharing)
@@ -88,9 +87,10 @@
 |Task                                                                                              |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
 | Scrum Board                                                                                      | [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)         |
-| Home page: celestial object gallery                                                              | |
+| Home page: celestial object gallery                                                              | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/12) |
 | Greetings page navigation bar                                                                    | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/blob/main/templates/layouts/navbar.html) | 
 | Journals page navigation bar                                                                     | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/blob/main/templates/layouts/navbar.html) |
 | Layout for about pages and individual changes to each page                                       | |
 | Celestial objects on navigation bar, dropdown with object names                                  | |
-| Add website ideation under mini-labs                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/18)               |
+| Add website ideation under mini-labs                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/18)           |
+| Bootstrap Grid Embed                                                                             | |

@@ -10,12 +10,12 @@
 7. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 
 ## Contributors
-| Name | GitHub Profile | Tasks |
-|:-----|:---------------|:------|
-| Christina Lee | [@christinlee367](https://github.com/christinlee367) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3Achristinlee367) |
-| Rebecca Su | [@Rebecca-123](https://github.com/Rebecca-123) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3ARebecca-123)|
-| Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3ARitvik-Keerthi) |
-| William Li | [@3ghin5](https://github.com/3ghin5) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3A3ghin5) |
+| Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
+|:-----|:----------------------|:-----:|:-----------:|:-------:|
+| Christina Lee | [@christinlee367](https://github.com/christinlee367) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3Achristinlee367) |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Achristinlee367)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=christinlee367)|
+| Rebecca Su | [@Rebecca-123](https://github.com/Rebecca-123) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3ARebecca-123)|[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Arebecca-123)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=Rebecca-123)|
+| Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3ARitvik-Keerthi) |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Aritvik-keerthi)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=Ritvik-Keerthi)|
+| William Li | [@3ghin5](https://github.com/3ghin5) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3A3ghin5) |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3A3ghin5)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=3ghin5)|
 
 ## [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)
 

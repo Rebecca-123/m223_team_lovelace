@@ -1,4 +1,6 @@
 body {
-    background: lightblue url("/static/assets/space_journal.jpg") no-repeat fixed center;
+    background-image: url("/static/assets/space_about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-size: 20px;
 }

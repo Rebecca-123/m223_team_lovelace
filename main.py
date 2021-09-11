@@ -66,8 +66,8 @@ def brainwrite():
 def wireframe():
     return render_template("wireframes.html")
 
-@app.route("/TPT3/")
+@app.route("/tpt3/")
 def TPT3():
-    return render_template("TPT3.html")
+    return render_template("tpt3.html")
 if __name__ == "__main__":
     app.run(debug=True)

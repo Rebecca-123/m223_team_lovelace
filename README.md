@@ -1,6 +1,5 @@
 # AP CSP Period 3: Team Lovelace
-## [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)
-## [Insights with Contributors and Commits](https://github.com/Rebecca-123/m223_team_lovelace/graphs/contributors)
+## [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1), [Insights](https://github.com/Rebecca-123/m223_team_lovelace/graphs/contributors)
 
 ## Table of Contents
 1. [Contributors](https://github.com/Rebecca-123/m223_team_lovelace#contributors)
@@ -89,12 +88,11 @@
 | Celestial objects on navigation bar, dropdown with object names                                  | Still in progress |
 | Add website ideation under mini-labs                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/18)           |
 | Bootstrap Grid Embed                                                                             | |
-##### Future Improvments
-#####
+##### Future Improvements
+##### TBD after Live Grading
 
 ### Sprint 4 - Week 4: 9/13-17
 #### Progress
 | Task                                                                                             |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
 | Celestial objects on navigation bar, dropdown with object names                                  | Still in progress |
-| Bootstrap Grid Embed                                                                             | |

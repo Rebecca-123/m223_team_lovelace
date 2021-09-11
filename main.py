@@ -42,7 +42,7 @@ def journal():
 
 
 @app.route('/greetings/', methods=['GET', 'POST'])
-def greeting():
+def greetings():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:
@@ -63,11 +63,12 @@ def brainwrite():
     return render_template("brainwrite.html")
 
 @app.route("/wireframes/")
-def wireframe():
+def wireframes():
     return render_template("wireframes.html")
 
 @app.route("/tpt3/")
-def TPT3():
+def tpt3():
     return render_template("tpt3.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

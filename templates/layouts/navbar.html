@@ -28,18 +28,27 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
-                        Early Concepts
+                        Mini-Labs
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <!--<a class="dropdown-item" href={{ url_for('greeting') }}>Greetings</a> -->
-                        <a class="dropdown-item" href={{ url_for('all_labs') }}>All Labs</a>
-                        <a class="dropdown-item" href=>Website Ideation</a>
+                        <a class="dropdown-item" href={{ url_for('greetings') }}>Greetings</a>
                         <a class="dropdown-item" href={{ url_for('tpt3') }}>TPT 3</a>
                         <a class="dropdown-item" href={{ url_for('binary') }}>Binary Math Demo</a>
                     </div>
                 </li>
-                <li>
-                    <a class="nav-link" href={{ url_for('journal') }}>Journal</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
+                        Website Ideation
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <a class="dropdown-item" href={{ url_for('brainwrite') }}>Brain Write</a>
+                        <a class="dropdown-item" href={{ url_for('wireframes') }}>Wireframes</a>
+                    </div>
+                </li>
+
+                <li><a class="nav-link" href={{ url_for('journal') }}>Journal</a></li>
+                <li><a class="dropdown-item" href={{ url_for('all_labs') }}>All Labs</a></li>
 
             </ul>
         </div>

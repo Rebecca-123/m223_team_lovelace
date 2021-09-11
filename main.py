@@ -54,21 +54,30 @@ def greetings():
 def all_labs():
     return render_template("all_labs.html")
 
+
 @app.route("/binary/")
 def binary():
     return render_template("binary.html")
+
 
 @app.route("/brainwrite/")
 def brainwrite():
     return render_template("brainwrite.html")
 
+
 @app.route("/wireframes/")
 def wireframes():
     return render_template("wireframes.html")
 
+
 @app.route("/tpt3/")
 def tpt3():
     return render_template("tpt3.html")
+
+@app.route("/prototypes/")
+def prototypes():
+    return render_template("prototypes.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

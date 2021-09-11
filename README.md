@@ -67,10 +67,6 @@
 | Ritvik Keerthi              |              4             |    8           |  My role was as a developer, which was integrating the greet like functionality (focusing more on this), embedding the video journal link for journal 0, as well as making the navbar dropdown menus. I also took the role of Technical Lead and coordinated a brain write session for my team website. My computer plan is a personal laptop running a Windows operating system. I completed multiple tasks on the scrum board, such as the navbar drop down (prototype), greet functionality, and the journal 0 linking. I have had 239+ total additions to the github repository, within 25 commits and 80+ deletions of changing various files. I believe that this amount is consistent with the amount of work that I have accomplished. The greet functionality has been integrated into my personal page, while being fully functional. The TPT journal assigned videos have been watched and each have notes for them with my pair share partner, William, along with the Design-a-Thon being completed properly and with effort. Therefore, I believe that I have worked enough for a score of 8/8, with everything in the PBL1,2 requirements being completed thoroughly and thoughtfully. My work plan will consist of spending at least 4 hours a week on this project, while using all my time in class to either understand content needed for the project, code the project, or listen to a Tech Talk to aid me with the project.|
 | William (Jiawen) Li         |              4             |    8           |  PBL (Team) {4/4} My role in our team was as a developer. I was the main contributor to the greet like functionality lab page and its html files, along with fixing bugs in the code, finding and correcting any errors, and getting the website to run. I worked with Ritvik on the page for the Video Journal 0. I resolved the errors and got the page to work, and made it into an embed of our Google Doc. I was on task and putting in full effort during our work time in class. I have a total of 354 additions, 290 deletions, and a total of 10 commits. I believe this somewhat accurately reflects the work I did, as I have had to copy over the code from an old project repository to a new one which may have added to the additions. With this in mind I still have made major contributions to our code. I worked with Ritvik to integrate Greet into our individual pages, and with the TPT points and journal assigned videos. I am using a Dell G3 laptop with windows that I use at home and at school. My work plan includes all of class time, plus about one or two hours in the evening depending on the work needed to get done. All in all I feel like I have contributed equally as a member of our team to the PBL 1,2 in order to earn 8/8.    |
 
-##### Journals with Assigned College Board Video Notes
-##### [Ritvik Keerthi and William Li Journal](https://docs.google.com/document/d/1yTmP6R16Gsj7J-Nt4jP-sOAtXwmaNLJ-t-T8G6riBp0/edit?usp=sharing)
-##### [Christina Lee and Rebecca Su Journal](https://docs.google.com/document/d/1rxDS-Su8Yf-JtRhYigMewVp3HRqp1VQKlIGGpcutEeI/edit)
-
 ##### TPT Brain Writing (Design-a-Thon)
 ##### [Restaurants in Poway Brain Write](https://www.canva.com/design/DAEo0kZBgVA/R9kRBpZFF88cjC9wivz40Q/view?utm_content=DAEo0kZBgVA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 ###### [Diagram with Website Plan](https://docs.google.com/presentation/d/1X-lsOf79Y-JZbHH0RyQ2TtXRqFzc_2bfVrBIuFVO_A4/edit?usp=sharing)
@@ -86,11 +82,19 @@
 #### Progress
 |Task                                                                                              |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
-| Scrum Board                                                                                      | [Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1)         |
 | Home page: celestial object gallery                                                              | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/12) |
 | Greetings page navigation bar                                                                    | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/blob/main/templates/layouts/navbar.html) | 
 | Journals page navigation bar                                                                     | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/blob/main/templates/layouts/navbar.html) |
 | Layout for about pages and individual changes to each page                                       | |
-| Celestial objects on navigation bar, dropdown with object names                                  | |
+| Celestial objects on navigation bar, dropdown with object names                                  | Still in progress |
 | Add website ideation under mini-labs                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/18)           |
+| Bootstrap Grid Embed                                                                             | |
+##### Future Improvments
+#####
+
+### Sprint 4 - Week 4: 9/13-17
+#### Progress
+| Task                                                                                             |  Evidence                                                                           |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| Celestial objects on navigation bar, dropdown with object names                                  | Still in progress |
 | Bootstrap Grid Embed                                                                             | |

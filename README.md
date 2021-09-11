@@ -84,9 +84,9 @@
 | Home page: celestial object gallery                                                              | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/12) |
 | Greetings page navigation bar                                                                    | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/blob/main/templates/layouts/navbar.html) | 
 | Journals page navigation bar                                                                     | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/blob/main/templates/layouts/navbar.html) |
-| Prototypes of about pages                                                                           | [Ticket]()|
+| Prototypes of about pages                                                                        | [Ticket]()|
 | Individual changes to each about page                                                            | [Ticket]()|
-| Celestial objects on navigation bar, dropdown with object names                                  | Still in progress -- Backlog |
+| Celestial objects on navigation bar, dropdown with object names                                  | Backlog, didn't have time this week |
 | Add website ideation under mini-labs                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/18)           |
 | Bootstrap Grid Embed                                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/20) |
 ##### Future Improvements
@@ -96,4 +96,5 @@
 #### Progress
 | Task                                                                                             |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
-| Celestial objects on navigation bar, dropdown with object names                                  | Still in progress |
+| Celestial objects on navigation bar, dropdown with object names                                  |  |
+| 

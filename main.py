@@ -55,9 +55,13 @@ def all_labs():
     return render_template("all_labs.html")
 
 
-@app.route("/binary/")
+@app.route("/binary/", methods = ['GET', 'POST'])
 def binary():
-    return render_template("binary.html")
+    BITS = 8
+    # second time you call it, its a post action
+    if request.method == 'POST':
+        BITS = int(request.form['BITS'])
+    return render_template("binary.html", BITS=BITS)
 
 
 @app.route("/brainwrite/")

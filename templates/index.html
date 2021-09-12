@@ -1,15 +1,13 @@
 {% extends "layouts/base.html" %}
 
-<head>
-    <title>Team Lovelace</title>
+{% block head %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         .mySlides {display:none;}
     </style>
-</head>
+{% endblock %}
 
-<body>
 {% block body %}
     <div class="w3-content w3-display-container">
         <img alt="Comet" class="mySlides" src="/static/assets/comet.jpeg" style="width: 100%">
@@ -44,5 +42,3 @@
     </script>
 
 {% endblock %}
-
-</body>

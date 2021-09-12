@@ -1,6 +1,5 @@
 body {
-    background-color: #4f00ff;
-    margin: 0;
-    font-family: "Agency FB", Times, serif;
-    font-size: 100px;
+    background-image: url("/static/assets/space_about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

@@ -58,10 +58,12 @@ def all_labs():
 @app.route("/binary/", methods = ['GET', 'POST'])
 def binary():
     BITS = 8
+    imgBulbOn = "/static/assets/blub_on.gif"
     # second time you call it, its a post action
     if request.method == 'POST':
         BITS = int(request.form['BITS'])
-    return render_template("binary.html", BITS=BITS)
+        imgBulbOn = request.form['lightOn']
+    return render_template("binary.html", imgBulbOn = imgBulbOn, BITS=BITS)
 
 
 @app.route("/brainwrite/")

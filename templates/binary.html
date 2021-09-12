@@ -13,7 +13,7 @@
 <!-- Hack: Set bulbs and pass as variables via Python render_template
            add new images (ie PNGs) to project -->
 <!-- use your PNGs as default -->
-{% set imgBulbOn = "/static/assets/bulb_on.gif" %}
+{#{% set imgBulbOn = "/static/assets/bulb_on.gif" %}#}
 {% set imgBulbOff = "/static/assets/bulb_off.png" %}
 {% set msgTurnOn = "Turn On" %}
 {% set msgTurnOff = "Turn Off" %}
@@ -118,7 +118,16 @@
 {#    to pass a default value#}
     <form action="/binary/" method="post">
         <label>Bits:</label>
-        <input type="text" name="BITS" value={{ BITS }}>
+        <input type="text" name="BITS" value={{ BITS }}><br>
+        <p>Choose a lightBulb</p>
+{#code found on w3 c#}
+            <input type="radio" name="lightOn" value="/static/assets/bulb_on.gif" checked>
+            <img src="/static/assets/bulb_on.gif">
+            <input type="radio" name="lightOn" value="/static/assets/Lightbulbon.jpeg">
+            <img src="/static/assets/Lightbulbon.jpeg">
+            <input type="radio" name="lightOn" value="/static/assets/blub_on3.jpeg">
+            <img src="/static/assets/blub_on3.jpeg">
+        <br>
         <input type="submit" value="Submit">
     </form>
     <div class="container">

@@ -1,10 +1,46 @@
 {% extends "layouts/base.html" %}
-{%block head%}
 
-{%endblock%}
+{% block head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
+{% endblock %}
 
+{% block body %}
+    <div class="w3-content w3-display-container">
+        <img alt="Prototype 1" class="mySlides" src="/static/assets/prototype1.png" style="width: 100%">
+        <img alt="Prototype 2" class="mySlides" src="/static/assets/prototype2.png" style="width:100%">
+        <img alt="Prototype 3" class="mySlides" src="/static/assets/prototype3.png" style="width: 100%">
+        <img alt="Prototype 4" class="mySlides" src="/static/assets/prototype4.png" style="width:100%">
+        <img alt="Prototype 5" class="mySlides" src="/static/assets/prototype5.png" style="width: 100%">
+        <img alt="Prototype 6" class="mySlides" src="/static/assets/prototype6.png" style="width:100%">
+        <img alt="Prototype 7" class="mySlides" src="/static/assets/prototype7.png" style="width: 100%">
+        <img alt="Prototype 8" class="mySlides" src="/static/assets/prototype8.png" style="width:100%">
+        <img alt="Prototype 9" class="mySlides" src="/static/assets/prototype9.png" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
 
-{%block body%}
-    <h1>Website Design Prototypes</h1>
-    <img alt="1st About Page Design" src="">
-{%endblock%}
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+{% endblock %}

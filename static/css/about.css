@@ -1,6 +1,8 @@
 body {
     background: #4f00ff;
     margin: 0;
+    font-family: "Agency FB", Times, serif;
+    font-size: 100px;
 }
 
 #backgroundImage {
@@ -17,6 +19,3 @@ body {
     visibility: visible;
 }
 
-.p1 {
-    font-family: "Agency FB", Times, serif;
-}

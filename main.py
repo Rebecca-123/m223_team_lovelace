@@ -84,6 +84,17 @@ def tpt3():
 def prototypes():
     return render_template("prototypes.html")
 
+@app.route("/constellations/")
+def constellations():
+    return render_template("/Celestial Objects/constellations.html")
+
+@app.route("/comets/")
+def comets():
+    return render_template("/Celestial Objects/comets.html")
+
+@app.route("/planets/")
+def planets():
+    return render_template("/Celestial Objects/planets.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

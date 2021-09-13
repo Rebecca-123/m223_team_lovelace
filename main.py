@@ -97,9 +97,9 @@ def planets():
     return render_template("/Celestial Objects/planets.html")
 
 
-@app.route("/binary_william/")
+@app.route("/binaryWilliam/")
 def binaryWilliam():
-    return render_template("binary_william.html")
+    return render_template("binaryWilliam.html")
 
 @app.route("/binary_ritvik/")
 def binaryRitvik():

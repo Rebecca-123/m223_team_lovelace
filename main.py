@@ -96,5 +96,11 @@ def comets():
 def planets():
     return render_template("/Celestial Objects/planets.html")
 
+
+@app.route("/binary_william/")
+def binaryWilliam():
+    return render_template("binary_william.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

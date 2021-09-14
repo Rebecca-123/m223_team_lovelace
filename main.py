@@ -96,5 +96,14 @@ def comets():
 def planets():
     return render_template("/Celestial Objects/planets.html")
 
+
+@app.route("/binaryWilliam/")
+def binaryWilliam():
+    return render_template("binaryWilliam.html")
+
+@app.route("/binary_ritvik/")
+def binaryRitvik():
+    return render_template("binary_ritvik.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

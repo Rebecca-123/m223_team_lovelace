@@ -96,6 +96,9 @@ def comets():
 def planets():
     return render_template("/Celestial Objects/planets.html")
 
+@app.route("/galaxies/")
+def galaxies():
+    return render_template("/Celestial Objects/galaxies.html")
 
 @app.route("/binaryWilliam/")
 def binaryWilliam():

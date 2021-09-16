@@ -108,5 +108,6 @@ def binaryWilliam():
 def binaryRitvik():
     return render_template("binary_ritvik.html")
 
+
 if __name__ == "__main__":
     app.run(debug=True)

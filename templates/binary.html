@@ -54,8 +54,17 @@
      */
       {#javaScript language to convert ascii number to ascii printable characters#}
       document.getElementById("ascii").innerHTML = String.fromCharCode(parseInt(binary, 2));
-      var hex = document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
+      document.getElementById("RGB").innerHTML =
+
+      function BinaryToRGB(binary) {
+          var pbin = parseInt(binary, 2);
+          var r = pbin >> 16;
+          var g = pbin >> 8 & 0xFF;
+          var b = pbin & 0xFF;
+          return [r, g, b];
+      }
   }
+
 
   // algorithm to convert decimal to base using division and remainder
   function decimal_2_base(decimal, base) {
@@ -121,22 +130,6 @@
         document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
       }
     }
-  }
-
-  function hex_to_RGB(hex) {
-      let r = 0, g = 0, b = 0;
-      if (hex.length == 4) {
-          r = "0x" + h[1] + h[1];
-          g = "0x" + h[2] + h[2];
-          b = "0x" + h[3] + h[3];
-      }
-      else if (hex.length == 7) {
-      r = "0x" + h[1] + h[2];
-      g = "0x" + h[3] + h[4];
-      b = "0x" + h[5] + h[6];
-    }
-
-    document.getElementById('rgb').innerHTML=("+ +r + "," + +g + "," + +b + ");
   }
 
 </script>

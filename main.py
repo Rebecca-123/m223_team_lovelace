@@ -86,19 +86,19 @@ def prototypes():
 
 @app.route("/constellations/")
 def constellations():
-    return render_template("/Celestial Objects/constellations.html")
+    return render_template("/celestial objects/constellations.html")
 
 @app.route("/comets/")
 def comets():
-    return render_template("/Celestial Objects/comets.html")
+    return render_template("/celestial objects/comets.html")
 
 @app.route("/planets/")
 def planets():
-    return render_template("/Celestial Objects/planets.html")
+    return render_template("/celestial objects/planets.html")
 
 @app.route("/galaxies/")
 def galaxies():
-    return render_template("/Celestial Objects/galaxies.html")
+    return render_template("/celestial objects/galaxies.html")
 
 @app.route("/binaryWilliam/")
 def binaryWilliam():

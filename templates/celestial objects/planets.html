@@ -2,7 +2,27 @@
 {% extends "layouts/base.html" %}
 
 {%block head%}
-    <div style="position: absolute; left: 10px; top: 40px;">
-        <img src="mercury.jpg" width="114" height="38">
-    </div>
+    <style>
+        body {
+            background-image: url("/static/assets/planets background placeholder.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container {
+            position: absolute;
+            width: 100%;
+            max-width: 400px;
+        }
+        .container img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+{%endblock%}
+
+{% block body %}
+    <h1>Planets</h1>
+    <a href="/william/">
+        <img src="/static/assets/mercury_no_bg.png" style="width:42px;height:42px;">
+    </a>
 {% endblock %}

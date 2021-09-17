@@ -10,40 +10,48 @@
         }
         .container {
             position: absolute;
-            width: 100%
+            width: 100%;
             max-width: 400px;
         }
         .container img{
             width: 100%;
             height: auto;
         }
-        .container .btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            background-color: #f1f1f1;
-            color: black;
-            font-size: 16px;
-            padding: 16px 30px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .container .btn:hover {
-            background-color: black;
-            color: white;
-        }
     </style>
 {%endblock%}
 
 {% block body %}
     <h1>Planets</h1>
-<div class="container">
-        <img src="/assets/mercury.jpg" style="width:100%">
-    <button class="btn"></button>
-</div>
+    {# MERCURYYYYYYY #}
+    <a href="/william/">
+        <img src="/static/assets/mercury_no_bg.png" style="width:42px;height:42px;">
+    </a>
+    {# VENUS #}
+    <a href="/william/">
+        <img src="/static/assets/venusnobg.png" style="width:42px;height:42px;">
+    </a>
+    {# Earth? do we need to include that? probably or else it would look weird. but i dont want an earth page its so cliche #}
+    <a href="/william/">
+        <img src="/static/assets/mercury_no_bg.png" style="width:42px;height:42px;">
+    </a>
+    {# MARS #}
+    <a href="/william/">
+        <img src="/static/assets/mars.png" style="width:42px;height:42px;">
+    </a>
+    {# JUPITEr #}
+    <a href="/william/">
+        <img src="/static/assets/jupiternobg.png" style="width:42px;height:42px;">
+    </a>
+    {# SATURN #}
+    <a href="/william/">
+        <img src="/static/assets/saturnnobg.png" style="width:42px;height:42px;">
+    </a>
+    {# URANUS #}
+    <a href="/william/">
+        <img src="/static/assets/uranus.png" style="width:42px;height:42px;">
+    </a>
+    {# NEPTUNE #}
+    <a href="/william/">
+        <img src="/static/assets/neptune.png" style="width:42px;height:42px;">
+    </a>
 {% endblock %}

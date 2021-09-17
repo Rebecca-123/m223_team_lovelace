@@ -3,8 +3,77 @@
 
 <head>
     <script>
+
+
+
+
+
+
+
+
         function mercuryText() {
-            
+            var a = document.getElementById("mercurytext");
+            if (a.style.display === "none") {
+                a.style.display = "block";
+            } else {
+                a.style.display = "none";
+            }
+        }
+        function venusText() {
+            var b = document.getElementById("venustext");
+            if (b.style.display === "none") {
+                b.style.display = "block";
+            } else {
+                b.style.display = "none";
+            }
+        }
+        function earthText() {
+            var c = document.getElementById("earthtext");
+            if (c.style.display === "none") {
+                c.style.display = "block";
+            } else {
+                c.style.display = "none";
+            }
+        }
+        function marsText() {
+            var d = document.getElementById("marstext");
+            if (d.style.display === "none") {
+                d.style.display = "block";
+            } else {
+                d.style.display = "none";
+            }
+        }
+        function jupiterText() {
+            var e = document.getElementById("jupitertext");
+            if (e.style.display === "none") {
+                e.style.display = "block";
+            } else {
+                e.style.display = "none";
+            }
+        }
+        function saturnText() {
+            var f = document.getElementById("saturntext");
+            if (f.style.display === "none") {
+                f.style.display = "block";
+            } else {
+                f.style.display = "none";
+            }
+        }
+        function uranusText() {
+            var f = document.getElementById("uranustext");
+            if (f.style.display === "none") {
+                f.style.display = "block";
+            } else {
+                f.style.display = "none";
+            }
+        }
+        function neptuneText() {
+            var g = document.getElementById("neptunetext");
+            if (g.style.display === "none") {
+                g.style.display = "block";
+            } else {
+                g.style.display = "none";
+            }
         }
     </script>
 </head>
@@ -31,74 +100,68 @@
 {% block body %}
     <h1>Planets</h1>
     {# MERCURYYYYYYY #}
-    <button onclick="myFunction()">
+    <a href="/william/" onclick="mercuryText()">
         <img src="/static/assets/mercury_no_bg.png" style="width:42px;height:42px;">
-    </button>
-    {#
-    <a href="/william/">
-        <img src="/static/assets/mercury_no_bg.png" style="width:42px;height:42px;">
-    </a> #}
+    </a>
 
     {# VENUS #}
-    <button onclick="myFunction()">
-        <img src="/static/assets/venusnobg.png" style="width:42px;height:42px;">
-    </button>
-    {#
     <a href="/william/">
         <img src="/static/assets/venusnobg.png" style="width:42px;height:42px;">
     </a>
 
     {# Earth? do we need to include that? probably or else it would look weird. but i dont want an earth page its so cliche #}
-    <button onclick="myFunction()">
-        <img src="/static/assets/earthnobg.png" style="width:42px;height:42px;">
-    </button>
-    {#
     <a href="/william/">
         <img src="/static/assets/earthnobg.png" style="width:42px;height:42px;">
     </a>
 
     {# MARS #}
-    <button onclick="myFunction()">
-        <img src="/static/assets/mars.png" style="width:42px;height:42px;">
-    </button>
-    {#
     <a href="/william/">
         <img src="/static/assets/mars.png" style="width:42px;height:42px;">
     </a>
 
     {# JUPITEr #}
-    <button onclick="myFunction()">
-        <img src="/static/assets/jupiternobg.png" style="width:42px;height:42px;">
-    </button>
-    {#
     <a href="/william/">
         <img src="/static/assets/jupiternobg.png" style="width:42px;height:42px;">
     </a>
 
     {# SATURN #}
-    <button onclick="myFunction()">
-        <img src="/static/assets/saturnnobg.png" style="width:42px;height:42px;">
-    </button>
-    {#
     <a href="/william/">
         <img src="/static/assets/saturnnobg.png" style="width:42px;height:42px;">
     </a>
 
     {# URANUS #}
-    <button onclick="myFunction()">
-        <img src="/static/assets/uranus.png" style="width:42px;height:42px;">
-    </button>
-    {#
     <a href="/william/">
         <img src="/static/assets/uranus.png" style="width:42px;height:42px;">
     </a>
 
     {# NEPTUNE #}
-    <button onclick="myFunction()">
-        <img src="/static/assets/neptune.png" style="width:42px;height:42px;">
-    </button>
-    {#
     <a href="/william/">
         <img src="/static/assets/neptune.png" style="width:42px;height:42px;">
     </a> #}
+
+    <div id="mercurytext" >
+        mercury
+    </div>
+    <div id="venustext">
+        This is my DIV element.
+    </div>
+    <div id="earthtext">
+        This is my DIV element.
+    </div>
+    <div id="marstext">
+        This is my DIV element.
+    </div>
+    <div id="jupitertext">
+        This is my DIV element.
+    </div>
+    <div id="saturntext">
+        This is my DIV element.
+    </div>
+    <div id="uranustext">
+        This is my DIV element.
+    </div>
+    <div id="neptunetext">
+        This is my DIV element.
+    </div>
+
 {% endblock %}

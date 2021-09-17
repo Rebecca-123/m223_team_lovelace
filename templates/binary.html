@@ -60,19 +60,24 @@
       var green = 0;
       if (binary.length < 0 && binary.length < 9) {
           blue = parseInt(binary.substring(0, binary.length), 2).toString(10);
-      } else if (binary.length > 8 && binary.length < 17) {
+      }
+      else if (binary.length > 8 && binary.length < 17) {
           green = parseInt(binary.substring(0, binary.length - 8), 2).toString(10);
           blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
-      } else if (binary.length > 16 && binary.length < 25) {
+      }
+      else if (binary.length > 16 && binary.length < 25) {
           red = parseInt(binary.substring(0, binary.length - 16), 2).toString(10);
           green = parseInt(binary.substring(binary.length - 16, binary.length - 8), 2).toString(10);
           blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
-      } else if (binary.length >= 25) {
-          red = parseInt(binary.substring(binary.length - 24, binary.length - 16), 2).toString(10);//
+      }
+      else if (binary.length >= 25) {
+          red = parseInt(binary.substring(binary.length - 24, binary.length - 16), 2).toString(10);
           green = parseInt(binary.substring(binary.length - 16, binary.length - 8), 2).toString(10);
           blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
       }
       document.getElementById("RGB").innerHTML = "(" + red + "," + green + "," + blue + ")";
+  }
+
 
 
       // algorithm to convert decimal to base using division and remainder
@@ -141,7 +146,6 @@
               }
           }
       }
-  }
 
 </script>
 {% endblock %}

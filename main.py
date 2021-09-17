@@ -110,6 +110,10 @@ def planets():
 def galaxies():
     return render_template("/celestial objects/galaxies.html")
 
+@app.route("/blackholes/")
+def blackholes():
+    return render_template("/celestial objects/blackholes.html")
+
 @app.route("/binaryWilliam/")
 def binaryWilliam():
     return render_template("binaryWilliam.html")

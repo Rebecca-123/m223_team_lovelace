@@ -65,6 +65,16 @@ def binary():
         imgBulbOn = request.form['lightOn']
     return render_template("binary.html", imgBulbOn = imgBulbOn, BITS=BITS)
 
+@app.route("/christinaBinary/", methods = ['GET', 'POST'])
+def christinaBinary():
+    BITS = 8
+    imgBulbOn = "/static/assets/blub_on.gif"
+    # second time you call it, its a post action - Christina Lee
+    if request.method == 'POST':
+        BITS = int(request.form['BITS'])
+        imgBulbOn = request.form['lightOn']
+    return render_template("christinaBinary.html", BITS=BITS, imgBulbOn=imgBulbOn)
+
 
 @app.route("/brainwrite/")
 def brainwrite():

@@ -54,7 +54,6 @@
      */
       {#javaScript language to convert ascii number to ascii printable characters#}
       document.getElementById("ascii").innerHTML = String.fromCharCode(parseInt(binary, 2));
-
       var blue = 0;
       var red = 0;
       var green = 0;
@@ -73,6 +72,8 @@
           blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
       }
       document.getElementById("RGB").innerHTML = "(" + red + "," + green + "," + blue + ")";
+  }
+
 
 
       // algorithm to convert decimal to base using division and remainder
@@ -141,7 +142,6 @@
               }
           }
       }
-  }
 
 </script>
 {% endblock %}

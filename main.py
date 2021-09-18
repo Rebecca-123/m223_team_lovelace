@@ -132,7 +132,7 @@ def nebulae():
     return render_template("/celestial objects/nebulae.html")
 
 
-@app.route("/binaryWilliam/")
+@app.route("/binary_william/")
 def binary_william():
     return render_template("binary_william.html")
 

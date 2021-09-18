@@ -41,6 +41,11 @@ def journal():
     return render_template("journal.html")
 
 
+@app.route("/rgb/")
+def rgb():
+    return render_template("rgb.html")
+
+
 @app.route('/greetings/', methods=['GET', 'POST'])
 def greetings():
     if request.form:
@@ -55,7 +60,7 @@ def all_labs():
     return render_template("all_labs.html")
 
 
-@app.route("/binary/", methods = ['GET', 'POST'])
+@app.route("/binary/", methods=['GET', 'POST'])
 def binary():
     BITS = 8
     imgBulbOn = "/static/assets/blub_on.gif"
@@ -63,9 +68,10 @@ def binary():
     if request.method == 'POST':
         BITS = int(request.form['BITS'])
         imgBulbOn = request.form['lightOn']
-    return render_template("binary.html", imgBulbOn = imgBulbOn, BITS=BITS)
+    return render_template("binary.html", imgBulbOn=imgBulbOn, BITS=BITS)
 
-@app.route("/christinaBinary/", methods = ['GET', 'POST'])
+
+@app.route("/christinaBinary/", methods=['GET', 'POST'])
 def christinaBinary():
     BITS = 8
     imgBulbOn = "/static/assets/blub_on.gif"
@@ -90,40 +96,49 @@ def wireframes():
 def tpt3():
     return render_template("tpt3.html")
 
+
 @app.route("/prototypes/")
 def prototypes():
     return render_template("prototypes.html")
+
 
 @app.route("/constellations/")
 def constellations():
     return render_template("/celestial objects/constellations.html")
 
+
 @app.route("/comets/")
 def comets():
     return render_template("/celestial objects/comets.html")
+
 
 @app.route("/planets/")
 def planets():
     return render_template("/celestial objects/planets.html")
 
+
 @app.route("/galaxies/")
 def galaxies():
     return render_template("/celestial objects/galaxies.html")
+
 
 @app.route("/blackholes/")
 def blackholes():
     return render_template("/celestial objects/blackholes.html")
 
+
 @app.route("/nebulae/")
 def nebulae():
     return render_template("/celestial objects/nebulae.html")
 
+
 @app.route("/binaryWilliam/")
-def binaryWilliam():
-    return render_template("binaryWilliam.html")
+def binary_william():
+    return render_template("binary_william.html")
+
 
 @app.route("/binary_ritvik/")
-def binaryRitvik():
+def binary_ritvik():
     return render_template("binary_ritvik.html")
 
 

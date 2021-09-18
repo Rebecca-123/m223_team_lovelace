@@ -103,7 +103,7 @@
 | Category                                                                                         |  Score and Justification                                                                    |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
 | Planning                                                                                         | (1/1) Seen by tasks below and GitHub issues |
-| Team Technicals                                                                                  | (2/2) Issues and individual technicals complete required PBL tasks on binary, and further development of project site, no flying birds |
+| Team Technicals                                                                                  | (2/2) Issues and individual technicals, completed required PBL tasks on binary, and further development of project site, no flying birds |
 | Individual Technicals                                                                            | (2/2) Individual technical tasks shown below, commits can also be seen on GitHub |
 
 #### Progress

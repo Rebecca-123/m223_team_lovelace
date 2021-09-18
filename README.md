@@ -8,6 +8,7 @@
 4. [Sprint 0 - Introduction](https://github.com/Rebecca-123/m223_team_lovelace#introduction---sprint-0)
 5. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
 6. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
+7. [Sprints 5,6 - Development](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-5,6)
 
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
@@ -89,12 +90,33 @@
 | Celestial objects on navigation bar, dropdown with object names                                  | Backlog, didn't have time this week |
 | Add website ideation under mini-labs                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/18)           |
 | Bootstrap Grid Embed                                                                             | [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/20) |
-##### Future Improvements
-##### TBD after Live Grading
 
 ### Sprint 4 - Week 4: 9/13-17
+#### Roles
+##### Scrum Master: Rebecca
+##### Designer: William
+##### Navigator/Tester: Christina
+##### Groomer: Ritvik
+##### Developers: Everyone
+#### Grading
+##### Totals: 5 out of 5 (for all team members)
+| Category                                                                                         |  Score and Justification                                                                    |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| Planning                                                                                         | (1/1) Seen by tasks below and GitHub issues |
+| Team Technicals                                                                                  | (2/2) Issues and individual technicals complete required PBL tasks on binary, and further development of project site, no flying birds |
+| Individual Technicals                                                                            | (2/2) Individual technical tasks shown below, commits can also be seen on GitHub |
+
 #### Progress
 | Task                                                                                             |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
-| Celestial objects on navigation bar, dropdown with object names                                  |  |
-| TT3 Binary Math Hacks                                                                            |  |
+| Celestial objects on navigation bar, dropdown with object names                                  | [Task](https://github.com/Rebecca-123/m223_team_lovelace/issues/15) |
+| TT3 Binary Math Hacks                                                                            | [Christina's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/22) |
+| RGB Values on Binary Display                                                                     | [Rebecca's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/26) |
+| Personal binary page                                                                             | [Ritvik's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/37)  |
+| Personal binary page                                                                             | [William's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/28)  |
+| Home page gallery image resizing                                                                 | [Task](https://github.com/Rebecca-123/m223_team_lovelace/issues/27)
+
+## Development - Sprints 5, 6
+
+### Sprint 5 - Week 5: 9/20-24
+#### Progress

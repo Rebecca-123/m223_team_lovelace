@@ -74,7 +74,7 @@ def binary():
 @app.route("/christinaBinary/", methods=['GET', 'POST'])
 def christinaBinary():
     BITS = 8
-    imgBulbOn = "/static/assets/blub_on.gif"
+    imgBulbOn = "/static/assets/pbl_ttt/binary_img/blub_on.gif"
     # second time you call it, its a post action - Christina Lee
     if request.method == 'POST':
         BITS = int(request.form['BITS'])

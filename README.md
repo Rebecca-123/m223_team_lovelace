@@ -110,11 +110,11 @@
 | Task                                                                                             |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
 | Celestial objects on navigation bar, dropdown with object names                                  | [Task](https://github.com/Rebecca-123/m223_team_lovelace/issues/15) |
-| TT3 Binary Math Hacks                                                                            | [Christina's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/22) |
-| RGB Values on Binary Display                                                                     | [Rebecca's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/26) |
-| Personal binary page                                                                             | [Ritvik's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/37)  |
-| Personal binary page                                                                             | [William's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/28)  |
-| Home page gallery image resizing                                                                 | [Task](https://github.com/Rebecca-123/m223_team_lovelace/issues/27)
+| TT3 Binary Math Hacks                                                                            | [Christina's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/22) [Specific Commit](https://github.com/Rebecca-123/m223_team_lovelace/commit/097a83ac8129d9276ce8b3dab49cfe18ccee8a38) |
+| RGB Values on Binary Display                                                                     | [Rebecca's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/26) [Specific Commit](https://github.com/Rebecca-123/m223_team_lovelace/commit/78749a01f9eebdca1db636b175074c958c5d5bf7)|
+| Personal binary page                                                                             | [Ritvik's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/37) [Specific Commit](https://github.com/Rebecca-123/m223_team_lovelace/commit/48acbfd68ee19262c9dc76c92382cfc0f974c10f) |
+| Personal binary page                                                                             | [William's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/28) [Specific Commit](https://github.com/Rebecca-123/m223_team_lovelace/commit/089b6cb8deeed8e7283037955187fb55ed6514cd) |
+| Home page gallery image resizing                                                                 | [Task](https://github.com/Rebecca-123/m223_team_lovelace/issues/27) |
 
 ## Development - Sprints 5, 6
 

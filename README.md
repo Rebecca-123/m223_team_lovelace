@@ -115,6 +115,7 @@
 | Personal binary page                                                                             | [Ritvik's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/37)   [Specific Commit](https://github.com/Rebecca-123/m223_team_lovelace/commit/48acbfd68ee19262c9dc76c92382cfc0f974c10f) |
 | Personal binary page                                                                             | [William's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/28)   [Specific Commit](https://github.com/Rebecca-123/m223_team_lovelace/commit/089b6cb8deeed8e7283037955187fb55ed6514cd) |
 | Home page gallery image resizing                                                                 | [Task](https://github.com/Rebecca-123/m223_team_lovelace/issues/27) |
+#### [Improvements](https://github.com/Rebecca-123/m223_team_lovelace/issues/33#issuecomment-922537406)
 
 ## Development - Sprints 5, 6
 

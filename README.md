@@ -10,6 +10,17 @@
 6. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 7. [Sprints 5,6 - Development](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-5-6)
 
+## Project Ideation
+
+### Unique Idea: celestial themed website with objects rotated around (gallery)
+#### Viewers can learn more about objects by clicking on images
+#### Website will also contain work from Test Prep Tuesday, Tech Talks and information about team members
+
+### Visual Thoughts
+#### Home page: gallery of celestial objects
+#### Each image will link to a page with more detailed information about the object
+#### Nav bar with Home, About > dropdown with team members, Celestial Objects > dropdown with different objects, Mini-Labs > dropdown with different pages including a greetings page, Journals
+
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
 |:-----|:----------------------|:-----:|:-----------:|:-------:|
@@ -21,17 +32,6 @@
 ## Pair Share Journals
 ### [Ritvik Keerthi and William Li Journal](https://docs.google.com/document/d/1yTmP6R16Gsj7J-Nt4jP-sOAtXwmaNLJ-t-T8G6riBp0/edit?usp=sharing)
 ### [Christina Lee and Rebecca Su Journal](https://docs.google.com/document/d/1rxDS-Su8Yf-JtRhYigMewVp3HRqp1VQKlIGGpcutEeI/edit)
-
-## Project Ideation
-
-### Unique Idea: celestial themed website with objects rotated around (gallery)
-#### Viewers can learn more about objects by clicking on images
-#### Website will also contain work from Test Prep Tuesday, Tech Talks and information about team members
-
-### Visual Thoughts
-#### Home page: gallery of celestial objects
-#### Each image will link to a page with more detailed information about the object
-#### Nav bar with Home, About > dropdown with team members, Celestial Objects > dropdown with different objects, Mini-Labs > dropdown with different pages including a greetings page, Journals
 
 ## Introduction - Sprint 0 
 ### Week 0: 8/18-20
@@ -115,6 +115,7 @@
 | Personal binary page                                                                             | [Ritvik's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/37)   [Specific Commit](https://github.com/Rebecca-123/m223_team_lovelace/commit/48acbfd68ee19262c9dc76c92382cfc0f974c10f) |
 | Personal binary page                                                                             | [William's Technical](https://github.com/Rebecca-123/m223_team_lovelace/issues/28)   [Specific Commit](https://github.com/Rebecca-123/m223_team_lovelace/commit/089b6cb8deeed8e7283037955187fb55ed6514cd) |
 | Home page gallery image resizing                                                                 | [Task](https://github.com/Rebecca-123/m223_team_lovelace/issues/27) |
+#### [Improvements](https://github.com/Rebecca-123/m223_team_lovelace/issues/33#issuecomment-922537406)
 
 ## Development - Sprints 5, 6
 

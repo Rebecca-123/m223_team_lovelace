@@ -17,14 +17,18 @@
 {% set msgTurnOff = "Turn Off" %}
 
 {% block head %}
-    <style>
-        body {
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: white;
-        }
-
-    </style>
+    <html>
+    <body style="background-color:teal;">
+    </body>
+    </html>
+{#    <style>#}
+{#        body {#}
+{#            background-size: cover;#}
+{#            background-repeat: no-repeat;#}
+{#            color: white;#}
+{#        }#}
+{##}
+{#    </style>#}
 
 <script>
   const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);

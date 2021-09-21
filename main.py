@@ -141,6 +141,9 @@ def binary_william():
 def binary_ritvik():
     return render_template("binary_ritvik.html")
 
+@app.route("/rgblab")
+def RGB():
+    return render_template("rgb.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

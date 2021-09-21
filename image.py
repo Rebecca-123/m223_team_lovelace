@@ -77,14 +77,15 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
 
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":
-    local_path = "../static/img/"
+    local_path = "static/assets/"
     img_test = [
-        {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
+        {'source': "iconsdb.com", 'label': "Comets", 'file': "comet2.jpg"},
     ]
     items = image_data(local_path, img_test)  # path of local run
     for row in items:
-        # print some details about the image so you can validate that it looks like it is working
+            # print some details about the image so you can validate that it looks like it is working
         # meta data
+
         print("---- meta data -----")
         print(row['label'])
         print(row['format'])

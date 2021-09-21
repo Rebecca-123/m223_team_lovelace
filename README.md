@@ -132,4 +132,5 @@
 | Christina: Write image data function with Big O notation                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/40) |
 | Rebecca: Button on rgb.html for gray scaling                                                     |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/36) |
 | Ritvik: Research and figure out how to hide a message in an image                                |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/38) |
-| William: Implement new possibility in manipulating image                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/39)
+| William: Implement new possibility in manipulating image                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/39) |
+| Everyone: TPT Journals and Quizzes                                                               |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/41) |

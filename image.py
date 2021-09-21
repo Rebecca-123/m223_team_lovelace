@@ -11,7 +11,7 @@ from io import BytesIO
 img = Image.open('static/assets/solarsystem_stego.jpg')
 
 draw = ImageDraw.Draw(img)
-draw.text((30, 60), "This is a test!", fill=(223,223,223))
+draw.text((30, 60), "Solar System!", fill=(223,223,223))
 img.show()
 img.save("static/assets/new_solarsystem_stego.jpg")
 def image_base64(img, img_type):
@@ -26,16 +26,16 @@ def image_formatter(img, img_type):
 
 
 # color_data prepares a series of images for data analysis
-def image_data(path="static/img/", img_list=None):  # path of static images is defaulted
+def image_data(path="static/assets/", img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano-256.jpg"},
-            {'source': "iconsdb.com", 'label': "Black square", 'file': "black-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Red square", 'file': "red-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Green square", 'file': "green-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
-            {'source': "iconsdb.com", 'label': "White square", 'file': "white-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.jpg"}
+            {'source': "Peter Carolin", 'label': "Big Dipper", 'file': "big_dipper.jpg"},
+            {'source': "iconsdb.com", 'label': "Black Hole", 'file': "black_hole.jpg"},
+            {'source': "iconsdb.com", 'label': "Mars", 'file': "mars.png"},
+            {'source': "iconsdb.com", 'label': "Milky Way", 'file': "milky_way.jpg"},
+            {'source': "iconsdb.com", 'label': "Saturn", 'file': "saturnnobg.png"},
+            {'source': "iconsdb.com", 'label': "Nebula", 'file': "nebula.jpg"},
+            {'source': "iconsdb.com", 'label': "Constellations", 'file': "constellations.jpg"}
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
@@ -77,14 +77,15 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
 
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":
-    local_path = "../static/img/"
+    local_path = "static/assets/"
     img_test = [
-        {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
+        {'source': "iconsdb.com", 'label': "Comets", 'file': "comet2.jpg"},
     ]
     items = image_data(local_path, img_test)  # path of local run
     for row in items:
-        # print some details about the image so you can validate that it looks like it is working
+            # print some details about the image so you can validate that it looks like it is working
         # meta data
+
         print("---- meta data -----")
         print(row['label'])
         print(row['format'])

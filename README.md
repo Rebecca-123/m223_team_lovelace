@@ -121,3 +121,15 @@
 
 ### Sprint 5 - Week 5: 9/20-24
 #### Progress
+#### TPT Grading
+| Category                                                                                         |  Score                                                                    |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| TPT                                                                                              | (__ / 3)  |
+
+#### Progress
+| Task                                                                                             |  Evidence                                                                           |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| Christina: Write image data function with Big O notation                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/40) |
+| Rebecca: Button on rgb.html for gray scaling                                                     |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/36) |
+| Ritvik: Research and figure out how to hide a message in an image                                |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/38) |
+| William: Implement new possibility in manipulating image                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/39)

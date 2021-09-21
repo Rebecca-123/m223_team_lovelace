@@ -41,11 +41,6 @@ def journal():
     return render_template("journal.html")
 
 
-@app.route("/rgb/")
-def rgb():
-    return render_template("rgb.html")
-
-
 @app.route('/greetings/', methods=['GET', 'POST'])
 def greetings():
     if request.form:

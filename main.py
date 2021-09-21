@@ -136,7 +136,7 @@ def binary_william():
 def binary_ritvik():
     return render_template("binary_ritvik.html")
 
-@app.route("/rgblab")
+@app.route("/rgblab/")
 def RGB():
     return render_template("rgb.html")
 

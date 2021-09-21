@@ -6,7 +6,7 @@ from io import BytesIO
 
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 # Hidden image in file (new file named new_solarsystem_stego.jpg
-from PIL import Image, ImageDraw
+# from PIL import Image, ImageDraw
 
 img = Image.open('/static/assets/solarsystem_stego.jpg')
 

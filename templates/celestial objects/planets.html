@@ -3,76 +3,68 @@
 
 <head>
     <script>
-
-
-
-
-
-
-
-
         function mercuryText() {
-            var a = document.getElementById("mercurytext");
-            if (a.style.display === "none") {
-                a.style.display = "block";
+            let a = document.getElementById("mercurytext");
+            if (a.hasAttribute("hidden")) {
+                a.removeAttribute("hidden");
             } else {
-                a.style.display = "none";
+                a.setAttribute("hidden", "");
             }
         }
         function venusText() {
-            var b = document.getElementById("venustext");
-            if (b.style.display === "none") {
-                b.style.display = "block";
+            let b = document.getElementById("venustext");
+            if (b.hasAttribute("hidden")) {
+                b.removeAttribute("hidden");
             } else {
-                b.style.display = "none";
+                b.setAttribute("hidden", "");
             }
         }
         function earthText() {
-            var c = document.getElementById("earthtext");
-            if (c.style.display === "none") {
-                c.style.display = "block";
+            let c = document.getElementById("earthtext");
+            if (c.hasAttribute("hidden")) {
+                c.removeAttribute("hidden");
             } else {
-                c.style.display = "none";
+                c.setAttribute("hidden", "");
             }
         }
         function marsText() {
-            var d = document.getElementById("marstext");
-            if (d.style.display === "none") {
-                d.style.display = "block";
+            let d = document.getElementById("marstext");
+            if (d.hasAttribute("hidden")) {
+                d.removeAttribute("hidden");
             } else {
-                d.style.display = "none";
+                d.setAttribute("hidden", "");
             }
         }
         function jupiterText() {
-            var e = document.getElementById("jupitertext");
-            if (e.style.display === "none") {
-                e.style.display = "block";
+            let e = document.getElementById("jupitertext");
+            if (e.hasAttribute("hidden")) {
+                e.removeAttribute("hidden");
             } else {
-                e.style.display = "none";
+                e.setAttribute("hidden", "");
             }
         }
         function saturnText() {
-            var f = document.getElementById("saturntext");
-            if (f.style.display === "none") {
-                f.style.display = "block";
+            let f = document.getElementById("saturntext");
+            if (f.hasAttribute("hidden")) {
+                f.removeAttribute("hidden");
             } else {
-                f.style.display = "none";
+                f.setAttribute("hidden", "");
             }
         }
         function uranusText() {
-            var f = document.getElementById("uranustext");
-            if (f.style.display === "none") {
-                f.style.display = "block";
+            let g = document.getElementById("uranustext");
+            if (g.hasAttribute("hidden")) {
+                g.removeAttribute("hidden");
             } else {
-                f.style.display = "none";
+                g.setAttribute("hidden", "");
             }
         }
         function neptuneText() {
-            var g = document.getElementById("neptunetext");
-            if (g.style.display === "none") {
-                g.style.display = "block";
+            let h = document.getElementById("neptunetext");
+            if (h.hasAttribute("hidden")) {
+                h.removeAttribute("hidden");
             } else {
-                g.style.display = "none";
+                h.setAttribute("hidden", "");
             }
         }
     </script>
@@ -100,68 +92,68 @@
 {% block body %}
     <h1>Planets</h1>
     {# MERCURYYYYYYY #}
-    <a href="/william/" onclick="mercuryText()">
+    <a href="/planets/" onclick="mercuryText()">
         <img src="/static/assets/mercury_no_bg.png" style="width:42px;height:42px;">
     </a>
 
     {# VENUS #}
-    <a href="/william/">
+    <a href="/planets/">
         <img src="/static/assets/venusnobg.png" style="width:42px;height:42px;">
     </a>
 
     {# Earth? do we need to include that? probably or else it would look weird. but i dont want an earth page its so cliche #}
-    <a href="/william/">
+    <a href="/planets/">
         <img src="/static/assets/earthnobg.png" style="width:42px;height:42px;">
     </a>
 
     {# MARS #}
-    <a href="/william/">
+    <a href="/planets/">
         <img src="/static/assets/mars.png" style="width:42px;height:42px;">
     </a>
 
     {# JUPITEr #}
-    <a href="/william/">
+    <a href="/planets/">
         <img src="/static/assets/jupiternobg.png" style="width:42px;height:42px;">
     </a>
 
     {# SATURN #}
-    <a href="/william/">
+    <a href="/planets/">
         <img src="/static/assets/saturnnobg.png" style="width:42px;height:42px;">
     </a>
 
     {# URANUS #}
-    <a href="/william/">
+    <a href="/planets/">
         <img src="/static/assets/uranus.png" style="width:42px;height:42px;">
     </a>
 
     {# NEPTUNE #}
-    <a href="/william/">
+    <a href="/planets/">
         <img src="/static/assets/neptune.png" style="width:42px;height:42px;">
     </a> #}
 
-    <div id="mercurytext" >
-        mercury
-    </div>
-    <div id="venustext">
-        This is my DIV element.
-    </div>
-    <div id="earthtext">
-        This is my DIV element.
-    </div>
-    <div id="marstext">
-        This is my DIV element.
-    </div>
-    <div id="jupitertext">
-        This is my DIV element.
-    </div>
-    <div id="saturntext">
-        This is my DIV element.
-    </div>
-    <div id="uranustext">
-        This is my DIV element.
-    </div>
-    <div id="neptunetext">
-        This is my DIV element.
-    </div>
+    <p hidden id="mercurytext" >
+mercury description
+    </p>
+    <p hidden id="venustext">
+       venus description
+    </p>
+    <p hidden id="earthtext">
+        earth description
+    </p>
+    <p hidden id="marstext">
+       mars description
+    </p>
+    <p hidden id="jupitertext">
+        jupiter description
+    </p>
+    <p hidden id="saturntext">
+      saturn description
+    </p>
+    <p hidden id="uranustext">
+      uranus description
+    </p>
+    <p hidden id="neptunetext">
+  neptune description
+    </p>
 
 {% endblock %}

@@ -139,6 +139,17 @@ def binary_ritvik():
 def RGB():
     return render_template("rgb.html")
 
+@app.route("/rosetta/")
+def rosetta():
+    return render_template("/celestial objects/rosetta.html")
+
+@app.route("/halleys")
+def halleys():
+    return render_template("/celestial objects/halleys.html")
+
+@app.route("/hale_bopp")
+def hale_bopp():
+    return render_template("/celestial objects/hale-bopp.html")
 #from image import hide_msg
 #@app.route("/rgbhide")
 #def hidemsg():

@@ -6,6 +6,9 @@
         //  document.getElementById("img<n>").src
         //  document.getElementID("img_gray<n>").innerHTML
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
+        function toggle(n) {
+            document.getElementById("img<n>").src =
+        }
     </script>
     <title>RGB starter</title>
 {% endblock %}
@@ -39,6 +42,8 @@
                                {{image.base64}}  original image
                                {{image.base64_GRAY}}  gray scale image
                             -->
+                            <button onclick="toggle({{ loop.index }})">orignal image</button>
+                            <button onclick="toggle({{  }})"
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                         </td>

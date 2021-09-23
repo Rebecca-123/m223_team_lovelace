@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 # create an instance of flask object
 app = Flask(__name__)
+#from image import image_data
 
 
 # home page accessed with http://127.0.0.1:5000/
@@ -135,9 +136,9 @@ def binary_william():
 def binary_ritvik():
     return render_template("binary_ritvik.html")
 
-@app.route("/rgblab/")
+@app.route("/rgblab/", methods=["GET", "POST"])
 def RGB():
-    return render_template("rgb.html")
+    return render_template("rgb.html", images=image_data(shouldDraw=True))
 
 @app.route("/rosetta/")
 def rosetta():

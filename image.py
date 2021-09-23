@@ -8,12 +8,12 @@ from io import BytesIO
 # Hidden image in file (new file named new_solarsystem_stego.jpg
 from PIL import Image, ImageDraw
 #def hide_msg():
-img = Image.open("/static/assets/neptune.png")
-
-draw = ImageDraw.Draw(img)
-draw.text((30, 60), "Solar System!", fill=(223,223,223))
-img.show()
-img.save("/static/assets/newneptune.png")
+# img = Image.open("/static/assets/prototypes/neptune.png")
+#
+# draw = ImageDraw.Draw(img)
+# draw.text((30, 60), "Solar System!", fill=(223,223,223))
+# img.show()
+# img.save("/static/assets/prototypes/neptune.png")
 
 def image_base64(img, img_type):
     with BytesIO() as buffer:
@@ -30,13 +30,7 @@ def image_formatter(img, img_type):
 def image_data(path="static/assets/", img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "Peter Carolin", 'label': "Big Dipper", 'file': "big_dipper.jpg"},
             {'source': "iconsdb.com", 'label': "Black Hole", 'file': "black_hole.jpg"},
-            {'source': "iconsdb.com", 'label': "Mars", 'file': "mars.png"},
-            {'source': "iconsdb.com", 'label': "Milky Way", 'file': "milky_way.jpg"},
-            {'source': "iconsdb.com", 'label': "Saturn", 'file': "saturnnobg.png"},
-            {'source': "iconsdb.com", 'label': "Nebula", 'file': "nebula.jpg"},
-            {'source': "iconsdb.com", 'label': "Constellations", 'file': "constellations.jpg"}
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:

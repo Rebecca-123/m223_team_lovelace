@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 # create an instance of flask object
 app = Flask(__name__)
-#from image import image_data
 
 
 # home page accessed with http://127.0.0.1:5000/

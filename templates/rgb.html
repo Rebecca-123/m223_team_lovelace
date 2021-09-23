@@ -6,10 +6,13 @@
         //  document.getElementById("img<n>").src
         //  document.getElementID("img_gray<n>").innerHTML
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
-        function toggle(n) {
-            document.getElementById("img<n>").src =
+        var normal = document.getElementById("img_orig{{loop.index}}");
+        var grayed = document.getElementById("img_gray{{loop.index}}");
+        function grayscale(){
+            document.getElementById("img_orig{{loop.index}}").src = grayed;
         }
     </script>
+
     <title>RGB starter</title>
 {% endblock %}
 
@@ -37,13 +40,17 @@
                         </td>
                         <td>
                             <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}" >
+                            <button onclick="grayscale()">Grayscale!</button>
                             <!-- Hack: create button (btn{{loop.index}} to  call java script function
                                pass index to allow you to toggle images with hidden id's
                                {{image.base64}}  original image
                                {{image.base64_GRAY}}  gray scale image
                             -->
+
                             <button onclick="toggle({{ loop.index }})">Original Image</button>
-{#                            <button onclick="toggle({{  }})"></button>#}
+                            <button onclick="toggle({{  }})"></button>#}
+
+
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                         </td>
@@ -59,7 +66,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {% for row in image.data[:256:1] %}
+                                    {% for row in image.data[:256+1] %}
                                         <tr>
                                             <td>{{loop.index}}</td>
                                             <td>{{row}}</td>

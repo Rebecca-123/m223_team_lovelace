@@ -56,6 +56,7 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
         # Numpy is used to allow easy access to data of image, python list
         img_dict['data'] = numpy.array(img_data)
         img_dict['hex_array'] = []
+        # move around code to create one for loop (getting rid of redundencies)-Christina Lee
         img_dict['gray_data'] = []
         hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
         hex_value = hex_value.replace("x", "0")

@@ -6,10 +6,15 @@
         //  document.getElementById("img<n>").src
         //  document.getElementID("img_gray<n>").innerHTML
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
-        var normal = document.getElementById("img_orig{{loop.index}}");
-        var grayed = document.getElementById("img_gray{{loop.index}}");
-        function grayscale(){
-            document.getElementById("img_orig{{loop.index}}").src = grayed;
+        function toggle(){
+            const normal = document.getElementById("img_orig{{loop.index}}");
+            const grayed = document.getElementById("img_gray{{loop.index}}");
+            if (normal.src == document.getElementById("img_orig{{loop.index}}").innerHTML) {
+                normal.src = document.getElementById("img_gray{{loop.index}}").innerHTML;
+            }
+            else{
+                normal.src = document.getElementById("img_orig{{ loop.index }}").innerHTML
+            }
         }
     </script>
 
@@ -40,7 +45,7 @@
                         </td>
                         <td>
                             <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}" >
-                            <button onclick="grayscale()">Grayscale!</button>
+                            <button onclick="toggle()">Toggle Image!</button>
                             <!-- Hack: create button (btn{{loop.index}} to  call java script function
                                pass index to allow you to toggle images with hidden id's
                                {{image.base64}}  original image

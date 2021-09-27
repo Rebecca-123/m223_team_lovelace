@@ -13,27 +13,27 @@ def index():
 
 @app.route("/about/")
 def about():
-    return render_template("about.html")
+    return render_template("../layouts/about.html")
 
 
 @app.route("/christina/")
 def christina():
-    return render_template("/team/christina.html")
+    return render_template("../team/christina.html")
 
 
 @app.route("/rebecca/")
 def rebecca():
-    return render_template("/team/rebecca.html")
+    return render_template("../team/rebecca.html")
 
 
 @app.route("/ritvik/")
 def ritvik():
-    return render_template("/team/ritvik.html")
+    return render_template("../team/ritvik.html")
 
 
 @app.route("/william/")
 def william():
-    return render_template("/team/william.html")
+    return render_template("../team/william.html")
 
 
 @app.route("/journal/")
@@ -99,32 +99,32 @@ def prototypes():
 
 @app.route("/constellations/")
 def constellations():
-    return render_template("/celestial objects/constellations.html")
+    return render_template("../celestial objects/constellations.html")
 
 
 @app.route("/comets/")
 def comets():
-    return render_template("/celestial objects/comets.html")
+    return render_template("../celestial objects/comets.html")
 
 
 @app.route("/planets/")
 def planets():
-    return render_template("/celestial objects/planets.html")
+    return render_template("../celestial objects/planets.html")
 
 
 @app.route("/galaxies/")
 def galaxies():
-    return render_template("/celestial objects/galaxies.html")
+    return render_template("../celestial objects/galaxies.html")
 
 
 @app.route("/blackholes/")
 def blackholes():
-    return render_template("/celestial objects/blackholes.html")
+    return render_template("../celestial objects/blackholes.html")
 
 
 @app.route("/nebulae/")
 def nebulae():
-    return render_template("/celestial objects/nebulae.html")
+    return render_template("../celestial objects/nebulae.html")
 
 
 @app.route("/binary_william/")
@@ -142,15 +142,15 @@ def RGB():
 
 @app.route("/rosetta/")
 def rosetta():
-    return render_template("/celestial objects/rosetta.html")
+    return render_template("../celestial objects/rosetta.html")
 
 @app.route("/halleys")
 def halleys():
-    return render_template("/celestial objects/halleys.html")
+    return render_template("../celestial objects/halleys.html")
 
 @app.route("/hale_bopp")
 def hale_bopp():
-    return render_template("/celestial objects/hale-bopp.html")
+    return render_template("../celestial objects/hale-bopp.html")
 #from image import hide_msg
 #@app.route("/rgbhide")
 #def hidemsg():

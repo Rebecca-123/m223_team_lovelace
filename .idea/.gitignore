@@ -6,3 +6,8 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+### Exclude IntelliJ IDEA from GitHub ###
+.idea
+*.iws
+*.iml
+*.ipr

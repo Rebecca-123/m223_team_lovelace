@@ -142,6 +142,9 @@ def binary_ritvik():
 def RGB():
     return render_template("rgb.html", images=image_data())
 
+@app.route("/RGBChristina/", methods=["GET", "POST"])
+def RGBChristina():
+    return render_template("christina_rgb.html", images=image_data())
 
 @app.route("/rosetta/")
 def rosetta():

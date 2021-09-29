@@ -20,15 +20,7 @@ def image_base64(img, img_type):
         img.save(buffer, img_type)
         return base64.b64encode(buffer.getvalue()).decode()
 
-def image_resize():
 
-    im = Image.open("/static/assets/mercury_no_bg.png")
-
-    #Make the new image half the width and half the height of the original image
-    resized_im = im.resize((round(im.size[0]*5), round(im.size[1]*5)))
-
-    #Display the resized imaged
-    resized_im.show()
 
 # formatter preps base64 string for inclusion, ie <img src=[this return value] ... />
 def image_formatter(img, img_type):

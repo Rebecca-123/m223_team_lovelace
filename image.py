@@ -15,11 +15,6 @@ from PIL import Image, ImageDraw
 # img.show()
 # img.save("/static/assets/prototypes/neptune.png")
 
-<<<<<<< HEAD
-#hide_msg()
-=======
-
->>>>>>> f6ce7645c7cbbaa3aba89a596a1fd15a0339ad7e
 def image_base64(img, img_type):
     with BytesIO() as buffer:
         img.save(buffer, img_type)

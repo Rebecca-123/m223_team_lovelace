@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from image import image_data
-
 # create an instance of flask object
 app = Flask(__name__)
 

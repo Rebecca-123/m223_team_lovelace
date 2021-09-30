@@ -7,18 +7,29 @@ from io import BytesIO
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 # Hidden image in file (new file named new_solarsystem_stego.jpg
 from PIL import Image, ImageDraw
-def hide_msg():
- img = Image.open("/static/assets/prototypes/neptune.png")
+# def hide_msg():
+# img = Image.open("/static/assets/prototypes/neptune.png")
 
- draw = ImageDraw.Draw(img)
- draw.text((30, 60), "Solar System!", fill=(223, 223, 223))
- img.show()
- img.save("/static/assets/prototypes/neptune.png")
+# draw = ImageDraw.Draw(img)
+# draw.text((30, 60), "Neptune6", fill=(223,223,223))
+# img.show()
+# img.save("/static/assets/prototypes/neptune.png")
 
 def image_base64(img, img_type):
     with BytesIO() as buffer:
         img.save(buffer, img_type)
         return base64.b64encode(buffer.getvalue()).decode()
+
+
+def image_resize():
+
+    im = Image.open("/static/assets/mercury_no_bg.png")
+
+    # Make the new image half the width and half the height of the original image
+    resized_im = im.resize((round(im.size[0]*5), round(im.size[1]*5)))
+
+    # Display the resized imaged
+    resized_im.show()
 
 
 # formatter preps base64 string for inclusion, ie <img src=[this return value] ... />
@@ -69,7 +80,6 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
     return img_list  # list is returned with all the attributes for each image dictionary
-
 
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":

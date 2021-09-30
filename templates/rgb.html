@@ -6,16 +6,7 @@
         //  document.getElementById("img<n>").src
         //  document.getElementID("img_gray<n>").innerHTML
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
-        function toggle(){
-            const normal = document.getElementById("img_orig{{loop.index}}");
-            const grayed = document.getElementById("img_gray{{loop.index}}");
-            if (normal.src == document.getElementById("img_orig{{loop.index}}").innerHTML) {
-                normal.src = document.getElementById("img_gray{{loop.index}}").innerHTML;
-            }
-            else{
-                normal.src = document.getElementById("img_orig{{ loop.index }}").innerHTML
-            }
-        }
+
     </script>
 
     <title>RGB starter</title>
@@ -52,8 +43,8 @@
                                {{image.base64_GRAY}}  gray scale image
                             -->
 
-                            <button onclick="toggle({{ loop.index }})">Original Image</button>
-                            <!--<button onclick="toggle({{  }})"></button>#}-->
+                            <button onclick="toggle()">Original Image</button>
+
 
 
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>

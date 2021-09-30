@@ -7,7 +7,7 @@ from io import BytesIO
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 # Hidden image in file (new file named new_solarsystem_stego.jpg
 from PIL import Image, ImageDraw
-#def hide_msg():
+# def hide_msg():
 # img = Image.open("/static/assets/prototypes/neptune.png")
 #
 # draw = ImageDraw.Draw(img)
@@ -15,11 +15,22 @@ from PIL import Image, ImageDraw
 # img.show()
 # img.save("/static/assets/prototypes/neptune.png")
 
+
 def image_base64(img, img_type):
     with BytesIO() as buffer:
         img.save(buffer, img_type)
         return base64.b64encode(buffer.getvalue()).decode()
 
+
+def image_resize():
+
+    im = Image.open("/static/assets/mercury_no_bg.png")
+
+    # Make the new image half the width and half the height of the original image
+    resized_im = im.resize((round(im.size[0]*5), round(im.size[1]*5)))
+
+    # Display the resized imaged
+    resized_im.show()
 
 
 # formatter preps base64 string for inclusion, ie <img src=[this return value] ... />
@@ -80,7 +91,7 @@ if __name__ == "__main__":
     ]
     items = image_data(local_path, img_test)  # path of local run
     for row in items:
-            # print some details about the image so you can validate that it looks like it is working
+        # print some details about the image so you can validate that it looks like it is working
         # meta data
 
         print("---- meta data -----")

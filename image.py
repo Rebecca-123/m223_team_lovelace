@@ -9,12 +9,13 @@ from io import BytesIO
 from PIL import Image, ImageDraw
 #def hide_msg():
 # img = Image.open("/static/assets/prototypes/neptune.png")
-#
+
 # draw = ImageDraw.Draw(img)
-# draw.text((30, 60), "Solar System!", fill=(223,223,223))
+# draw.text((30, 60), "Neptune6", fill=(223,223,223))
 # img.show()
 # img.save("/static/assets/prototypes/neptune.png")
 
+#hide_msg()
 def image_base64(img, img_type):
     with BytesIO() as buffer:
         img.save(buffer, img_type)
@@ -70,7 +71,6 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
     return img_list  # list is returned with all the attributes for each image dictionary
-
 
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":

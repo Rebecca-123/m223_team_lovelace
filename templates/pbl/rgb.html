@@ -5,13 +5,12 @@
         // Hack: JS function to toggle image
         // Help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
         function toggle(ndx){
-            // here ndx is passed into toggle, {{ loop.index }} will replace ndx
+            // here ndx is passed into toggle, loop.index will replace ndx
             // loop.index can't be directly placed here because the Jinja variable only works inside the for loop
-            if (document.getElementById("img"+ndx).src == document.getElementById("img_orig"+ndx).innerHTML)
-            // if the image source matches the original image's HTML content {{image.base64}}
-            {
+            if (document.getElementById("img"+ndx).src == document.getElementById("img_orig"+ndx).innerHTML) {
+                // if the image source matches the original image's HTML content image.base64
                 document.getElementById("img"+ndx).src = document.getElementById("img_gray"+ndx).innerHTML;
-                // then the image source will be changed to the {{image.base64_GRAY}}
+                // then the image source will be changed to the image.base64_GRAY
             }
             else {
                 document.getElementById("img"+ndx).src = document.getElementById("img_orig"+ndx).innerHTML
@@ -47,8 +46,8 @@
                             <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}" >
 
                             <button onclick="toggle({{ loop.index }})">Toggle Image!</button>
-{#                          <!-- button will call function that can toggle image-->
-                            <!-- loop.index is a parameter passed into the toggle function, ie. img{{ 1 }}, img{{ 2 }} -->
+                            <!-- button will call function that can toggle image-->
+                            <!-- loop.index is a parameter passed into the toggle function, ie. img 1 , img 2 -->
 
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <!-- these ids determine which image (original or grayscale) is displayed -->

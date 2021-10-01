@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from image import image_data
+
 # create an instance of flask object
 app = Flask(__name__)
 
@@ -141,9 +142,11 @@ def binary_ritvik():
 def RGB():
     return render_template("pbl/rgb.html", images=image_data())
 
+
 @app.route("/RGBChristina/", methods=["GET", "POST"])
 def RGBChristina():
     return render_template("pbl/christina_rgb.html", images=image_data())
+
 
 @app.route("/rosetta/")
 def rosetta():

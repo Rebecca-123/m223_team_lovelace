@@ -7,13 +7,12 @@ from io import BytesIO
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 # Hidden image in file (new file named new_solarsystem_stego.jpg
 from PIL import Image, ImageDraw
-# def hide_msg():
-# img = Image.open("/static/assets/prototypes/neptune.png")
-
-# draw = ImageDraw.Draw(img)
-# draw.text((30, 60), "Neptune6", fill=(223,223,223))
-# img.show()
-# img.save("/static/assets/prototypes/neptune.png")
+def hide_msg():
+    img = Image.open("/static/assets/prototypes/neptune.png")
+    draw = ImageDraw.Draw(img)
+    draw.text((30, 60), "Neptune6", fill=(223,223,223))
+    img.show()
+    img.save("/static/assets/prototypes/neptune.png")
 
 def image_base64(img, img_type):
     with BytesIO() as buffer:

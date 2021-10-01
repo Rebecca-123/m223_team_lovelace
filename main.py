@@ -63,7 +63,7 @@ def binary():
     if request.method == 'POST':
         BITS = int(request.form['BITS'])
         imgBulbOn = request.form['lightOn']
-    return render_template("binary.html", imgBulbOn=imgBulbOn, BITS=BITS)
+    return render_template("pbl/binary.html", imgBulbOn=imgBulbOn, BITS=BITS)
 
 
 @app.route("/christinaBinary/", methods=['GET', 'POST'])
@@ -74,7 +74,7 @@ def christinaBinary():
     if request.method == 'POST':
         BITS = int(request.form['BITS'])
         imgBulbOn = request.form['lightOn']
-    return render_template("christinaBinary.html", BITS=BITS, imgBulbOn=imgBulbOn)
+    return render_template("pbl/christinaBinary.html", BITS=BITS, imgBulbOn=imgBulbOn)
 
 
 @app.route("/brainwrite/")
@@ -129,21 +129,21 @@ def nebulae():
 
 @app.route("/binary_william/")
 def binary_william():
-    return render_template("binary_william.html")
+    return render_template("pbl/binary_william.html")
 
 
 @app.route("/binary_ritvik/")
 def binary_ritvik():
-    return render_template("binary_ritvik.html")
+    return render_template("pbl/binary_ritvik.html")
 
 
 @app.route("/rgb/", methods=["GET", "POST"])
 def RGB():
-    return render_template("rgb.html", images=image_data())
+    return render_template("pbl/rgb.html", images=image_data())
 
 @app.route("/RGBChristina/", methods=["GET", "POST"])
 def RGBChristina():
-    return render_template("christina_rgb.html", images=image_data())
+    return render_template("pbl/christina_rgb.html", images=image_data())
 
 @app.route("/rosetta/")
 def rosetta():

@@ -3,11 +3,12 @@ import numpy
 import base64
 from io import BytesIO
 
-
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 # Hidden image in file (new file named new_solarsystem_stego.jpg
 from PIL import Image, ImageDraw
-#def hide_msg():
+
+
+# def hide_msg():
 #    img = Image.open("/static/assets/prototypes/neptune.png")
 #    draw = ImageDraw.Draw(img)
 #    draw.text((30, 60), "Neptune6", fill=(223,223,223))
@@ -21,11 +22,10 @@ def image_base64(img, img_type):
 
 
 def image_resize():
-
     im = Image.open("/static/assets/mercury_no_bg.png")
 
     # Make the new image half the width and half the height of the original image
-    resized_im = im.resize((round(im.size[0]*5), round(im.size[1]*5)))
+    resized_im = im.resize((round(im.size[0] * 5), round(im.size[1] * 5)))
 
     # Display the resized imaged
     resized_im.show()
@@ -68,9 +68,9 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
             # binary conversions
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
             img_dict['binary_array'].append(bin_value)
-        # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
+            # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
 
-        # for pixel in img_dict['data']:
+            # for pixel in img_dict['data']:
             average = (pixel[0] + pixel[1] + pixel[2]) // 3
             if len(pixel) > 3:
                 img_dict['gray_data'].append((average, average, average, pixel[3]))
@@ -79,6 +79,7 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
     return img_list  # list is returned with all the attributes for each image dictionary
+
 
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":

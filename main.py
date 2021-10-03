@@ -51,9 +51,10 @@ def project_layout():
 def study_sheet():
     return render_template("journals/study_sheet.html")
 
-@app.route("/logicGates/")
-def logicGates():
-    return render_template("pbl/logicGates.html")
+
+@app.route("/logic_gates/")
+def logic_gates():
+    return render_template("pbl/logic_gates.html")
 
 
 @app.route('/greetings/', methods=['GET', 'POST'])

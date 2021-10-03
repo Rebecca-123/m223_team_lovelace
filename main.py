@@ -172,11 +172,6 @@ def halleys():
 def hale_bopp():
     return render_template("celestial objects/hale-bopp.html")
 
-@app.route("/studySheet")
-def studySheet():
-    return render_template("journals/study_sheet.html")
-
-
 # from image import hide_msg
 # @app.route("/rgbhide")
 # def hidemsg():

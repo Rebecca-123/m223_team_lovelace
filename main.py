@@ -158,11 +158,6 @@ def RGB():
     return render_template("pbl/rgb.html", images=image_data())
 
 
-@app.route("/logic/", methods=["GET", "POST"])
-def logic_gates():
-    return render_template("pbl/logic_gates.html")
-
-
 @app.route("/RGBChristina/", methods=["GET", "POST"])
 def RGBChristina():
     return render_template("pbl/christina_rgb.html", images=image_data())

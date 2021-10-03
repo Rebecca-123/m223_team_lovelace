@@ -39,7 +39,17 @@ def william():
 
 @app.route("/journal/")
 def journal():
-    return render_template("Journals/journal.html")
+    return render_template("journals/journal.html")
+
+
+@app.route("/pld/")
+def project_layout():
+    return render_template("journals/project_layout.html")
+
+
+@app.route("/study_sheet/")
+def study_sheet():
+    return render_template("journals/study_sheet.html")
 
 
 @app.route('/greetings/', methods=['GET', 'POST'])
@@ -164,7 +174,7 @@ def hale_bopp():
 
 @app.route("/studySheet")
 def studySheet():
-    return render_template("Journals/studySheet.html")
+    return render_template("journals/study_sheet.html")
 
 
 # from image import hide_msg

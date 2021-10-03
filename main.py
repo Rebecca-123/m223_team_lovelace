@@ -47,8 +47,8 @@ def greetings():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:
-            return render_template("greetings.html", name=name)
-    return render_template("greetings.html", name="name")
+            return render_template("pbl/greetings.html", name=name)
+    return render_template("pbl/greetings.html", name="name")
 
 
 @app.route("/all_labs/")

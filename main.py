@@ -51,9 +51,10 @@ def project_layout():
 def study_sheet():
     return render_template("journals/study_sheet.html")
 
-@app.route("/logicGates/")
-def logicGates():
-    return render_template("pbl/logicGates.html")
+
+@app.route("/logic_gates/")
+def logic_gates():
+    return render_template("pbl/logic_gates.html")
 
 
 @app.route('/greetings/', methods=['GET', 'POST'])
@@ -155,6 +156,11 @@ def binary_ritvik():
 @app.route("/rgb/", methods=["GET", "POST"])
 def RGB():
     return render_template("pbl/rgb.html", images=image_data())
+
+
+@app.route("/logic/", methods=["GET", "POST"])
+def logic_gates():
+    return render_template("pbl/logic_gates.html")
 
 
 @app.route("/RGBChristina/", methods=["GET", "POST"])

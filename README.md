@@ -9,7 +9,7 @@
 5. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
 6. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 7. [Sprints 5,6 - Development](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-5-6)
-8. [Sprints 7,8 - Algorithms and Programming](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-7-8)
+8. [Sprints 7,8 - Algorithms and Programming](https://github.com/Rebecca-123/m223_team_lovelace#algorithms-and-programming---sprints-7-8)
 
 ## Project Ideation
 

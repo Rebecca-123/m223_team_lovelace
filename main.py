@@ -177,9 +177,9 @@ def halleys():
 def hale_bopp():
     return render_template("celestial objects/hale-bopp.html")
 
-# from image import hide_msg
-# @app.route("/rgbhide")
-# def hidemsg():
+#from image import hide_msg
+#@app.route("/rgbhide")
+#def hidemsg():
 #    hide_msg()
 
 if __name__ == "__main__":

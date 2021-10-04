@@ -113,6 +113,6 @@ if __name__ == "__main__":
         filename = local_path + row['file']
         image_ref = Image.open(filename)
         draw = ImageDraw.Draw(image_ref)
-        draw.text((0, 0), "Size is {0} X {1}".format(*row['size']))  # draw in image
+        draw.text((55, 22), "Look at this wonderful comet!".format(*row['size']))  # draw in image
         image_ref.show()
 print()

@@ -9,6 +9,7 @@
 5. [Sprints 1,2 - Innovation](https://github.com/Rebecca-123/m223_team_lovelace#innovation---sprints-12)
 6. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 7. [Sprints 5,6 - Development](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-5-6)
+8. [Sprints 7,8 - Algorithms and Programming](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-7-8)
 
 ## Project Ideation
 
@@ -150,3 +151,22 @@
 | Everyone: TPT Journals and Quizzes                                                               |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/49) |
 | Christina: Research Number Bases and Journal                                                     |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/46) |
 | TBD: Project Layout Documentation                                                                |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/47) |
+
+## Algorithms and Programming - Sprints 7, 8
+
+### Sprint 7 - Week 7: 10/4-8
+#### Progress
+| Task                                                                                             |  Evidence                                                                           |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| Christina: Logic Gates                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/56) |
+| Rebecca: Unsigned Addition and Subtraction                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/57) |
+| Ritvik: Color Code Display                                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/55) |
+| William: Signed Addition and Subtraction                                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/59) |
+| Christina: Multiply and Divide by 2 (Shifting Bits)                                              |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/48) |
+| Christina: Converting ASCII to Unicode on Binary Math Demo                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/58) |
+| Everyone: TPT Journals and Quizzes                                                               |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/60) |
+
+#### TPT Grading
+| Category                                                                                         |  Score                                                                    |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| TPT                                                                                              | /2  |

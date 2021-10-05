@@ -20,16 +20,6 @@ def image_base64(img, img_type):
         return base64.b64encode(buffer.getvalue()).decode()
 
 
-def image_resize():
-    im = Image.open("/static/assets/mercury_no_bg.png")
-
-    # Make the new image half the width and half the height of the original image
-    resized_im = im.resize((round(im.size[0] * 5), round(im.size[1] * 5)))
-
-    # Display the resized imaged
-    resized_im.show()
-
-
 # formatter preps base64 string for inclusion, ie <img src=[this return value] ... />
 def image_formatter(img, img_type):
     return "data:image/" + img_type + ";base64," + image_base64(img, img_type)
@@ -39,7 +29,7 @@ def image_formatter(img, img_type):
 def image_data(path="static/assets/", img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "idk", 'label': "Black Hole", 'file': "black_hole.jpg"}
+            {'source': "idk", 'label': "Black Hole", 'file': "black_hole_smol.jpg"}
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
@@ -47,12 +37,17 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
         file = path + img_dict['file']  # file with path for local access (backend)
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
+
+        # resized_im = img_reference.resize((round(img_reference.size[0]*3), round(img_reference.size[1]*3)))
+        resized_im = img_reference.resize((round(img_reference.size[0]*1.5), round(img_reference.size[1]*1.5)))
+
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
         img_dict['size'] = img_reference.size
         # Conversion of original Image to Base64, a string format that serves HTML nicely
         img_dict['base64'] = image_formatter(img_reference, img_dict['format'])
+        img_dict['base64_RESIZED'] = image_formatter(resized_im, img_dict['format'])
         # Numpy is used to allow easy access to data of image, python list
         img_dict['data'] = numpy.array(img_data)
         img_dict['hex_array'] = []

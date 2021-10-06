@@ -59,7 +59,13 @@ def logic_gates():
 
 @app.route("/unsigned_addition/")
 def unsigned_addition():
-    return render_template("pbl/unsigned_addition.html")
+    BITS = 8
+    imgBulbOn = "/static/assets/blub_on.gif"
+    # second time you call it, its a post action
+    if request.method == 'POST':
+        BITS = int(request.form['BITS'])
+        imgBulbOn = request.form['lightOn']
+    return render_template("pbl/unsigned_addition.html", imgBulbOn=imgBulbOn, BITS=BITS)
 
 
 @app.route('/greetings/', methods=['GET', 'POST'])

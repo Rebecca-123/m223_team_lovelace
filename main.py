@@ -57,6 +57,11 @@ def logic_gates():
     return render_template("pbl/logic_gates.html")
 
 
+@app.route("/unsigned_addition/")
+def unsigned_addition():
+    return render_template("pbl/unsigned_addition.html")
+
+
 @app.route('/greetings/', methods=['GET', 'POST'])
 def greetings():
     if request.form:

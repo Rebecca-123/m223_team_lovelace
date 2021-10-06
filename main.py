@@ -67,6 +67,9 @@ def unsigned_addition():
         imgBulbOn = request.form['lightOn']
     return render_template("pbl/unsigned_addition.html", imgBulbOn=imgBulbOn, BITS=BITS)
 
+@app.route("/color_code/")
+def color_code():
+    return render_template("pbl/color_code.html")
 
 @app.route('/greetings/', methods=['GET', 'POST'])
 def greetings():
@@ -187,6 +190,7 @@ def halleys():
 @app.route("/hale_bopp")
 def hale_bopp():
     return render_template("celestial objects/hale-bopp.html")
+
 
 #from image import hide_msg
 #@app.route("/rgbhide")

@@ -59,8 +59,17 @@ def logic_gates():
 
 @app.route("/unsigned_addition/")
 def unsigned_addition():
-    return render_template("pbl/unsigned_addition.html")
+    BITS = 8
+    imgBulbOn = "/static/assets/blub_on.gif"
+    # second time you call it, its a post action
+    if request.method == 'POST':
+        BITS = int(request.form['BITS'])
+        imgBulbOn = request.form['lightOn']
+    return render_template("pbl/unsigned_addition.html", imgBulbOn=imgBulbOn, BITS=BITS)
 
+@app.route("/color_code/")
+def color_code():
+    return render_template("pbl/color_code.html")
 
 @app.route('/greetings/', methods=['GET', 'POST'])
 def greetings():
@@ -181,6 +190,7 @@ def halleys():
 @app.route("/hale_bopp")
 def hale_bopp():
     return render_template("celestial objects/hale-bopp.html")
+
 
 #from image import hide_msg
 #@app.route("/rgbhide")

@@ -14,60 +14,75 @@
 </style>
 
 {% block body %}
-<table style="width:100%">
+<table style="width:50%">
     <tr>
-        <td>Emil</td>
+        <td>1</td>
         <td>Tobias</td>
         <td>Linus</td>
+        <td>Joe</td>
+        <td>Joe</td>
+        <td>Joe</td>
+        <td>Joe</td>
+        <td>Joe</td>
     </tr>
     <tr>
         <td>16</td>
         <td>14</td>
         <td>10</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
     </tr>
     <tr>
         <td>16</td>
         <td>14</td>
         <td>10</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
     </tr>
 </table>
 <script>
 const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
 // return string with current value of each bit
 function getBits() {
-let bits = "";
-for(let i = 0; i < BITS; i++) {
-bits = bits + document.getElementById('digit' + i).value;
+    let bits = "";
+    for(let i = 0; i < BITS; i++) {
+    bits = bits + document.getElementById('digit' + i).value;
 }
 return bits;
 }
 // setter for DOM values
 function setConversions(binary) {
-document.getElementById('binary').innerHTML = binary;
+    document.getElementById('binary').innerHTML = binary;
 // DOM assignment to Octal conversion
-document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
+    document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
 // DOM assignment to Hexadecimal conversion
-document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
+    document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
 // DOM assignment to Decimal conversion
-document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
+    document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
 /* Hack: show ASCII printable character(s) for each 8 bits
 DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asp
 look below ASCII for more ideas of where to make changes
 */
 // {#javaScript language to convert ascii number to ascii printable characters#}
 // convert hexidecimal to unicode -christinaLee
-let unicode = parseInt(binary, 2).toString(16);
-if (unicode.length > 4) {
-unicode = unicode.substr(unicode.length - 4, 4);
-} else if (unicode.length == 3) {
-unicode = "0" + unicode;
-} else if (unicode.length == 2) {
-unicode = "00" + unicode;
-} else if (unicode.length == 1) {
-unicode = "000" + unicode;
+    let unicode = parseInt(binary, 2).toString(16);
+    if (unicode.length > 4) {
+        unicode = unicode.substr(unicode.length - 4, 4);
+    } else if (unicode.length == 3) {
+    unicode = "0" + unicode;
+    } else if (unicode.length == 2) {
+    unicode = "00" + unicode;
+    } else if (unicode.length == 1) {
+    unicode = "000" + unicode;
 }
-unicode = "U-" + unicode;
-document.getElementById("unicode").innerHTML = unicode;
+    unicode = "U-" + unicode;
+    document.getElementById("unicode").innerHTML = unicode;
 
 /* converting binary to RGB (optional hack) */
 /* first establishing default RGB values*/
@@ -77,21 +92,21 @@ var green = 0;
 
 /* conditionals to convert binary to RGB, depending on # of bits */
 if (binary.length < 0 && binary.length < 9) {
-blue = parseInt(binary.substring(0, binary.length), 2).toString(10);
+    blue = parseInt(binary.substring(0, binary.length), 2).toString(10);
 }
 else if (binary.length > 8 && binary.length < 17) {
-green = parseInt(binary.substring(0, binary.length - 8), 2).toString(10);
-blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
+    green = parseInt(binary.substring(0, binary.length - 8), 2).toString(10);
+    blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
 }
 else if (binary.length > 16 && binary.length < 25) {
-red = parseInt(binary.substring(0, binary.length - 16), 2).toString(10);
-green = parseInt(binary.substring(binary.length - 16, binary.length - 8), 2).toString(10);
-blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
+    red = parseInt(binary.substring(0, binary.length - 16), 2).toString(10);
+    green = parseInt(binary.substring(binary.length - 16, binary.length - 8), 2).toString(10);
+    blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
 }
 else if (binary.length >= 25) {
-red = parseInt(binary.substring(binary.length - 24, binary.length - 16), 2).toString(10);
-green = parseInt(binary.substring(binary.length - 16, binary.length - 8), 2).toString(10);
-blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
+    red = parseInt(binary.substring(binary.length - 24, binary.length - 16), 2).toString(10);
+    green = parseInt(binary.substring(binary.length - 16, binary.length - 8), 2).toString(10);
+    blue = parseInt(binary.substring(binary.length - 8, binary.length), 2).toString(10);
 }
 /* call the RGB element and set it equal to a string containing the actual RGB values */
 document.getElementById("RGB").innerHTML = "(" + red + "," + green + "," + blue + ")";

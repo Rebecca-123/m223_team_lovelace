@@ -5,8 +5,8 @@
 
 {% set binary1 = "/static/assets/pbl_ttt/binary_img/1.png" %}
 {% set binary0 = "/static/assets/pbl_ttt/binary_img/0.png" %}
-{% set msgTurnOn = "1" %}
-{% set msgTurnOff = "0" %}
+{% set thisIsOn = "1" %}
+{% set thisIsOff = "0" %}
 
 {% block head %}
 <html lang="en">
@@ -53,11 +53,11 @@
         if (image.src.match("{{ binary1 }}")) {
             dig.value = 0;
             image.src = "{{ binary0 }}";
-            butt.innerHTML = "{{ msgTurnOn }}";
+            butt.innerHTML = "{{ thisIsOn }}";
         } else {
             dig.value = 1;
             image.src = "{{ binary1 }}";
-            butt.innerHTML = "{{ msgTurnOff }}";
+            butt.innerHTML = "{{ thisIsOff }}";
         }
         // Binary numbers
         const binary = getBits();
@@ -72,11 +72,11 @@
         if (image.src.match("{{ binary1 }}")) {
             dig.value = 0;
             image.src = "{{ binary0 }}";
-            butt.innerHTML = "{{ msgTurnOn }}";
+            butt.innerHTML = "{{ thisIsOn }}";
         } else {
             dig.value = 1;
             image.src = "{{ binary1 }}";
-            butt.innerHTML = "{{ msgTurnOff }}";
+            butt.innerHTML = "{{ thisIsOff }}";
         }
         const binary2 = getBits2();
         setConversions2(binary2);
@@ -110,7 +110,7 @@
                 <tr>
                     {% for i in range(BITS) %}
                     <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ binary0 }}" alt="" width="40" height="Auto">
-                        <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+                        <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ thisIsOn }}</button>
                     </td>
                     {% endfor %}
                 </tr>
@@ -152,7 +152,7 @@
                     <tr>
                         {% for i in range(BITS) %}
                         <td><img class="img-responsive py-3" id="bulb2{{i}}" src="{{ binary0 }}" alt="" width="40" height="Auto">
-                            <button type="button" id="butt2{{i}}" onclick="toggleBit2('{{i}}')">{{ msgTurnOn }}</button>
+                            <button type="button" id="butt2{{i}}" onclick="toggleBit2('{{i}}')">{{ thisIsOn }}</button>
                         </td>
                         {% endfor %}
                     </tr>
@@ -184,7 +184,7 @@
                         <tr>
                             {% for i in range(BITS2) %}
                             <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ binary0 }}" alt="" width="40" height="Auto">
-                                <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+                                <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ thisIsOn }}</button>
                             </td>
                             {% endfor %}
                         </tr>

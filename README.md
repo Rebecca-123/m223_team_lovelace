@@ -159,7 +159,7 @@
 | Task                                                                                             |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
 | Christina: Logic Gates                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/56) |
-| Rebecca: Unsigned Addition and Subtraction                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/57) |
+| Rebecca: Unsigned Addition                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/57) |
 | Ritvik: Color Code Display                                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/55) |
 | William: Signed Addition and Subtraction                                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/59) |
 | Christina: Multiply and Divide by 2 (Shifting Bits)                                              |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/48) |

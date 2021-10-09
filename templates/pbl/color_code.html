@@ -7,7 +7,7 @@
 {% set binary0 = "/static/assets/pbl_ttt/binary_img/0.png" %}
 {% set thisIsOn = "1" %}
 {% set thisIsOff = "0" %}
-
+{% set RGB = "RGB" %}
 {% block head %}
     <html lang="en">
     <body style="background-color:turquoise"></body>
@@ -58,6 +58,28 @@
             document.getElementById('decimal3').innerHTML = parseInt(binary3, 2).toString(10);
             document.getElementById('hex3').innerHTML = parseInt(binary3, 2).toString(16);
         }
+
+        //Function found online to implement code
+        function hexToRgb(hex) {
+            // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+            var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+            hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+                return r + r + g + g + b + b;
+            });
+
+            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? [
+                parseInt(result[1], 16),
+                parseInt(result[2], 16),
+                parseInt(result[3], 16)
+            ] : null;
+        }
+        h3x1 = hexToRgb(hex1)
+        h3x2 = hexToRgb(hex2)
+        h3x3 = hexToRgb(hex3)
+        hex_to_RGB(hex1)
+        hex_to_RGB(hex2)
+        hex_to_RGB(hex3)
 
         // toggle selected bit and recalculate for row 1
         function toggleBit(i) {

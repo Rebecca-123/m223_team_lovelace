@@ -13,7 +13,7 @@
     <body style="background-color:turquoise"></body>
     </html>
     <script>
-        const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
+        const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 16);
         // return string with current value of each bit
         function getBits() {
             let bits = "";
@@ -44,16 +44,19 @@
             document.getElementById('binary').innerHTML = binary;
             // DOM assignment to Decimal conversion
             document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
+            document.getElementById('hex').innerHTML = parseInt(binary, 2).toString(16);
         }
 
         function setConversions2(binary2) {
             document.getElementById('binary2').innerHTML = binary2;
             document.getElementById('decimal2').innerHTML = parseInt(binary2, 2).toString(10);
+            document.getElementById('hex2').innerHTML = parseInt(binary2, 2).toString(16);
         }
 
         function setConversions3(binary3) {
             document.getElementById('binary3').innerHTML = binary3;
             document.getElementById('decimal3').innerHTML = parseInt(binary3, 2).toString(10);
+            document.getElementById('hex3').innerHTML = parseInt(binary3, 2).toString(16);
         }
 
         // toggle selected bit and recalculate for row 1
@@ -123,10 +126,12 @@
                     <tr id="table">
                         <th>Binary</th>
                         <th>Decimal</th>
+                        <th>Hex</th>
                     </tr>
                     <tr>
                         <td id="binary">00000000</td>
                         <td id="decimal">0</td>
+                        <td id="hex">0</td>
                     </tr>
                 </table>
             </div>
@@ -154,10 +159,12 @@
                         <tr id="table">
                             <th>Binary</th>
                             <th>Decimal</th>
+                            <th>Hex</th>
                         </tr>
                         <tr>
                             <td id="binary2">00000000</td>
                             <td id="decimal2">0</td>
+                            <td id="hex2">0</td>
                         </tr>
                     </table>
                 </div>
@@ -187,10 +194,12 @@
                             <tr id="table">
                                 <th>Binary</th>
                                 <th>Decimal</th>
+                                <th>Hex</th>
                             </tr>
                             <tr>
                                 <td id="binary3">00000000</td>
                                 <td id="decimal3">0</td>
+                                <td id="hex3">0</td>
                             </tr>
                         </table>
                     </div>
@@ -211,6 +220,7 @@
                                 {% endfor %}
                             </tr>
                         </table>
+
                     </div>
 
                 </div>

@@ -29,93 +29,28 @@
         let bValue = 0;
         if (b[1].checked)
             bValue = 1;
-        document.getElementById('or').innerHTML = aValue || bValue;
-        document.getElementById('and').innerHTML = aValue && bValue;
-        document.getElementById('nor').innerHTML = !(aValue || bValue);
-        document.getElementById('nand').innerHTML = !(aValue && bValue);
-        document.getElementById('not').innerHTML = !aValue;
+        document.getElementById('or').innerHTML = aValue | bValue;
+        document.getElementById('and').innerHTML = aValue & bValue;
+        if (!(aValue || bValue)) {
+            document.getElementById('nor').innerHTML = 1;
+        } else {
+            document.getElementById('nor').innerHTML = 0;
+        }
+        if (!(aValue && bValue)) {
+            document.getElementById('nand').innerHTML = 1;
+        } else {
+            document.getElementById('nand').innerHTML = 0;
+        }
+        // christinaLee = bitwise operator
+        if (!aValue) {
+            document.getElementById('not').innerHTML = 1;
+        } else {
+            document.getElementById('not').innerHTML = 0;
+        }
         document.getElementById('xor').innerHTML = aValue ^ bValue;
         return 0;
     }
 
-    // toggle selected bit and recalculate
-    function toggleBit(i) {
-        //alert("Digit action: " + i );
-        const dig = document.getElementById('digit' + i);
-        const image = document.getElementById('bulb' + i);
-        const butt = document.getElementById('butt' + i);
-        // Change digit and visual
-        if (image.src.match("{{ imgBulbOn }}")) {
-            dig.value = 0;
-            image.src = "{{ imgBulbOff }}";
-            butt.innerHTML = "{{ msgTurnOn }}";
-        } else {
-            dig.value = 1;
-            image.src = "{{ imgBulbOn }}";
-            butt.innerHTML = "{{ msgTurnOff }}";
-        }
-        // Binary numbers
-        const binary = getBits();
-        setConversions(binary);
-    }
-
-    // add is positive integer, subtract is negative integer
-    function add(n) {
-        let binary = getBits();
-        // convert to decimal and do math
-        let decimal = parseInt(binary, 2);
-        if (n > 0) {  // PLUS
-            decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
-        }
-        else {     // MINUS
-            decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
-        }
-        // convert the result back to binary
-        binary = decimal_2_base(decimal, 2);
-        // update conversions
-        setConversions(binary);
-        // update bits
-        for (let i = 0; i < binary.length; i++) {
-            let digit = binary.substr(i, 1);
-            document.getElementById('digit' + i).value = digit;
-            if (digit === "1") {
-                document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
-                document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
-            }
-            else {
-                document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
-                document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
-            }
-        }
-    }
-    function times(n) {
-        let binary = getBits();
-        // convert to decimal and do math
-        let decimal = parseInt(binary, 2);
-        if (n > 1) {  // times 2
-            decimal = MAX === decimal ? 0 : decimal *= 2; // OVERFLOW or PLUS
-        }
-        else {     // divided by 2
-            decimal = 0 === decimal ? MAX : decimal *= n; // OVERFLOW or MINUS
-        }
-        // convert the result back to binary
-        binary = decimal_2_base(decimal, 2);
-        // update conversions
-        setConversions(binary);
-        // update bits
-        for (let i = 0; i < binary.length; i++) {
-            let digit = binary.substr(i, 1);
-            document.getElementById('digit' + i).value = digit;
-            if (digit === "1") {
-                document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
-                document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
-            }
-            else {
-                document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
-                document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
-            }
-        }
-    }
 </script>
 {% endblock %}
 
@@ -145,30 +80,37 @@
             <table class="table">
                 <tr id="table">
                     <th>Logic Gate</th>
+                    <th>Operation</th>
                     <th>Value</th>
                 </tr>
                 <tr>
                     <td><img src="/static/assets/andgate.png"> </td>
+                    <td>and</td>
                     <td id="and">0</td>
                 </tr>
                 <tr>
                     <td><img src="/static/assets/orgate.png"> </td>
+                    <td>or</td>
                     <td id="or">0</td>
                 </tr>
                 <tr>
                     <td><img src="/static/assets/nandgate.png"></td>
+                    <td>nand</td>
                     <td id="nand">0</td>
                 </tr>
                 <tr>
                     <td><img src="/static/assets/norgate.png"></td>
+                    <td>nor</td>
                     <td id="nor">0</td>
                 </tr>
                 <tr>
                     <td><img src="/static/assets/xorgate.png"></td>
+                    <td>xor</td>
                     <td id="xor">0</td>
                 </tr>
                 <tr>
                     <td><img src="/static/assets/notgate.png"></td>
+                    <td>not</td>
                     <td id="not">1</td>
                 </tr>
             </table>

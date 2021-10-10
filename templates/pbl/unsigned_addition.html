@@ -10,7 +10,7 @@
 
 {% block head %}
     <html lang="en">
-        <body style="background-color:lightskyblue"></body>
+    <body style="background-color:lightskyblue"></body>
     </html>
     <script>
         const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
@@ -107,7 +107,7 @@
             return conversion;
         }
 
-          function usa(){
+        function usa(){
             // one will be first number being added
             // set value of first row equal to one
             let one =  parseInt(document.getElementById('decimal').innerHTML);
@@ -164,8 +164,8 @@
                         <th>Decimal</th>
                     </tr>
                     <tr>
-                        <td> id="binary">00000000</td>
-                        <td> id="decimal">0</td>
+                        <td id="binary">00000000</td>
+                        <td id="decimal">0</td>
                     </tr>
                 </table>
             </div>
@@ -211,23 +211,23 @@
                     </table>
                 </div>
 
-            <!-- Row 2-->
-            <div class="col-12">
-                <table class="table">
-                    <tr>
-                        {% for i in range(BITS) %}
-                            <td><img class="img-responsive py-3" id="bulb2{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
-                                <button type="button" id="butt2{{i}}" onclick="toggleBit2('{{i}}')">{{ msgTurnOn }}</button>
-                            </td>
-                        {% endfor %}
-                    </tr>
-                    <tr>
-                        {% for i in range(BITS) %}
-                            <td><input type='text' id='digit2{{i}}' Value="0" size="1" readonly></td>
-                        {% endfor %}
-                    </tr>
-                </table>
-            </div>
+                <!-- Row 2-->
+                <div class="col-12">
+                    <table class="table">
+                        <tr>
+                            {% for i in range(BITS) %}
+                                <td><img class="img-responsive py-3" id="bulb2{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                    <button type="button" id="butt2{{i}}" onclick="toggleBit2('{{i}}')">{{ msgTurnOn }}</button>
+                                </td>
+                            {% endfor %}
+                        </tr>
+                        <tr>
+                            {% for i in range(BITS) %}
+                                <td><input type='text' id='digit2{{i}}' Value="0" size="1" readonly></td>
+                            {% endfor %}
+                        </tr>
+                    </table>
+                </div>
 
                 <div class="row justify-content-md-center">
                     <div class="col-8">
@@ -244,21 +244,21 @@
                     </div>
 
                     <!-- Row 3-->
-            <div class="col-12">
-                <table class="table">
-                    <tr>
-                        {% for i in range(SUMOFBITS) %}
-                            <td><img class="img-responsive py-3" id="bulb3{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto"></td>                           </td>
-                        {% endfor %}
-                    </tr>
-                    <tr>
-                        {% for i in range(SUMOFBITS) %}
-                            <td><input type='text' id='digit3{{i}}' Value="0" size="1" readonly></td>
-                        {% endfor %}
-                    </tr>
-                </table>
-            </div>
+                    <div class="col-12">
+                        <table class="table">
+                            <tr>
+                                {% for i in range(SUMOFBITS) %}
+                                    <td><img class="img-responsive py-3" id="bulb3{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto"></td>                           </td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                {% for i in range(SUMOFBITS) %}
+                                    <td><input type='text' id='digit3{{i}}' Value="0" size="1" readonly></td>
+                                {% endfor %}
+                            </tr>
+                        </table>
+                    </div>
 
-        </div>
-    </div>
+                </div>
+            </div>
 {% endblock %}

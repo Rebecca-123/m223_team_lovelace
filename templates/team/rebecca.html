@@ -22,4 +22,21 @@
         <li>Embedded brainwrite and wireframes</li>
         <li>Developed prototypes for about pages</li>
     </ol>
+
+    <!-- access name variable -->
+    <form action="/rebecca/" id="greetings" method="POST">
+        <!-- if get method is used the string would show up in URL -->
+        <label for="num1" style="color: white;">Type a decimal number:</label>
+        <input name="num1" id="num1">
+        <!-- input will be associated with variable name-->
+        <!-- if get method is used the string would show up in URL -->
+        <label for="num2" style="color: white;">Type another decimal number:</label>
+        <input name="num2" id="num2">
+        <!-- input will be associated with variable name-->
+        <input type="submit" name="action" value="Add numbers!">
+        <input type="submit" name="action" value="Subtract numbers!">
+        <input type="submit" name="action" value="Multiply numbers!">
+        <input type="submit" name="action" value="Divide numbers!">
+    </form>
+    <p style="color: white;">Sum: {{ num }}</p>
 {% endblock %}

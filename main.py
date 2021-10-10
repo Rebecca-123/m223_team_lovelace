@@ -22,9 +22,31 @@ def christina():
     return render_template("team/christina.html")
 
 
-@app.route("/rebecca/")
+@app.route("/rebecca/", methods=["GET", "POST"])
 def rebecca():
-    return render_template("team/rebecca.html")
+    # submit button pushed
+    if request.form:
+        num1 = request.form.get("num1")
+        num2 = request.form.get("num2")
+        # store submission in name variable
+        # if not empty string
+        if num1 != "" or num2 != "":
+            # for arithmetic round answer to ten thousandths place
+            if request.form["action"] == "Add numbers!":
+                num = float(num1) + float(num2)
+                return render_template("team/rebecca.html", num=round(num, 4))
+            elif request.form["action"] == "Subtract numbers!":
+                num = float(num1) - float(num2)
+                return render_template("team/rebecca.html", num=round(num, 4))
+            # for multiplication and division round answer to 8 places after decimal point
+            elif request.form["action"] == "Multiply numbers!":
+                num = float(num1) * float(num2)
+                return render_template("team/rebecca.html", num=round(num, 8))
+            elif request.form["action"] == "Divide numbers!":
+                num = float(num1) / float(num2)
+                return render_template("team/rebecca.html", num=round(num, 8))
+    # tell user to input numbers if they haven't
+    return render_template("team/rebecca.html", num="Input numbers to sum!")
 
 
 @app.route("/ritvik/")
@@ -67,9 +89,11 @@ def unsigned_addition():
         imgBulbOn = request.form['lightOn']
     return render_template("pbl/unsigned_addition.html", imgBulbOn=imgBulbOn, BITS=BITS)
 
+
 @app.route("/color_code/")
 def color_code():
     return render_template("pbl/color_code.html")
+
 
 @app.route('/greetings/', methods=['GET', 'POST'])
 def greetings():
@@ -192,9 +216,9 @@ def hale_bopp():
     return render_template("celestial objects/hale-bopp.html")
 
 
-#from image import hide_msg
-#@app.route("/rgbhide")
-#def hidemsg():
+# from image import hide_msg
+# @app.route("/rgbhide")
+# def hidemsg():
 #    hide_msg()
 
 if __name__ == "__main__":

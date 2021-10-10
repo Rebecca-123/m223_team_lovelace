@@ -167,7 +167,9 @@
 | Christina: Multiply and Divide by 2 (Shifting Bits)                                              |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/48) |
 | Christina: Converting ASCII to Unicode on Binary Math Demo                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/58) |
 | Everyone: TPT Journals and Quizzes                                                               |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/60) |
-| Bonus: Tech Talk 7 Activities                                                                    |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/63) |
+| Bonus: Tech Talk 7 Activities (Rebecca completed Activity 1)                                     |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/63) |
+| Rebecca: Implementation of floating point (Extra Credit)                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/64) |
+
 
 #### TPT Grading
 | Category                                                                                         |  Score                                                                    |

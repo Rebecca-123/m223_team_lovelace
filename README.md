@@ -155,6 +155,7 @@
 ## Algorithms and Programming - Sprints 7, 8
 
 ### Sprint 7 - Week 7: 10/4-8
+### [Review Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/61)
 #### [Submission Runtime Video]()
 #### Progress
 | Task                                                                                             |  Evidence                                                                           |
@@ -166,6 +167,7 @@
 | Christina: Multiply and Divide by 2 (Shifting Bits)                                              |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/48) |
 | Christina: Converting ASCII to Unicode on Binary Math Demo                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/58) |
 | Everyone: TPT Journals and Quizzes                                                               |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/60) |
+| Bonus: Tech Talk 7 Activities                                                                    |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/63) |
 
 #### TPT Grading
 | Category                                                                                         |  Score                                                                    |

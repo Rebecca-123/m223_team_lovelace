@@ -16,9 +16,10 @@ print(student_list[5:])
 print(student_list)
 
 # check if rob is in the student_list
-for i in student_list:
-    if i == "rob":
-        print("rob is in the list")
+if "rob" in student_list:
+    print("Rob is in the list!")
+else:
+    print("Rob is not in the list.")
 
 # Activity 2
 p1 = {"name": "John", "age": 61, "city": "Eugene"}
@@ -36,10 +37,6 @@ for i in list_of_people:
         while x == 0:
             print(i["name"])
             x += 1
-
-# for i in list_of_people:
-#     for value in i:
-#         print(i["name"])
 
 # turn list to dictionary of people
 dict_people = {'people': list_of_people}

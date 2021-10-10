@@ -52,9 +52,14 @@ def study_sheet():
     return render_template("journals/study_sheet.html")
 
 
-@app.route("/logic_gates/")
+@app.route("/logic_gates/", methods=['GET', 'POST'])
 def logic_gates():
-    return render_template("pbl/logic_gates.html")
+    a = 0
+    b = 0
+    if request.method == 'POST':
+        a = int(request.form['a'])
+        b = int(request.form['b'])
+    return render_template("pbl/logic_gates.html", a=a, b=b)
 
 
 @app.route("/unsigned_addition/")

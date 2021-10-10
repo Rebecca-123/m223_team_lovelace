@@ -17,6 +17,12 @@
     img {
         float: inherit;
     }
+    .column {
+        float: right;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+    }
 </style>
 <script>
     const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
@@ -197,7 +203,7 @@
 
 {% block body %}
 <h1 class="text-center">Logic Gates</h1>
-{#    to pass a default value#}
+<div class="column">
 <form action="/logic_gates/" method="post">
     <h1>input</h1>
         <input type="checkbox" id="a" name="a" value="1">
@@ -206,6 +212,9 @@
         <label for="b">B</label><br>
         <input type="submit" value="Submit">
     </form>
+</div>
+<div class="column">
+
 <div class="container">
     <div class="row justify-content-md-center">
 
@@ -241,7 +250,7 @@
                 </tr>
             </table>
         </div>
-
+    </div>
     </div>
 </div>
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% set BITS = 8 %}
-{% set BITS2 = 16 %}
+{% set SUMOFBITS = 16 %}
 
 {% set imgBulbOn = "/static/assets/best_light_bulb.png" %}
 {% set imgBulbOff = "/static/assets/pbl_ttt/binary_img/bulb_off.png" %}
@@ -43,6 +43,12 @@
             document.getElementById('decimal2').innerHTML = parseInt(binary2, 2).toString(10);
         }
 
+        function setConversions3(binary_sum) {
+            document.getElementById('binary3').innerHTML = binary_sum;
+            document.getElementById('decimal3').innerHTML = parseInt(binary_sum, 2).toString(10);
+        }
+
+
         // toggle selected bit and recalculate for row 1
         function toggleBit(i) {
             //alert("Digit action: " + i );
@@ -68,23 +74,79 @@
         function toggleBit2(i) {
             const dig = document.getElementById('digit2' + i);
             const image = document.getElementById('bulb2' + i);
-            const butt = document.getElementById('butt2' + i);
+            const butt2 = document.getElementById('butt2' + i);
             if (image.src.match("{{ imgBulbOn }}")) {
                 dig.value = 0;
                 image.src = "{{ imgBulbOff }}";
-                butt.innerHTML = "{{ msgTurnOn }}";
+                butt2.innerHTML = "{{ msgTurnOn }}";
             } else {
                 dig.value = 1;
                 image.src = "{{ imgBulbOn }}";
-                butt.innerHTML = "{{ msgTurnOff }}";
+                butt2.innerHTML = "{{ msgTurnOff }}";
             }
             const binary2 = getBits2();
             setConversions2(binary2);
         }
 
-        function usa(){
+        // algorithm to convert decimal to base using division and remainder
+        function decimal_2_base(decimal, base) {
+            let conversion = "";
+            // loop to convert to base
+            do {
+                let digit = decimal % base;
+                conversion = "" + digit + conversion; // what does this do?
+                decimal = ~~(decimal / base);         // what does this do?  what is ~~?
+            }
+            while (decimal > 0);                  // why while at the end?
+            // loop to pad with zeros
+            if (base === 2) {                        // only pad for binary conversions
+                for (let i = 0; conversion.length < BITS; i++) {
+                    conversion = "0" + conversion;
+                }
+            }
+            return conversion;
+        }
+
+          function usa(){
+            // one will be first number being added
+            // set value of first row equal to one
+            let one =  parseInt(document.getElementById('decimal').innerHTML);
+            // two will be second number being added
+            // set value of second row equal to two
+            let two = parseInt(document.getElementById('decimal2').innerHTML);
+            // sum first two numbers
+            let sum = one + two;
+            // convert sum to binary
+            let binary_sum = decimal_2_base(sum, 2);
+            // update table values with sum in binary and in decimal format
+            setConversions3(binary_sum);
+
+            for (let i = 0; i < binary_sum.length; i++){
+                let num = parseInt(binary_sum.charAt(i));
+                if (binary_sum.length === 16) {
+                    if (num === 1) {
+                        document.getElementById("bulb3" + i).src = "{{ imgBulbOn }}";
+                        document.getElementById("digit3" + i).value = "1";
+                    }
+                    else {
+                        document.getElementById("bulb3" + i).src = "{{ imgBulbOff }}";
+                        document.getElementById("digit3" + i).value = "0";
+                    }
+                }
+                else {
+                    if (num === 1) {
+                        document.getElementById("bulb3" + (16-(binary_sum.length) + i)).src = "{{ imgBulbOn }}";
+                        document.getElementById("digit3" + (16-(binary_sum.length) + i)).value = "1";
+                    }
+                    else {
+                        document.getElementById("bulb3" + (16-(binary_sum.length) + i)).src = "{{ imgBulbOff }}";
+                        document.getElementById("digit3" + (16-(binary_sum.length) + i)).value = "0";
+                    }
+                }
+            }
 
         }
+
     </script>
 {% endblock %}
 
@@ -140,7 +202,7 @@
                     <table class="table">
                         <tr>
                             <td style="text-align: center">
-                                <button type="button" id="addition" onclick="usa()"> + </button>
+                                <button type="button" id="addition" onclick=usa()> + </button>
                             </td>
                         </tr>
                     </table>
@@ -182,15 +244,13 @@
             <div class="col-12">
                 <table class="table">
                     <tr>
-                        {% for i in range(BITS2) %}
-                            <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
-                                <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
-                            </td>
+                        {% for i in range(SUMOFBITS) %}
+                            <td><img class="img-responsive py-3" id="bulb3{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto"></td>                           </td>
                         {% endfor %}
                     </tr>
                     <tr>
-                        {% for i in range(BITS2) %}
-                            <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
+                        {% for i in range(SUMOFBITS) %}
+                            <td><input type='text' id='digit3{{i}}' Value="0" size="1" readonly></td>
                         {% endfor %}
                     </tr>
                 </table>

@@ -23,7 +23,18 @@
     function choose() {
         var a = document.getElementsByName('a');
         var b = document.getElementsByName('b');
-
+        let aValue = 0;
+        if (a[1].checked)
+            aValue = 1;
+        let bValue = 0;
+        if (b[1].checked)
+            bValue = 1;
+        document.getElementById('or').innerHTML = aValue || bValue;
+        document.getElementById('and').innerHTML = aValue && bValue;
+        document.getElementById('nor').innerHTML = !(aValue || bValue);
+        document.getElementById('nand').innerHTML = !(aValue && bValue);
+        document.getElementById('not').innerHTML = !aValue;
+        document.getElementById('xor').innerHTML = aValue ^ bValue;
         return 0;
     }
 

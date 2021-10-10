@@ -121,8 +121,10 @@
             // update table values with sum in binary and in decimal format
             setConversions3(binary_sum);
 
+            // for loop to update image (bulb) and the value
             for (let i = 0; i < binary_sum.length; i++){
                 let num = parseInt(binary_sum.charAt(i));
+                // when the length is 16, no adjustments need to be made to the i-value
                 if (binary_sum.length === 16) {
                     if (num === 1) {
                         document.getElementById("bulb3" + i).src = "{{ imgBulbOn }}";
@@ -135,6 +137,7 @@
                 }
                 else {
                     if (num === 1) {
+                        // adjust i-value for id of bulb 3 since there are 16 bulbs
                         document.getElementById("bulb3" + (16-(binary_sum.length) + i)).src = "{{ imgBulbOn }}";
                         document.getElementById("digit3" + (16-(binary_sum.length) + i)).value = "1";
                     }

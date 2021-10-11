@@ -44,21 +44,38 @@
             // DOM assignment to Decimal conversion
             document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
             document.getElementById('hex').innerHTML = parseInt(binary, 2).toString(16);
+            binary2=document.getElementById('binary2').innerHTML;
+            binary3=document.getElementById('binary3').innerHTML;
+            setColor(binary,binary2,binary3);
         }
 
         function setConversions2(binary2) {
             document.getElementById('binary2').innerHTML = binary2;
             document.getElementById('decimal2').innerHTML = parseInt(binary2, 2).toString(10);
             document.getElementById('hex2').innerHTML = parseInt(binary2, 2).toString(16);
+            binary=document.getElementById('binary').innerHTML;
+            binary3=document.getElementById('binary3').innerHTML;
+            setColor(binary,binary2,binary3);
+
         }
 
         function setConversions3(binary3) {
             document.getElementById('binary3').innerHTML = binary3;
             document.getElementById('decimal3').innerHTML = parseInt(binary3, 2).toString(10);
             document.getElementById('hex3').innerHTML = parseInt(binary3, 2).toString(16);
+            binary=document.getElementById('binary').innerHTML;
+            binary2=document.getElementById('binary2').innerHTML;
+            setColor(binary,binary2,binary3);;
+
+        }
+
+        function setColor(bin1,bin2,bin3)
+        {
+            binColor=bin1+bin2+bin3;
+            hexColor = parseInt(binColor,2).toString(16);
+            document.getElementById('setColor').style.color = "#"+hexColor;
         }
         //Set decimal values into one RGB value
-        rgb(decimal, decimal2, decimal3)
 
         // toggle selected bit and recalculate for row 1
         function toggleBit(i) {
@@ -120,7 +137,7 @@
 {% endblock %}
 
 {% block body %}
-    <h1 class="text-center" style = "padding: 20px">Color Codes</h1>
+    <h1 class="text-center" id="setColor" style = "padding: 20px">Color Codes</h1>
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-8">

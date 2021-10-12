@@ -65,7 +65,7 @@
             document.getElementById('hex3').innerHTML = parseInt(binary3, 2).toString(16);
             binary=document.getElementById('binary').innerHTML;
             binary2=document.getElementById('binary2').innerHTML;
-            setColor(binary,binary2,binary3);;
+            setColor(binary,binary2,binary3);
 
         }
 
@@ -74,6 +74,7 @@
             binColor=bin1+bin2+bin3;
             hexColor = parseInt(binColor,2).toString(16);
             document.getElementById('setColor').style.color = "#"+hexColor;
+            document.getElementById('printhex').innerHTML = "#"+hexColor;
         }
         //Set decimal values into one RGB value
 
@@ -141,6 +142,8 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-8">
+                <p>Hex Combined Value:</p>
+                <p id="printhex"></p>
                 <table class="table">
                     <tr id="table">
                         <th>Binary</th>

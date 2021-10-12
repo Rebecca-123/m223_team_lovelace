@@ -15,6 +15,7 @@
     <script>
         const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
         // return string with current value of each bit
+        // only two functions needed since bits of third function is determined by sum, not by which bulbs user turned on/off
         function getBits() {
             let bits = "";
             for(let i = 0; i < BITS; i++) {
@@ -38,6 +39,7 @@
             document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
         }
 
+        // individual function for each row of light bulbs
         function setConversions2(binary2) {
             document.getElementById('binary2').innerHTML = binary2;
             document.getElementById('decimal2').innerHTML = parseInt(binary2, 2).toString(10);
@@ -154,9 +156,10 @@
 {% endblock %}
 
 {% block body %}
-    <h1 class="text-center" style = "padding: 20px">Unsigned Addition</h1>
+    <h1 class="text-center" style = "padding: 20px; font-size:30px;" >Unsigned Addition</h1>
     <div class="container">
         <div class="row justify-content-md-center">
+
             <div class="col-8">
                 <table class="table">
                     <tr id="table">
@@ -164,6 +167,7 @@
                         <th>Decimal</th>
                     </tr>
                     <tr>
+                        <!-- display number in binary and decimal -->
                         <td id="binary">00000000</td>
                         <td id="decimal">0</td>
                     </tr>
@@ -187,6 +191,16 @@
                 </table>
             </div>
 
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        <td style="text-align: center">
+                            <button type="button" id="addition" onclick=usa()> + </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
             <div class="row justify-content-md-center">
                 <div class="col-8">
                     <table class="table">
@@ -197,16 +211,6 @@
                         <tr>
                             <td id="binary2">00000000</td>
                             <td id="decimal2">0</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="col-12">
-                    <table class="table">
-                        <tr>
-                            <td style="text-align: center">
-                                <button type="button" id="addition" onclick=usa()> + </button>
-                            </td>
                         </tr>
                     </table>
                 </div>
@@ -248,7 +252,8 @@
                         <table class="table">
                             <tr>
                                 {% for i in range(SUMOFBITS) %}
-                                    <td><img class="img-responsive py-3" id="bulb3{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto"></td>                           </td>
+                                    <td><img class="img-responsive py-3" id="bulb3{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto"></td>
+                                    <!-- no turn on/off button needed -->
                                 {% endfor %}
                             </tr>
                             <tr>
@@ -258,7 +263,6 @@
                             </tr>
                         </table>
                     </div>
-
                 </div>
             </div>
 {% endblock %}

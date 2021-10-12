@@ -160,15 +160,15 @@
 #### Progress
 | Task                                                                                             |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
-| Christina: Logic Gates                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/56) |
-| Rebecca: Unsigned Addition                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/57) |
-| Ritvik: Color Code Display                                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/55) |
-| William: Signed Addition and Subtraction                                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/59) |
+| Christina: Logic Gates                                                                           |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/56) |
 | Christina: Multiply and Divide by 2 (Shifting Bits)                                              |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/48) |
 | Christina: Converting ASCII to Unicode on Binary Math Demo                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/58) |
+| Rebecca: Unsigned Addition                                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/57) |
+| Rebecca: Implementation of floating point (Extra Credit)                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/64) | 
+| Ritvik: Color Code Display                                                                       |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/55) |
+| William: Signed Addition and Subtraction                                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/59) |
 | Everyone: TPT Journals and Quizzes                                                               |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/60) |
 | Bonus: Tech Talk 7 Activities (Rebecca completed Activity 1)                                     |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/63) |
-| Rebecca: Implementation of floating point (Extra Credit)                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/64) |
 
 
 #### TPT Grading

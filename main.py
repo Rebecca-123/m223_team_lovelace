@@ -181,8 +181,8 @@ def nebulae():
     return render_template("celestial objects/nebulae.html")
 
 
-@app.route("/binary_william/")
-def binary_william():
+@app.route("/signed_addition/")
+def signed_addition():
     return render_template("pbl/binary_william.html")
 
 

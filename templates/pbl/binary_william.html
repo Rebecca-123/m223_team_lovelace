@@ -1,120 +1,392 @@
 <!DOCTYPE html>
 {% extends "layouts/base.html" %}
 
-<!-- Search for all the Hack: below for hack-a-thon and mini-lab requirements -->
-
-<!-- Hack: Build form to drive bit size dynamic updates
-           use HTML Input Form in Frontend, ie toward top of Page
-           send initial value and updated values to form via Python render_template -->
-<!-- Hack: use 8 as default -->
-{% set BITS = 8 %}
-{% set MAX = ((2 ** BITS) - 1) %}
-
-<!-- Hack: Set bulbs and pass as variables via Python render_template
-           add new images (ie PNGs) to project -->
-<!-- use your PNGs as default -->
 {% set imgBulbOn = "/static/assets/pbl_ttt/binary_img/bulb_on.gif" %}
 {% set imgBulbOff = "/static/assets/pbl_ttt/binary_img/bulb_off.png" %}
 {% set msgTurnOn = "Turn On" %}
 {% set msgTurnOff = "Turn Off" %}
+{% set imgMinus = "/static/assets/minus.png" %}
+{% set imgPlus = "/static/assets/plus.png" %}
 
 {% block head %}
 <title>Binary page</title>
 <script>
-  const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
-  // return string with current value of each bit
-  function getBits() {
-    let bits = "";
-    for(let i = 0; i < BITS; i++) {
-      bits = bits + document.getElementById('digit' + i).value;
+  //everything related to the top binary number will be referred to as TOP in functions, ids, etc. Likewise BOTTOM for the bottom number, and SUM for their sum.
+  let TOP = 0
+  let BOTTOM = 0
+  let SUM = 0
+  let TOPbit1 = false
+  let TOPbit2 = false
+  let TOPbit3 = false
+  let TOPbit4 = false
+  let TOPbit5 = false
+  let TOPbit6 = false
+  let TOPbit7 = false
+  let TOPbit8 = false
+  let BOTTOMbit1 = false
+  let BOTTOMbit2 = false
+  let BOTTOMbit3 = false
+  let BOTTOMbit4 = false
+  let BOTTOMbit5 = false
+  let BOTTOMbit6 = false
+  let BOTTOMbit7 = false
+  let BOTTOMbit8 = false
+
+
+  //inc here means increment
+  function incTOP(n){
+    if(n>0){
+      TOP = TOP + 1
+    } else{
+      TOP = TOP - 1
     }
-    return bits;
-  }
-  // setter for DOM values
-  function setConversions(binary) {
-    document.getElementById('binary').innerHTML = binary;
-    // DOM assignment to Octal conversion
-    document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
-    // DOM assignment to Hexadecimal conversion
-    document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
-    // DOM assignment to Decimal conversion
-    document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
-    /* Hack: show ASCII printable character(s) for each 8 bits
-     DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asp
-     look below ASCII for more ideas of where to make changes
-     */
+    if (TOP<=0){
+      TOP = 0
+    }
+    document.getElementById('decimalTOP').innerHTML = String(TOP)
   }
 
-  // algorithm to convert decimal to base using division and remainder
-  function decimal_2_base(decimal, base) {
-    let conversion = "";
-    // loop to convert to base
-    do {
-      let digit = decimal % base;
-      conversion = "" + digit + conversion; // what does this do?
-      decimal = ~~(decimal / base);         // what does this do?  what is ~~?
-    } while (decimal > 0);                  // why while at the end?
-    // loop to pad with zeros
-    if (base === 2) {                        // only pad for binary conversions
-      for (let i = 0; conversion.length < 7; i++) {
-        conversion = "0" + conversion;
-      }
+  function incBOTTOM(n){
+    if(n>0){
+      BOTTOM = BOTTOM + 1
+    } else{
+      BOTTOM = BOTTOM - 1
     }
-    return conversion;
+    if (BOTTOM<=0){
+      BOTTOM = 0
+    }
+    document.getElementById('decimalBOTTOM').innerHTML = String(BOTTOM)
   }
 
-  // toggle selected bit and recalculate
-  function toggleBit(i) {
-    //alert("Digit action: " + i );
-    const dig = document.getElementById('digit' + i);
-    const image = document.getElementById('bulb' + i);
-    const butt = document.getElementById('butt' + i);
-    // Change digit and visual
-    if (image.src.match("{{ imgBulbOn }}")) {
-      dig.value = 0;
-      image.src = "{{ imgBulbOff }}";
-      butt.innerHTML = "{{ msgTurnOn }}";
-    } else {
-      dig.value = 1;
-      image.src = "{{ imgBulbOn }}";
-      butt.innerHTML = "{{ msgTurnOff }}";
-    }
-    // Binary numbers
-    const binary = getBits();
-    setConversions(binary);
-  }
-  // add is positive integer, subtract is negative integer
-  function add(n) {
-    let binary = getBits();
-    // convert to decimal and do math
-    let decimal = parseInt(binary, 2);
-    if (n > 0) {  // PLUS
-      decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
-    } else  {     // MINUS
-      decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
-    }
-    // convert the result back to binary
-    binary = decimal_2_base(decimal, 2);
-    // update conversions
-    setConversions(binary);
-    // update bits
-    for (let i = 0; i < binary.length; i++) {
-      let digit = binary.substr(i, 1);
-      document.getElementById('digit' + i).value = digit;
-      if (digit === "1") {
-        document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
-        document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
-      } else {
-        document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
-        document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+  function toggleBit(n){
+    if(n==1){
+      if(TOPbit1==true){
+        TOPbit1=false
+        document.getElementById('decimalTOP').innerHTML = String(TOP)
+        document.getElementById('bulb01').src = "{{ imgPlus }}";
+        document.getElementById('butt01').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit01').innerHTML = "0"
+      }else{
+        TOPbit1=true
+        document.getElementById('decimalTOP').innerHTML = String('-'+ TOP)
+        document.getElementById('bulb01').src = "{{ imgMinus }}";
+        document.getElementById('butt01').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit01').innerHTML = "1"
       }
     }
+    if(n==2){
+      if(TOPbit2==false){
+        TOP = TOP + 64
+        TOPbit2=true
+        document.getElementById('bulb02').src = "{{ imgBulbOn }}";
+        document.getElementById('butt02').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit02').innerHTML = "1"
+      }else{
+        TOP = TOP - 64
+        TOPbit2=false
+        document.getElementById('bulb02').src = "{{ imgBulbOff }}";
+        document.getElementById('butt02').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit02').innerHTML = "0"
+      }
+    }
+    if(n==3){
+      if(TOPbit3==false){
+        TOP = TOP + 32
+        TOPbit3=true
+        document.getElementById('bulb03').src = "{{ imgBulbOn }}";
+        document.getElementById('butt03').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit03').innerHTML = "1"
+      }else{
+        TOP = TOP - 32
+        TOPbit3=false
+        document.getElementById('bulb03').src = "{{ imgBulbOff }}";
+        document.getElementById('butt03').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit03').innerHTML = "0"
+      }
+    }
+    if(n==4){
+      if(TOPbit4==false){
+        TOP = TOP + 16
+        TOPbit4=true
+        document.getElementById('bulb04').src = "{{ imgBulbOn }}";
+        document.getElementById('butt04').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit04').innerHTML = "1"
+      }else{
+        TOP = TOP - 16
+        TOPbit4=false
+        document.getElementById('bulb04').src = "{{ imgBulbOff }}";
+        document.getElementById('butt04').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit04').innerHTML = "0"
+      }
+    }
+    if(n==5){
+      if(TOPbit5==false){
+        TOP = TOP + 8
+        TOPbit5=true
+        document.getElementById('bulb05').src = "{{ imgBulbOn }}";
+        document.getElementById('butt05').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit05').innerHTML = "1"
+      }else{
+        TOP = TOP - 8
+        TOPbit5=false
+        document.getElementById('bulb05').src = "{{ imgBulbOff }}";
+        document.getElementById('butt05').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit05').innerHTML = "0"
+      }
+    }
+    if(n==6){
+      if(TOPbit6==false){
+        TOP = TOP + 4
+        TOPbit6=true
+        document.getElementById('bulb06').src = "{{ imgBulbOn }}";
+        document.getElementById('butt06').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit06').innerHTML = "1"
+      }else{
+        TOP = TOP - 4
+        TOPbit6=false
+        document.getElementById('bulb06').src = "{{ imgBulbOff }}";
+        document.getElementById('butt06').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit06').innerHTML = "0"
+      }
+    }
+    if(n==7){
+      if(TOPbit7==false){
+        TOP = TOP + 2
+        TOPbit7=true
+        document.getElementById('bulb07').src = "{{ imgBulbOn }}";
+        document.getElementById('butt07').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit07').innerHTML = "1"
+      }else{
+        TOP = TOP - 2
+        TOPbit7=false
+        document.getElementById('bulb07').src = "{{ imgBulbOff }}";
+        document.getElementById('butt07').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit07').innerHTML = "0"
+      }
+    }
+    if(n==8){
+      if(TOPbit8==false){
+        TOP = TOP + 1
+        TOPbit8=true
+        document.getElementById('bulb08').src = "{{ imgBulbOn }}";
+        document.getElementById('butt08').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit08').innerHTML = "1"
+      }else{
+        TOP = TOP - 1
+        TOPbit8=false
+        document.getElementById('bulb08').src = "{{ imgBulbOff }}";
+        document.getElementById('butt08').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit08').innerHTML = "0"
+      }
+    }
+
+
+
+    //BOTTOM
+    if(n==11){
+      if(BOTTOMbit1==true){
+        BOTTOMbit1=false
+        document.getElementById('decimalBOTTOM').innerHTML = String(BOTTOM)
+        document.getElementById('bulb11').src = "{{ imgPlus }}";
+        document.getElementById('butt11').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit11').innerHTML = "0"
+      }else{
+        BOTTOMbit1=true
+        document.getElementById('decimalBOTTOM').innerHTML = String('-'+ BOTTOM)
+        document.getElementById('bulb11').src = "{{ imgMinus }}";
+        document.getElementById('butt11').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit11').innerHTML = "1"
+      }
+    }
+    if(n==12){
+      if(BOTTOMbit2==false){
+        BOTTOM = BOTTOM + 64
+        BOTTOMbit2=true
+        document.getElementById('bulb12').src = "{{ imgBulbOn }}";
+        document.getElementById('butt12').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit12').innerHTML = "1"
+      }else{
+        BOTTOM = BOTTOM - 64
+        BOTTOMbit2=false
+        document.getElementById('bulb12').src = "{{ imgBulbOff }}";
+        document.getElementById('butt12').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit12').innerHTML = "0"
+      }
+    }
+    if(n==13){
+      if(BOTTOMbit3==false){
+        BOTTOM = BOTTOM + 32
+        BOTTOMbit3=true
+        document.getElementById('bulb13').src = "{{ imgBulbOn }}";
+        document.getElementById('butt13').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit13').innerHTML = "1"
+      }else{
+        BOTTOM = BOTTOM - 32
+        BOTTOMbit3=false
+        document.getElementById('bulb13').src = "{{ imgBulbOff }}";
+        document.getElementById('butt13').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit13').innerHTML = "0"
+      }
+    }
+    if(n==14){
+      if(BOTTOMbit4==false){
+        BOTTOM = BOTTOM + 16
+        BOTTOMbit4=true
+        document.getElementById('bulb14').src = "{{ imgBulbOn }}";
+        document.getElementById('butt14').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit14').innerHTML = "1"
+      }else{
+        BOTTOM = BOTTOM - 16
+        BOTTOMbit4=false
+        document.getElementById('bulb14').src = "{{ imgBulbOff }}";
+        document.getElementById('butt14').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit14').innerHTML = "0"
+      }
+    }
+    if(n==15){
+      if(BOTTOMbit5==false){
+        BOTTOM = BOTTOM + 8
+        BOTTOMbit5=true
+        document.getElementById('bulb15').src = "{{ imgBulbOn }}";
+        document.getElementById('butt15').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit15').innerHTML = "1"
+      }else{
+        BOTTOM = BOTTOM - 8
+        BOTTOMbit5=false
+        document.getElementById('bulb15').src = "{{ imgBulbOff }}";
+        document.getElementById('butt15').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit15').innerHTML = "0"
+      }
+    }
+    if(n==16){
+      if(BOTTOMbit6==false){
+        BOTTOM = BOTTOM + 4
+        BOTTOMbit6=true
+        document.getElementById('bulb16').src = "{{ imgBulbOn }}";
+        document.getElementById('butt16').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit16').innerHTML = "1"
+      }else{
+        BOTTOM = BOTTOM - 4
+        BOTTOMbit6=false
+        document.getElementById('bulb16').src = "{{ imgBulbOff }}";
+        document.getElementById('butt16').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit16').innerHTML = "0"
+      }
+    }
+    if(n==17){
+      if(BOTTOMbit7==false){
+        BOTTOM = BOTTOM + 2
+        BOTTOMbit7=true
+        document.getElementById('bulb17').src = "{{ imgBulbOn }}";
+        document.getElementById('butt17').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit17').innerHTML = "1"
+      }else{
+        BOTTOM = BOTTOM - 2
+        BOTTOMbit7=false
+        document.getElementById('bulb17').src = "{{ imgBulbOff }}";
+        document.getElementById('butt17').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit17').innerHTML = "0"
+      }
+    }
+    if(n==18){
+      if(BOTTOMbit8==false){
+        BOTTOM = BOTTOM + 1
+        BOTTOMbit8=true
+        document.getElementById('bulb18').src = "{{ imgBulbOn }}";
+        document.getElementById('butt18').innerHTML = "{{ msgTurnOff }}";
+        document.getElementById('bit18').innerHTML = "1"
+      }else{
+        BOTTOM = BOTTOM - 1
+        BOTTOMbit8=false
+        document.getElementById('bulb18').src = "{{ imgBulbOff }}";
+        document.getElementById('butt18').innerHTML = "{{ msgTurnOn }}";
+        document.getElementById('bit18').innerHTML = "0"
+      }
+    }
+    document.getElementById('decimalTOP').innerHTML = String(TOP)
+    document.getElementById('decimalBOTTOM').innerHTML = String(BOTTOM)
+let negative = '-'
+    if (TOPbit1==true){
+      document.getElementById('decimalTOP').innerHTML = negative.concat(String(TOP))
+    }
+    if(BOTTOMbit1==true){
+      document.getElementById('decimalBOTTOM').innerHTML = negative.concat(String(BOTTOM))
+    }
+
+
+
   }
+function calculadora(){
+  if(TOPbit1==true){
+    if(BOTTOMbit1==true){
+      SUM = -1*TOP + -1*BOTTOM
+    }
+    if(BOTTOMbit1==false){
+      SUM = -1*TOP + BOTTOM
+    }
+  }
+  if(TOPbit1==false){
+    if(BOTTOMbit1==true){
+      SUM = TOP + -1*BOTTOM
+    }
+    if(BOTTOMbit1==false){
+     SUM = TOP + BOTTOM
+    }
+  }
+  displaySUM(SUM)
+  document.getElementById('decimalSUM').innerHTML = String(SUM)
+}
+function displaySUM(n){
+    if(n<0){
+      document.getElementById('bulb21').src = "{{ imgBulbOn }}";
+      document.getElementById('bit21').innerHTML = "1"
+      n=n*-1
+    }
+  if(n>=128){
+    document.getElementById('bulb22').src = "{{ imgBulbOn }}";
+    document.getElementById('bit22').innerHTML = "1"
+    n = n - 128
+  }
+  if(n>=64){
+    document.getElementById('bulb23').src = "{{ imgBulbOn }}";
+    document.getElementById('bit23').innerHTML = "1"
+    n = n - 64
+  }
+  if(n>=32) {
+    document.getElementById('bulb24').src = "{{ imgBulbOn }}";
+    document.getElementById('bit24').innerHTML = "1"
+    n = n - 32
+  }
+  if(n>=16) {
+    document.getElementById('bulb25').src = "{{ imgBulbOn }}";
+    document.getElementById('bit25').innerHTML = "1"
+    n = n - 16
+  }
+  if(n>=8) {
+    document.getElementById('bulb26').src = "{{ imgBulbOn }}";
+    document.getElementById('bit26').innerHTML = "1"
+    n = n - 8
+  }
+  if(n>=4) {
+    document.getElementById('bulb27').src = "{{ imgBulbOn }}";
+    document.getElementById('bit27').innerHTML = "1"
+    n = n - 4
+  }
+  if(n>=2) {
+    document.getElementById('bulb28').src = "{{ imgBulbOn }}";
+    document.getElementById('bit28').innerHTML = "1"
+    n = n - 2
+  }
+  if(n>=1) {
+    document.getElementById('bulb29').src = "{{ imgBulbOn }}";
+    document.getElementById('bit29').innerHTML = "1"
+  }
+}
 </script>
 {% endblock %}
 
 {% block body %}
-<h1 class="text-center">Binary Math with Conversions</h1>
+<h1 class="text-center">Signed Addition</h1>
 {#    to pass a default value#}
 
     <div class="container">
@@ -122,23 +394,26 @@
 
     <div class="col-8">
       <table class="table">
-      <tr id="table">
-        <th>Plus</th>
-        <th>Binary</th>
-        <th>Octal</th>
-        <th>Hexadecimal</th>
-        <th>Decimal</th>
-        <th>Minus</th>
+      <tr id="table1">
+        <th hidden>Plus</th>
+        <th>First Number</th>
+        <th hidden>Minus</th>
+        <th hidden>Plus</th>
+        <th>Second Number</th>
+        <th hidden>Minus</th>
+        <th>Sum</th>
+
       </tr>
 
       <tr>
-        <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
-        <td id="binary">00000000</td>
-        <td id="octal">0</td>
-        <td id="hexadecimal">0</td>
-        <td id="decimal">0</td>
-          <!-- Hack: display ASCII printable character(s)  -->
-          <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
+        <td hidden><button type="button" id="add1top" onclick="incTOP(1)" hidden>+1</button></td>
+        <td id="decimalTOP">0</td>
+        <td hidden><button type="button" id="sub1top" onclick="incTOP(-1)" hidden>-1</button></td>
+        <td hidden><button type="button" id="add1bottom" onclick="incBOTTOM(1)" hidden>+1</button></td>
+        <td id="decimalBOTTOM">0</td>
+        <td hidden><button type="button" id="sub1bottom" onclick="incBOTTOM(-1)" hidden>-1</button></td>
+        <td id="decimalSUM">Not Calculated Yet</td>
+
 
       </tr>
       </table>
@@ -147,16 +422,133 @@
     <div class="col-12">
       <table class="table">
         <tr>
-          {% for i in range(BITS) %}
-            <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
-              <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+            <td><img class="img-responsive py-3" id="bulb01" src="{{ imgPlus }}" alt="" width="40" height="Auto">
+              <button type="button" id="butt01" onclick="toggleBit(1)">{{ msgTurnOn }}</button>
             </td>
-          {% endfor %}
+          <td><img class="img-responsive py-3" id="bulb02" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt02" onclick="toggleBit(2)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb03" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt03" onclick="toggleBit(3)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb04" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt04" onclick="toggleBit(4)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb05" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt05" onclick="toggleBit(5)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb06" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt06" onclick="toggleBit(6)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb07" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt07" onclick="toggleBit(7)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb08" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt08" onclick="toggleBit(8)">{{ msgTurnOn }}</button>
+          </td>
         </tr>
         <tr>
-          {% for i in range(BITS) %}
-            <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
-          {% endfor %}
+
+          <td id="bit01">0</td>
+          <td id="bit02">0</td>
+          <td id="bit03">0</td>
+          <td id="bit04">0</td>
+          <td id="bit05">0</td>
+          <td id="bit06">0</td>
+          <td id="bit07">0</td>
+          <td id="bit08">0</td>
+
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="col-12">
+      <table class="table">
+        <tr>
+          <td><img class="img-responsive py-3" id="bulb11" src="{{ imgPlus }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt11" onclick="toggleBit(11)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb12" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt12" onclick="toggleBit(12)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb13" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt13" onclick="toggleBit(13)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb14" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt14" onclick="toggleBit(14)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb15" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt15" onclick="toggleBit(15)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb16" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt16" onclick="toggleBit(16)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb17" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt17" onclick="toggleBit(17)">{{ msgTurnOn }}</button>
+          </td>
+          <td><img class="img-responsive py-3" id="bulb18" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+            <button type="button" id="butt18" onclick="toggleBit(18)">{{ msgTurnOn }}</button>
+          </td>
+        </tr>
+        <tr>
+
+          <td id="bit11">0</td>
+          <td id="bit12">0</td>
+          <td id="bit13">0</td>
+          <td id="bit14">0</td>
+          <td id="bit15">0</td>
+          <td id="bit16">0</td>
+          <td id="bit17">0</td>
+          <td id="bit18">0</td>
+        </tr>
+      </table>
+    </div>
+
+          <h2><button onclick="calculadora()" style="width: 200px;height: 40px">CALCULATE!!</button></h2>
+
+          <div class="col-12">
+            <table class="table">
+              <tr>
+                <td><img class="img-responsive py-3" id="bulb21" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+                <td><img class="img-responsive py-3" id="bulb22" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+                <td><img class="img-responsive py-3" id="bulb23" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+                <td><img class="img-responsive py-3" id="bulb24" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+                <td><img class="img-responsive py-3" id="bulb25" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+                <td><img class="img-responsive py-3" id="bulb26" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+                <td><img class="img-responsive py-3" id="bulb27" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+                <td><img class="img-responsive py-3" id="bulb28" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+                <td><img class="img-responsive py-3" id="bulb29" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+
+                </td>
+              </tr>
+              <tr>
+
+                <td id="bit21">0</td>
+                <td id="bit22">0</td>
+                <td id="bit23">0</td>
+                <td id="bit24">0</td>
+                <td id="bit25">0</td>
+                <td id="bit26">0</td>
+                <td id="bit27">0</td>
+                <td id="bit28">0</td>
+                <td id="bit29">0</td>
         </tr>
       </table>
     </div>

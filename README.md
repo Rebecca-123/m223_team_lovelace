@@ -174,4 +174,24 @@
 #### TPT Grading
 | Category                                                                                         |  Score                                                                    |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
-| TPT                                                                                              | /2  |
+| TPT                                                                                              | 2/2  |
+
+#### Logic Gates Grading
+| Category                                                                                         |  Score                                                                    |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| Logic Gates/All 6 Tasks                                                                          | 6/6  |
+
+### Sprint 8 - Week 8: 10/11-15
+### [Review Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/66)
+#### Progress
+| Task (Non-technical)                                                                             |  Evidence                                                                           |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| File organization in static directory                                                            |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/67) |
+| Presentation Plan                                                                                |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/68) |
+| Everyone: TPT Journals and Quizzes                                                               |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/65) |
+
+| Coding Tasks                                                                                     |  Evidence                                                                           |
+| :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
+| Planets info page                                                                                |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/30) |
+| Constellations info page                                                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/32) |
+| Bonus: Tech Talk 7 Activities                                                                    |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/63) |

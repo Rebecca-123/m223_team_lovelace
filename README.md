@@ -156,7 +156,7 @@
 
 ### Sprint 7 - Week 7: 10/4-8
 ### [Review Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/61)
-#### [Submission Runtime Video]()
+#### [Submission Runtime Video](https://www.youtube.com/watch?v=02Oplw4s8Vc)
 #### Progress
 | Task                                                                                             |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|

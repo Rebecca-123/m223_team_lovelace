@@ -11,6 +11,9 @@
 7. [Sprints 5,6 - Development](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-5-6)
 8. [Sprints 7,8 - Algorithms and Programming](https://github.com/Rebecca-123/m223_team_lovelace#algorithms-and-programming---sprints-7-8)
 
+## Project Description
+### Team project website with info on celestial objects, accompanied by journals and mini labs
+
 ## Project Ideation
 
 ### Unique Idea: celestial themed website with objects rotated around (gallery)
@@ -22,7 +25,7 @@
 #### Each image will link to a page with more detailed information about the object
 #### Nav bar with Home, About > dropdown with team members, Celestial Objects > dropdown with different objects, Mini-Labs > dropdown with different pages including a greetings page, Journals
 
-## Contributors
+## Contributors (Pop Quiz Table)
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
 |:-----|:----------------------|:-----:|:-----------:|:-------:|
 | Christina Lee | [@christinlee367](https://github.com/christinlee367) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3Achristinlee367) |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Achristinlee367)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=christinlee367)|
@@ -156,7 +159,7 @@
 
 ### Sprint 7 - Week 7: 10/4-8
 ### [Review Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/61)
-#### [Submission Runtime Video](https://www.youtube.com/watch?v=02Oplw4s8Vc)
+#### [Video](https://www.youtube.com/watch?v=02Oplw4s8Vc)
 #### Progress
 | Task                                                                                             |  Evidence                                                                           |
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|

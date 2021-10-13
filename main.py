@@ -215,6 +215,10 @@ def halleys():
 def hale_bopp():
     return render_template("celestial objects/hale-bopp.html")
 
+@app.route("/solar_system/")
+def solar_system():
+    return render_template("solar_system.html")
+
 
 # from image import hide_msg
 # @app.route("/rgbhide")

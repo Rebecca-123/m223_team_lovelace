@@ -2,10 +2,85 @@
 {% extends "layouts/base.html" %}
 
 {%block head%}
+<style>
+    body {
+        background-image: url("/static/assets/blackhole4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        color: white;
 
+    }
+    p {
+
+        color: white;
+    }
+    h2 {
+        color: white;
+
+    }
+</style>
 {%endblock%}
 
 {% block body %}
     <h1>Black Holes</h1>
+<h1 style="color: black"> NEVER GONNA GIVE YOU UP, NEVER GONNA LET YOU DOWN </h1>
+<h2> Introduction</h2>
+<p>
+    While black holes often defy logic, they are the simplest objects in the universe, described by only 3 parameters: mass, spin (angular momentum), and charge.
+</p>
+<p> The mass of the black hole is simply the mass of the singularity at the center, largely affected by the inital mass of the star and its core,
+along with the amount of mass that has been sucked into the black hole as well. The mass determines the size of the event horizon, and can vary wildly between
+categories of black hole</p>
+<p>
+    In theory, every black hole is spinning. The probability that a large mass will collapse perfectly into a point without any angular movement is pretty much zero.
+    The spin twists the spacetime around the black hole, adding angular momentum to orbits close to the black hole and thus the higher the spin, the closer an orbit can be to the black hole and remain stable.
+</p>
+<p>
+    Charge is often neglected in analysis regarding black holes. All black holes have some small amount of charge due to charged particles entering.
+</p>
+<h2>
+    Formation
+</h2>
+<p>
+    Only giant and supergiant stars can create black holes when they die. Only stars with 8 solar masses or more can begin to fuse iron in the stellar core,
+    the first and lightest element that can be fused that leads to an overall energy loss (as compared to hydrogen, helium, carbon, oxygen, neon, silicon, etc. all
+    releasing more energy in fusion), which causes gravitational collapse of the core that ends up being the singularity. The shockwave caused by the core collapse is what leads to the supernova,
+    however it is theorized that sufficiently massive stars can collapse and form a black hole without causing a supernova, resulting in what is referred to as a
+    'failed supernova'.
+</p>
+<h2>
+    Black Hole Degeneration
+</h2>
+<p>
+    Even though black holes are thought of as things that last until the end of the universe, they are hypothesized to emit a small amount of radiation known as Hawking Radiation, which means that black holes
+    do slowly lose mass, though at an incredibly, incredibly minute rate. Empty space is not empty. Even in an absolute vacuum, there are 'virtual particles' that
+    pop into existence in matter-antimatter pairs and annihilate each other. At the edge of a black hole, however, if the antiparticle falls into the black hole and
+    the other escapes into space, it becomes a real particle and the black hole has just loss mass.
+</p>
+<h2>
+    Types of Black Holes
+</h2>
+<p>
+    Black holes vary wildly in size. Stellar mass black holes can vary from 3.3 to 62 solar masses (though most are closer to 10), formed from the cores of supermassive stars. Anything below 3 is
+    unlikely to have enough gravitational mass to overcome neutron degenerate forces, and there is another mass gap where we have found few black holes of around 50 to 150 solar masses.
 
+</p>
+<p>
+    Intermediate-mass black holes range from 100 to 1000 solar masses. They are rarer than stellar mass or supermassive black holes as they are too massive to be
+    formed from star collapse and not massive enough to be formed from dense and extreme conditions that lead to supermassive black holes at galactic centers.
+    They are thought to be formed from merging black holes, from runaway collisions of supermassive stars in dense stellar clusters, or from leftover primordial black
+    holes from the big bang.
+</p>
+<p>
+    Supermassive black holes are the largest and are over 100,000 solar masses. The most massive is TON 618, at a mass of 66,000,000,000 solar masses and an
+    event horizon of 1300 astronomical units in radius, 40 times the distance from the sun to neptune. Supermassive black holes reside at the center of the galactic nucleus,
+    feeding on dense matter and stars to grow in mass. The ones not accreting any mass are referred to as 'dormant' while the ones actively accreting mass into
+    its accretion disk. Active Galactic Nuclei are very luminous, and Seyfert galaxies and quasars are galaxies with extremely luminous active galactic nuclei that
+    don't overpower the light of the host galaxy in the former, and do in the latter.
+</p>
+<img src="/static/assets/black_hole1.jpg" width="500" height="auto">
+<img src="/static/assets/blackhole2.jpg" width="500" height="auto">
+<img src="/static/assets/blackhole3.jpg" width="500" height="auto">
 {% endblock %}

@@ -219,6 +219,42 @@ def hale_bopp():
 def solar_system():
     return render_template("solar_system.html")
 
+@app.route('/joke', methods=['GET', 'POST'])
+def joke():
+    """
+    # use this url to test on and make modification on you own machine
+    url = "http://127.0.0.1:5222/api/joke"
+    """
+    url = "https://csp.nighthawkcodingsociety.com/api/joke"
+    response = requests.request("GET", url)
+    return render_template("starter/joke.html", joke=response.json())
+
+
+@app.route('/jokes', methods=['GET', 'POST'])
+def jokes():
+    """
+    # use this url to test on and make modification on you own machine
+    url = "http://127.0.0.1:5222/api/jokes"
+    """
+    url = "https://csp.nighthawkcodingsociety.com/api/jokes"
+
+    response = requests.request("GET", url)
+    return render_template("starter/jokes.html", jokes=response.json())
+
+
+@app.route('/covid19', methods=['GET', 'POST'])
+def covid19():
+    url = "https://corona-virus-world-and-india-data.p.rapidapi.com/api"
+    headers = {
+        'x-rapidapi-key': "dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063",
+        'x-rapidapi-host': "corona-virus-world-and-india-data.p.rapidapi.com"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+
+
+    return render_template("starter/covid19.html", stats=response.json())
+
 
 # from image import hide_msg
 # @app.route("/rgbhide")

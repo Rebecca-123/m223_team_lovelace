@@ -1,10 +1,37 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
 
-</body>
-</html>
+{% block head %}
+<style>
+    body {
+        background-image: url("/static/assets/celestial_Obj_img/planets background placeholder.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        color: lightblue;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        color: lightblue;
+    }
+    h2 {
+        color: lightskyblue;
+        text-align: center;
+    }
+    iframe {
+        align: center;
+    }
+</style>
+{% endblock %}
+{% block body%}
+<h1>Hale-Bopp Comet</h1>
+<p>Below is a display of multiple images taken of the Hale-Bopp Comet</p>
+<img src="/static/assets/celestial_Obj_img/halebopp1.jpg" width="631", height="400">
+<img src="/static/assets/celestial_Obj_img/halebopp2.jpg" width="631", height="400">
+<img src="/static/assets/celestial_Obj_img/halebopp3.jpg" width="631", height="400">
+<img src="/static/assets/celestial_Obj_img/halebopp4.jpg" width="631", height="400">
+<img src="/static/assets/celestial_Obj_img/halebopp5.jpg" width="631", height="400">
+<img src="/static/assets/celestial_Obj_img/halebopp6.jpg" width="631", height="400">
+{% endblock %}

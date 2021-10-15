@@ -1,7 +1,7 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
 
-{%block head%}
+{% block head %}
 <style>
     body {
         background-image: url("/static/assets/celestial_Obj_img/planets background placeholder.jpg");
@@ -20,5 +20,12 @@
         color: lightskyblue;
         text-align: center;
     }
+    iframe {
+        align: center;
+    }
 </style>
-{%endblock%}
+{% endblock %}
+{% block body%}
+<h1>Hale-Bopp Comet</h1>
+<p></p>
+{% endblock %}

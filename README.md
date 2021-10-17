@@ -10,6 +10,7 @@
 6. [Sprints 3,4 - Prototyping](https://github.com/Rebecca-123/m223_team_lovelace#prototyping---sprints-3-4)
 7. [Sprints 5,6 - Development](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-5-6)
 8. [Sprints 7,8 - Algorithms and Programming](https://github.com/Rebecca-123/m223_team_lovelace#algorithms-and-programming---sprints-7-8)
+9. [Sprints 9,10 - Deployment](https://github.com/Rebecca-123/m223_team_lovelace#deployment---sprints-9-10)
 
 ## Project Description
 ### Team project website with info on celestial objects, accompanied by journals and mini labs
@@ -197,4 +198,12 @@
 | :------------------------------------------------------------------------------------------------| :-----------------------------------------------------------------------------------|
 | Planets info page                                                                                |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/30) |
 | Constellations info page                                                                         |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/32) |
+| Black holes info page                                                                            |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/69) |
+| Nebulae info page                                                                                |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/70) |
+| Home page gallery modifications                                                                  |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/72) |
 | Bonus: Tech Talk 7 Activities                                                                    |  [Ticket](https://github.com/Rebecca-123/m223_team_lovelace/issues/63) |
+
+## Deployment - Sprints 9, 10
+
+### Sprint 9 - Week 9: 10/18-22
+#### [Part 1: Videos and Scores](https://docs.google.com/document/d/1JRH_MvMWFynRXpHhN-IO5GQ2-EJ2fVUPRyWw75sTYwY/edit?usp=sharing)

@@ -1,4 +1,9 @@
 
+body {
+    background-image: url("/static/assets/space_about2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 body {

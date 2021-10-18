@@ -219,6 +219,7 @@ def hale_bopp():
 def mantras():
     return render_template("mantras.html")
 
+
 @app.route('/joke', methods=['GET', 'POST'])
 def joke():
     """

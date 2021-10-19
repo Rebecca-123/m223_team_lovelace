@@ -206,4 +206,5 @@
 ## Deployment - Sprints 9, 10
 
 ### Sprint 9 - Week 9: 10/18-22
-#### [Part 1: Videos and Scores](https://docs.google.com/document/d/1JRH_MvMWFynRXpHhN-IO5GQ2-EJ2fVUPRyWw75sTYwY/edit?usp=sharing)
+#### [Google Doc Version - Part 1: Videos and Scores](https://docs.google.com/document/d/1JRH_MvMWFynRXpHhN-IO5GQ2-EJ2fVUPRyWw75sTYwY/edit?usp=sharing)
+#### [Ticket - Part 1: Videos and Scores](https://github.com/Rebecca-123/m223_team_lovelace/issues/74)

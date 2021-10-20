@@ -6,16 +6,25 @@
 
 {% block body %}
 <script>
-    var x = 35;
-    var y = 6738;
+    var x = window.prompt("Enter a number");
+    var y = window.prompt("Enter another number");
     document.write("Adding the two integers (x and y): ")
-    document.write(x + y)
+    var z = +x + +y
+    document.write(z)
+
+    document.write("<br>");
+    document.write("<br>");
 
     document.write("\nSubtracting the two integers (x and y): ")
     document.write(x - y)
 
+    document.write("<br>");
+    document.write("<br>");
     document.write("\nMultiplying the two integers (x and y): ")
     document.write(x * y)
+
+    document.write("<br>");
+    document.write("<br>");
 
     document.write("\nDividing the two integers (x and y): ")
     document.write(x / y)

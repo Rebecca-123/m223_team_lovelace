@@ -256,7 +256,10 @@ def covid19():
 
     return render_template("starter/covid19.html", stats=response.json())
 
-
+@app.route('/variable_ritvik')
+def variable_ritvik():
+    return render_template("individual_videos/variable_ritvik.html"
+                           "")
 # from image import hide_msg
 # @app.route("/rgbhide")
 # def hidemsg():

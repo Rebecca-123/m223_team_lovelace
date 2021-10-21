@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+{%block head%}
+
+{%endblock%}
+
+{%block body%}
+<script>
+    window.prompt("I can write a story about you!")
+    var x = window.prompt("What is your name?");
+    var y = window.prompt("Type in your favorite number!");
+    var z = window.prompt("What is your favorite food?")
+    var zz = window.prompt("What is your favorite animal?")
+
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("One day, a hunter walked into the woods. His name was " + x + ". ")
+{%endblock%}

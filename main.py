@@ -263,6 +263,10 @@ def variable_ritvik():
 @app.route('/variable2_ritvik')
 def variable2_ritvik():
     return render_template("indvid/variable2_ritvik.html")
+
+@app.route('/nested_ritvik')
+def nested_ritvik():
+    return render_template("indvid/nested_ritvik.html")
 # from image import hide_msg
 # @app.route("/rgbhide")
 # def hidemsg():

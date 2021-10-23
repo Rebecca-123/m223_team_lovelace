@@ -1,10 +1,58 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
-
+{% set sun = "/static/assets/sun.jpg" %}
+{% set smallsun = "/static/assets/SmolSun.jpg" %}
+{% set tinysun = "/static/assets/100sun.jpg" %}
 {%block head%}
+<script>
+    let use = false
+    function test(n) {
+        if(use==true){
+            location.reload()
+        }
+        if(use==false) {
+            if (n < 50) {
+                for (let i = 0; i < n;) {
+                    i = i + 1
+                    var img = document.createElement("img");
+                    img.setAttribute("src", "{{ sun }}");
+                    document.body.appendChild(img);
+                    if (i >= n) {
+                        break
+                    }
+                }
+
+            }
+            if (n > 99999) {
+                for (let i = 0; i < n;) {
+                    i = i + 100
+                    var img = document.createElement("img");
+                    img.setAttribute("src", "{{ tinysun }}");
+                    document.body.appendChild(img);
+                    if (i >= n) {
+                        break
+                    }
+                }
+            }
+            if (50 <= n && n <= 99999) {
+                for (let i = 0; i < n;) {
+                    i = i + 1
+                    var img = document.createElement("img");
+                    img.setAttribute("src", "{{ smallsun }}");
+                    document.body.appendChild(img);
+                    if (i >= n) {
+                        break
+                    }
+                }
+            }
+        }
+        use=true
+    }
+
+</script>
 <style>
     body {
-        background-image: url("/static/assets/blackhole4.jpg");
+        background-image: url("/static/assets/blackholelongbg.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -20,6 +68,47 @@
         color: white;
 
     }
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
 </style>
 {%endblock%}
 
@@ -48,7 +137,7 @@ categories of black hole</p>
     the first and lightest element that can be fused that leads to an overall energy loss (as compared to hydrogen, helium, carbon, oxygen, neon, silicon, etc. all
     releasing more energy in fusion), which causes gravitational collapse of the core that ends up being the singularity. The shockwave caused by the core collapse is what leads to the supernova,
     however it is theorized that sufficiently massive stars can collapse and form a black hole without causing a supernova, resulting in what is referred to as a
-    'failed supernova'. In reality, anything can become a black hole if squeezed to a dense enough volume, known as the Schwarzchild Radius. Collapsing the Earth into
+    "failed supernova". In reality, anything can become a black hole if squeezed to a dense enough volume, known as the Schwarzchild Radius. Collapsing the Earth into
     a volume the size of a peanut will turn it into a black hole.
 </p>
 <h2>
@@ -56,7 +145,7 @@ categories of black hole</p>
 </h2>
 <p>
     Even though black holes are thought of as things that last until the end of the universe, they are hypothesized to emit a small amount of radiation known as Hawking Radiation, which means that black holes
-    do slowly lose mass, though at an incredibly, incredibly minute rate. Empty space is not empty. Even in an absolute vacuum, there are 'virtual particles' that
+    do slowly lose mass, though at an incredibly, incredibly minute rate. Empty space is not empty. Even in an absolute vacuum, there are "virtual particles" that
     pop into existence in matter-antimatter pairs and annihilate each other. At the edge of a black hole, however, if the antiparticle falls into the black hole and
     the other escapes into space, it becomes a real particle and the black hole has just loss mass.
 </p>
@@ -77,11 +166,28 @@ categories of black hole</p>
 <p>
     Supermassive black holes are the largest and are over 100,000 solar masses. The most massive is TON 618, at a mass of 66,000,000,000 solar masses and an
     event horizon of 1300 astronomical units in radius, 40 times the distance from the sun to neptune. Supermassive black holes reside at the center of the galactic nucleus,
-    feeding on dense matter and stars to grow in mass. The ones not accreting any mass are referred to as 'dormant' while the ones actively accreting mass into
+    feeding on dense matter and stars to grow in mass. The ones not accreting any mass are referred to as "dormant" while the ones actively accreting mass into
     its accretion disk. Active Galactic Nuclei are very luminous, and Seyfert galaxies and quasars are galaxies with extremely luminous active galactic nuclei that
     don't overpower the light of the host galaxy in the former, and do in the latter.
 </p>
-<img src="/static/assets/black_hole1.jpg" width="500" height="auto">
-<img src="/static/assets/blackhole2.jpg" width="500" height="auto">
-<img src="/static/assets/blackhole3.jpg" width="500" height="auto">
+<p>
+    Below is a neat visualization of how much these black holes really differ in terms of mass and size. The website cannot
+    handle more than 4500 images at once, so the biggest one on here is Saggitarius A*, the supermassive black hole at the
+    center of the Milky Way, though there are black holes over 10,000 times more massive.
+</p>
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Black Holes</button>
+         <div class="dropdown-content">
+             <a onclick="test(3)"> V723 Monocerotis (Stellar)</a>
+             <a onclick="test(9)"> 4U 1543-47 (Stellar)</a>
+             <a onclick="test(14)"> GRS 1915+105 (Stellar)</a>
+             <a onclick="test(21)"> Cygnus X-1 (Stellar)</a>
+             <a onclick="test(3000)"> Triangulum Galaxy Central Black Hole (upper mass limit)</a>
+             <a onclick="test(10000)"> M87 Central Black Hole (Intermediate)</a>
+             <a onclick="test(1000000)"> M51 Central Black Hole (Supermassive)</a>
+             <a onclick="test(4300000)"> Saggitarius A* (Supermassive)</a>
+         </div>
+    </div>
 {% endblock %}

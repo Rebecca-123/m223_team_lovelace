@@ -80,7 +80,7 @@
       var green = 0;
 
       /* conditionals to convert binary to RGB, depending on # of bits */
-      if (binary.length < 0 && binary.length < 9) {
+      if (binary.length > 0 && binary.length < 9) {
           blue = parseInt(binary.substring(0, binary.length), 2).toString(10);
       }
       else if (binary.length > 8 && binary.length < 17) {

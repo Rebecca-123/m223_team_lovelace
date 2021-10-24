@@ -13,7 +13,7 @@
     <body style="background-color:lightskyblue"></body>
     </html>
     <script>
-        const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
+        const BITS = 12;
         // return string with current value of each bit
         // only two functions needed since bits of third function is determined by sum, not by which bulbs user turned on/off
         function getBits() {
@@ -298,4 +298,6 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 {% endblock %}

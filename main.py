@@ -267,6 +267,10 @@ def variable2_ritvik():
 @app.route('/conditionals_ritvik')
 def conditionals_ritvik():
     return render_template("indvid/conditionals_ritvik.html")
+
+@app.route('/stars')
+def stars():
+    return render_template("celestial objects/stars.html")
 # from image import hide_msg
 # @app.route("/rgbhide")
 # def hidemsg():

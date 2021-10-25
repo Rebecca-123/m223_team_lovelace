@@ -265,6 +265,10 @@ def conditionals_ritvik():
 @app.route('/stars')
 def stars():
     return render_template("celestial objects/stars.html")
+
+@app.route("/clock_christina/")
+def clock_christina():
+    return render_template("indvid/clock_christina.html")
 # from image import hide_msg
 # @app.route("/rgbhide")
 # def hidemsg():

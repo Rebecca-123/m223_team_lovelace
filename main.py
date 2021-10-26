@@ -28,7 +28,7 @@ def rebecca():
     if request.form:
         num1 = request.form.get("num1")
         num2 = request.form.get("num2")
-        # store submission in name variable
+        # store submission in num1 and num2 variables
         # if not empty string
         if num1 != "" or num2 != "":
             # for arithmetic round answer to ten thousandths place
@@ -46,7 +46,8 @@ def rebecca():
                 num = float(num1) / float(num2)
                 return render_template("team/rebecca.html", num=round(num, 8))
     # tell user to input numbers if they haven't
-    return render_template("team/rebecca.html", num="Input numbers to sum!")
+    else:
+        return render_template("team/rebecca.html", num="Input numbers to sum!")
 
 
 @app.route("/ritvik/")

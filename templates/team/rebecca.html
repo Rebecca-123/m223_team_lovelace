@@ -23,16 +23,19 @@
         <li>Developed prototypes for about pages</li>
     </ol>
 
-    <!-- access name variable -->
+    <!-- form action determines where data is sent-->
+    <!-- could be omitted because default is sending data to current page-->
     <form action="/rebecca/" id="greetings" method="POST">
         <!-- if get method is used the string would show up in URL -->
+        <!-- get method allows for bookmarking of result-->
         <label for="num1" style="color: white;">Type a decimal number:</label>
-        <input name="num1" id="num1">
-        <!-- input will be associated with variable name-->
+        <input name="num1" id="num1" type="text">
+        <!-- input will be associated with variable num1-->
         <!-- if get method is used the string would show up in URL -->
         <label for="num2" style="color: white;">Type another decimal number:</label>
-        <input name="num2" id="num2">
-        <!-- input will be associated with variable name-->
+        <input name="num2" id="num2" type="text">
+        <!-- input will be associated with variable num2-->
+        <!--inputs with type=submit will show up as buttons-->
         <input type="submit" name="action" value="Add numbers!">
         <input type="submit" name="action" value="Subtract numbers!">
         <input type="submit" name="action" value="Multiply numbers!">

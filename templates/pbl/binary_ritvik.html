@@ -13,8 +13,8 @@
 <!-- Hack: Set bulbs and pass as variables via Python render_template
            add new images (ie PNGs) to project -->
 <!-- use your PNGs as default -->
-{% set imgBulbOn = "/static/assets/pbl_ttt/bulb_on.gif" %}
-{% set imgBulbOff = "/static/assets/pbl_ttt/bulb_off.png" %}
+{% set imgBulbOn = "/static/assets/pbl_ttt/binary_img/bulb_on.gif" %}
+{% set imgBulbOff = "/static/assets/pbl_ttt/binary_img/bulb_off.png" %}
 {% set msgTurnOn = "Turn On" %}
 {% set msgTurnOff = "Turn Off" %}
 
@@ -123,9 +123,9 @@
         <input type="text" name="BITS" value={{ BITS }}><br>
         <p>Choose a lightBulb</p>
         {#code found on w3 c#}
-        <input type="radio" name="lightOn" value="/static/assets/bulb_on.gif" checked>
+        <input type="radio" name="lightOn" value="/static/assets/pbl_ttt/bulb_on.gif" checked>
         <img src="/static/assets/pbl_ttt/binary_img/bulb_on.gif">
-        <input type="radio" name="lightOn" value="/static/assets/Lightbulbon.jpeg">
+        <input type="radio" name="lightOn" value="/static/assets/pbl_ttt/binary_img/Lightbulbon.jpeg">
         <img src="/static/assets/pbl_ttt/binary_img/Lightbulbon.jpeg">
         <input type="radio" name="lightOn" value="/static/assets/blub_on3.jpeg">
         <img src="/static/assets/pbl_ttt/binary_img/bulb_on3.jpeg">

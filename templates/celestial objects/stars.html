@@ -8,4 +8,53 @@
     <h1>Stars</h1>
 
 
-{% endblock %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stars</title>
+</head>
+<script>
+    function starSize(n) {
+        var img = document.createElement("img");
+        img.setAttribute("src", "/static/assets/celestial_Obj_img/sun.jpg");
+        img.setAttribute("width",String(n))
+        document.body.appendChild(img);
+
+    }
+</script>
+<style>
+    body {
+        background-image: url("/static/assets/celestial_Obj_img/blackholelongbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        color: white;
+
+    }
+    p {
+
+        color: white;
+    }
+    h2 {
+        color: white;
+
+    }
+</style>
+<body>
+<header>Introduction</header>
+<button onclick="starSize(500)">BAI TUO XIAN SHENG</button>
+<button onclick="starSize(1500)">BAI TUO XIAN SHENG</button>
+<button onclick="starSize(5200)">BAI TUO XIAN SHENG</button>
+<p>
+    Stars defined our study of the night sky. Our ancestors looked to the sky but they couldn't make out faint galaxies, theorize about black holes, or conduct
+    astrophotometrical experiments to verify the potential existence of exoplanets, but they could see stars in the night as sure as they could see the sun during the day.
+    The sun itself is a star, though it is much closer and thus its apparent magnitude (the measure of how bright something is to us) is far greater. Well, actually
+    it would be lower as lower magnitudes are brighter, but you get the idea.
+</p>
+<p>
+    Stars come in one shape and a lot of sizes.
+</p>
+</body>
+
+{%endblock%}

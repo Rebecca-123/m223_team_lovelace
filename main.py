@@ -263,7 +263,7 @@ def variable2_ritvik():
 def conditionals_ritvik():
     return render_template("indvid/conditionals_ritvik.html")
 
-@app.route('/stars')
+@app.route('/stars/')
 def stars():
     return render_template("celestial objects/stars.html")
 

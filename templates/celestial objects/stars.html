@@ -14,17 +14,25 @@
     <title>Stars</title>
 </head>
 <script>
-    function starSize(n) {
-        var img = document.createElement("img");
-        img.setAttribute("src", "/static/assets/celestial_Obj_img/sun.jpg");
-        img.setAttribute("width",String(n))
+    let reload= false
+    function starSize(solarRadii) {
+        //the sun is 174 px across
+if (reload==true){
+    location.reload()
+}
+        let size = solarRadii*174
+
+        var img = document.createElement("img");                                           //this block of code creates a new image every time it is run
+        img.setAttribute("src", "/static/assets/celestial_Obj_img/comparisonstar.jpg");
+        img.setAttribute("width",String(size))                                             //the size of the image changes depending on the variable solarRadii
         document.body.appendChild(img);
+        reload=true
 
     }
 </script>
 <style>
     body {
-        background-image: url("/static/assets/celestial_Obj_img/blackholelongbg.jpg");
+        background-image: url("/static/assets/celestial_Obj_img/starsbg2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -40,12 +48,50 @@
         color: white;
 
     }
+    .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
 </style>
 <body>
+
 <header>Introduction</header>
-<button onclick="starSize(500)">BAI TUO XIAN SHENG</button>
-<button onclick="starSize(1500)">BAI TUO XIAN SHENG</button>
-<button onclick="starSize(5200)">BAI TUO XIAN SHENG</button>
 <p>
     Stars defined our study of the night sky. Our ancestors looked to the sky but they couldn't make out faint galaxies, theorize about black holes, or conduct
     astrophotometrical experiments to verify the potential existence of exoplanets, but they could see stars in the night as sure as they could see the sun during the day.
@@ -53,8 +99,43 @@
     it would be lower as lower magnitudes are brighter, but you get the idea.
 </p>
 <p>
-    Stars come in one shape and a lot of sizes.
+    Stars vary in size and temperature. There are some stars so small they blur the line between planet and star. These are known as brown dwarfs and are not massive
+    enough to begin fusing hydrogen into helium through the proton-proton chain reaction. Instead what little leftover heat they have will drive deuterium fusion,
+    and will gradually slow down and cool down over time. Red dwarfs are the smallest, though the rate at which fusion occurs is also much slower, thus red dwarfs
+    have lifetimes millions of times longer than the most massive stars, which burn through their fuel and end their lifecycles in a matter of millions of years.
+    Stars can be sorted by their luminosity (brightness, which increases with size) and temperature using a Hertzsprung-Russell Diagram, of which
+    a simplified version is depicted below. </p>
+    <img src="/static/assets/celestial_Obj_img/hr.jpg" width="200" height="auto">
+    <p>
+        Stars move through the various groups in the diagram throughout their lifetime. Stars form in regions of space densely packed with gas clouds sometimes
+        called "stellar nurseries." After accumulating enough mass, density, and sufficient temperature, they begin fusing hydrogen into helium
+        as main sequence stars, then stay there in the H-R Diagram, only moving slightly up the diagonal through their lifespan. The main sequence  Nearing the end of their life,
+        stars will begin to fuse helium alongside hydrogen, in a shell that surrounds a core of carbon and oxygen.
+        This increase in the stellar output causes the star to expand dramatically, sometimes ending up more than two astronomical units across. The layer of helium
+        fuel begins to run low, and sporadic bursts of helium fusion lead to the expulsion of the star's outer layers, leaving the mostly carbon and oxygen core exposed as a white dwarf.
+        More massive stars continute fusing heavier elements through the triple-a process, resulting in onion-like layers of hydrogen, helium, carbon, neon, oxygen, silicon, and an iron core.
+        However, because fusing iron is an endothermic process, the star loses the necessary pressure to withstand gravity and collapses, resulting in a supernova.
+        The remnant is a neutron star, only prevented from further collapse by neutron degeneracy forces. Even more massive stars collapse into black holes.
 </p>
+<p>
+    Below is a visualization of how much the sizes of stars can vary. The sun is on the left and the image on the right represents the selected star. Have fun scrolling through the last few!
+</p>
+<div class="dropdown">
+    <button class="dropbtn">Star Size Comparison</button>
+    <div class="dropdown-content">
+        <a onclick="starSize(0.2)"> Barnard's Star</a>
+        <a onclick="starSize(1.2264)"> Alpha Centauri A </a>
+        <a onclick="starSize(1.711)"> Sirius </a>
+        <a onclick="starSize(2.78)"> Vega </a>
+        <a onclick="starSize(8)"> Pollux </a>
+        <a onclick="starSize(25.7)"> Arcturus </a>
+        <a onclick="starSize(30)"> Polaris </a>
+        <a onclick="starSize(78)"> Rigel </a>
+        <a onclick="starSize(800)"> Antares </a>
+        <a onclick="starSize(2150)"> Stephenson 2-18 </a>
+    </div>
+</div>
+<img src="/static/assets/celestial_Obj_img/sun.jpg">
 </body>
 
 {%endblock%}

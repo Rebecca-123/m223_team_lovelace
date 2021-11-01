@@ -44,6 +44,7 @@
             // DOM assignment to Decimal conversion
             document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
             document.getElementById('hex').innerHTML = parseInt(binary, 2).toString(16);
+            document.getElementById('base32').innerHTML = parseInt(binary, 2).toString(32);
             binary2=document.getElementById('binary2').innerHTML;
             binary3=document.getElementById('binary3').innerHTML;
             setColor(binary,binary2,binary3);
@@ -53,6 +54,7 @@
             document.getElementById('binary2').innerHTML = binary2;
             document.getElementById('decimal2').innerHTML = parseInt(binary2, 2).toString(10);
             document.getElementById('hex2').innerHTML = parseInt(binary2, 2).toString(16);
+            document.getElementById('2base32').innerHTML = parseInt(binary2, 2).toString(32);
             binary=document.getElementById('binary').innerHTML;
             binary3=document.getElementById('binary3').innerHTML;
             setColor(binary,binary2,binary3);
@@ -63,6 +65,7 @@
             document.getElementById('binary3').innerHTML = binary3;
             document.getElementById('decimal3').innerHTML = parseInt(binary3, 2).toString(10);
             document.getElementById('hex3').innerHTML = parseInt(binary3, 2).toString(16);
+            document.getElementById('3base32').innerHTML = parseInt(binary3, 2).toString(32);
             binary=document.getElementById('binary').innerHTML;
             binary2=document.getElementById('binary2').innerHTML;
             setColor(binary,binary2,binary3);
@@ -149,11 +152,13 @@
                         <th>Binary</th>
                         <th>Decimal</th>
                         <th>Hex</th>
+                        <th>Base32</th>
                     </tr>
                     <tr>
                         <td id="binary">00000000</td>
                         <td id="decimal">0</td>
                         <td id="hex">0</td>
+                        <td id="base32">0</td>
                     </tr>
                 </table>
             </div>
@@ -182,11 +187,13 @@
                             <th>Binary</th>
                             <th>Decimal</th>
                             <th>Hex</th>
+                            <th>Base32</th>
                         </tr>
                         <tr>
                             <td id="binary2">00000000</td>
                             <td id="decimal2">0</td>
                             <td id="hex2">0</td>
+                            <td id="2base32">0</td>
                         </tr>
                     </table>
                 </div>
@@ -217,11 +224,13 @@
                                 <th>Binary</th>
                                 <th>Decimal</th>
                                 <th>Hex</th>
+                                <th>Base32</th>
                             </tr>
                             <tr>
                                 <td id="binary3">00000000</td>
                                 <td id="decimal3">0</td>
                                 <td id="hex3">0</td>
+                                <td id="3base32">0</td>
                             </tr>
                         </table>
                     </div>

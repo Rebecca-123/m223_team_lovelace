@@ -271,9 +271,9 @@ def stars():
 def clock_christina():
     return render_template("indvid/clock_christina.html")
 
-@app.route("/overview/")
-def overview():
-    return render_template("overview.html")
+@app.route("/navigation_guide/")
+def navigation_guide():
+    return render_template("navigation_guide.html")
 # from image import hide_msg
 # @app.route("/rgbhide")
 # def hidemsg():

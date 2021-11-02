@@ -6,5 +6,18 @@
 {%block body%}
 
     <h2>Navigation Guide</h2>
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: system-ui;">
 
+        <div class="col-12">
+            <p>Hi {{ name_nav }}!</p>
+        </div>
+
+        <div class="col-12">
+            <form action="/navigation_guide/" id="nav" method="POST">
+                <label for="name_nav">Type your name:</label>
+                <input name="name_nav" id="name_nav">
+                <input type="submit" value="Welcome!">
+            </form>
+        </div>
+    </div>
 {%endblock%}

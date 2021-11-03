@@ -210,6 +210,7 @@ def halleys():
 def hale_bopp():
     return render_template("celestial objects/hale-bopp.html")
 
+
 @app.route("/mantras/")
 def mantras():
     return render_template("mantras.html")
@@ -248,32 +249,43 @@ def covid19():
 
     response = requests.request("GET", url, headers=headers)
 
-
     return render_template("starter/covid19.html", stats=response.json())
+
 
 @app.route('/variable_ritvik')
 def variable_ritvik():
     return render_template("indvid/variable_ritvik.html")
 
+
 @app.route('/variable2_ritvik')
 def variable2_ritvik():
     return render_template("indvid/variable2_ritvik.html")
+
 
 @app.route('/conditionals_ritvik')
 def conditionals_ritvik():
     return render_template("indvid/conditionals_ritvik.html")
 
+
 @app.route('/stars/')
 def stars():
     return render_template("celestial objects/stars.html")
+
 
 @app.route("/clock_christina/")
 def clock_christina():
     return render_template("indvid/clock_christina.html")
 
+
 @app.route("/navigation_guide/")
 def navigation_guide():
-    return render_template("navigation_guide.html")
+    if request.form:
+        name_nav = request.form.get("name_nav")
+        if len(name_nav) != 0:
+            return render_template("navigation_guide.html", name_nav=name_nav)
+    return render_template("navigation_guide.html", name_nav="there")
+
+
 # from image import hide_msg
 # @app.route("/rgbhide")
 # def hidemsg():

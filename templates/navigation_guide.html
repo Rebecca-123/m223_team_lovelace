@@ -110,6 +110,7 @@
   </style>
 
     <h2>Navigation Guide</h2>
+<<<<<<< HEAD
     <html>
     <head>
         <title>
@@ -161,5 +162,20 @@
 
     </body>
     </html>
+=======
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: system-ui;">
+>>>>>>> 1b4ca5391d0e80dcc827e5a62442c6c8c4257a3c
 
+        <div class="col-12">
+            <p>Hi {{ name_nav }}!</p>
+        </div>
+
+        <div class="col-12">
+            <form action="/navigation_guide/" id="nav" method="POST">
+                <label for="name_nav">Type your name:</label>
+                <input name="name_nav" id="name_nav">
+                <input type="submit" value="Welcome!">
+            </form>
+        </div>
+    </div>
 {%endblock%}

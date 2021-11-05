@@ -279,11 +279,7 @@ def clock_christina():
 
 @app.route("/navigation_guide/")
 def navigation_guide():
-    if request.form:
-        name_nav = request.form.get("name_nav")
-        if len(name_nav) != 0:
-            return render_template("navigation_guide.html", name_nav=name_nav)
-    return render_template("navigation_guide.html", name_nav="there")
+    return render_template("navigation_guide.html")
 
 
 # from image import hide_msg

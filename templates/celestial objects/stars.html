@@ -16,11 +16,12 @@
 <script>
     let reload= false
     function starSize(solarRadii) {
-        //the sun is 174 px across
-if (reload==true){
-    location.reload()
-}
+        if (reload==true){
+            location.reload()
+        }
         let size = solarRadii*174*1.24137931034482758620689
+        //sun is 174 px across, and the margins for the
+        // image for the star is 1.24 times larger than the star in the image
 
         var img = document.createElement("img");                                           //this block of code creates a new image every time it is run
         img.setAttribute("src", "/static/assets/celestial_Obj_img/comparisonstar.jpg");
@@ -124,7 +125,7 @@ if (reload==true){
 <div class="dropdown">
     <button class="dropbtn">Star Size Comparison</button>
     <div class="dropdown-content">
-        <a onclick="starSize(0.2)"> Barnard's Star</a>
+        <a onclick="starSize(0.2)"> Barnard's Star </a>
         <a onclick="starSize(1.2264)"> Alpha Centauri A </a>
         <a onclick="starSize(1.711)"> Sirius </a>
         <a onclick="starSize(2.78)"> Vega </a>

@@ -11,6 +11,7 @@
 7. [Sprints 5,6 - Development](https://github.com/Rebecca-123/m223_team_lovelace#development---sprints-5-6)
 8. [Sprints 7,8 - Algorithms and Programming](https://github.com/Rebecca-123/m223_team_lovelace#algorithms-and-programming---sprints-7-8)
 9. [Sprints 9,10 - Deployment](https://github.com/Rebecca-123/m223_team_lovelace#deployment---sprints-9-10)
+10. [N@tM and Reflection](https://github.com/Rebecca-123/m223_team_lovelace#ntm-presentation-and-walk-abouts)
 
 ## Project Description
 ### Team project website with info on celestial objects, accompanied by journals and mini labs

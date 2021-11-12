@@ -208,3 +208,8 @@
 ### Sprint 9 - Week 9: 10/18-22
 #### [Google Doc Version - Part 1: Videos and Scores](https://docs.google.com/document/d/1JRH_MvMWFynRXpHhN-IO5GQ2-EJ2fVUPRyWw75sTYwY/edit?usp=sharing)
 #### [Ticket - Part 1: Videos and Scores](https://github.com/Rebecca-123/m223_team_lovelace/issues/74)
+
+## N@tM Presentation and Walk Abouts
+#### [Presentations and Walk About - Images and Recording](https://drive.google.com/drive/folders/1BC3LYY2Mk14wUByTLMmOMivfSeJ3p1mM?usp=sharing)
+#### [Christina and Rebecca- Journal Reflections](https://docs.google.com/document/d/1rxDS-Su8Yf-JtRhYigMewVp3HRqp1VQKlIGGpcutEeI/edit?usp=sharing)
+#### [Ritvik and William - Journal Reflections](https://docs.google.com/document/d/1yTmP6R16Gsj7J-Nt4jP-sOAtXwmaNLJ-t-T8G6riBp0/edit?usp=sharing)

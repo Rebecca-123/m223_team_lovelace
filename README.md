@@ -15,6 +15,7 @@
 
 ## Project Description
 ### Team project website with info on celestial objects, accompanied by journals and mini labs
+![Website Home Page](https://github.com/Rebecca-123/m223_team_lovelace/blob/main/static/assets/homepage.png)
 
 ## Project Ideation
 
